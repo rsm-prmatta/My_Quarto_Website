@@ -1,0 +1,12 @@
+{
+  "hash": "0b21009f04304e6da0df691ec91c0c7e",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Analysis of Cars\"\ndescription: \"A data exploration project examining the relationship between fuel efficiency and engine displacement.\"\nauthor: \"Prabhlin Kaur Matta\"\ndate: \"2026-03-04\"\ncategories: [Data Analysis, Python, Visualization]\n---\n\n## Overview\n\nThis project explores the relationship between fuel efficiency and engine displacement using Python, pandas, seaborn, and matplotlib.\n\n## Tools\n\n- Python\n- pandas\n- seaborn\n- matplotlib\n\n## Analysis\n\n::: {#8f511c38 .cell message='false' execution_count=1}\n\n::: {.cell-output .cell-output-display}\n![](index_files/figure-html/cell-2-output-1.png){width=593 height=429}\n:::\n:::\n\n\nThe relationship between fuel efficiency (`mpg`) and engine displacement is negative, with a correlation of -0.81.\n\nThis project is a strong example of exploratory analysis and simple visual storytelling. You can expand it with a short interpretation, business takeaway, or key insight section.\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

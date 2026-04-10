@@ -1,0 +1,103 @@
+---
+title: "Home"
+---
+
+:::{.hero-shell}
+:::{.hero-copy}
+::: {.eyebrow}
+Business analytics and marketing portfolio
+:::
+
+# Prabhlin Kaur Matta
+
+::: {.hero-lead}
+I use business analytics, consumer insights, and pricing strategy to help teams make sharper marketing decisions.
+:::
+
+::: {.hero-text}
+Based in San Diego, I bring experience across campaign performance analytics, line and price optimization, retail data analysis, and insight generation for global consumer brands.
+:::
+
+::: {.button-row}
+[Explore Projects](projects.qmd){.button-primary}
+[About Prabhlin](about.qmd){.button-secondary}
+[View Resume](resume.qmd){.button-secondary}
+:::
+:::
+
+::: {.hero-panel}
+## Professional Snapshot
+
+I am currently completing an MS in Business Analytics at UC San Diego and build decision support that connects data, consumer behavior, and commercial strategy.
+
+::: {.stat-grid}
+::: {.stat-card}
+### Consumer Insights
++100 focus groups and interviews translated into actionable recommendations.
+:::
+
+::: {.stat-card}
+### Pricing and Retail Analytics
+SQL, Excel, and dashboarding workflows applied to 10K+ retail records and optimization studies.
+:::
+
+::: {.stat-card}
+### Cross-Functional Delivery
+20+ projects managed across analytics, research, and client-facing stakeholders.
+:::
+:::
+:::
+:::
+
+:::{.section-shell}
+## What You'll Find Here
+
+::: {.feature-grid}
+::: {.feature-card}
+### About
+A concise overview of my background, training, and the kinds of business problems I enjoy solving.
+
+[Read the About page](about.qmd){.text-link}
+:::
+
+::: {.feature-card}
+### Resume
+My academic background, analytics toolkit, and experience supporting pricing, promotion, and insight-led decisions.
+
+[Open my Resume](resume.qmd){.text-link}
+:::
+
+::: {.feature-card}
+### Projects
+Selected work in offer optimization, promotion analytics, and marketing decision support.
+
+[Explore Projects](projects.qmd){.text-link}
+:::
+:::
+:::
+
+:::{.section-shell .section-accent}
+## Core Focus Areas
+
+::: {.pill-row}
+::: {.pill}
+Business Analytics
+:::
+
+::: {.pill}
+Consumer Insights
+:::
+
+::: {.pill}
+Pricing Strategy
+:::
+
+::: {.pill}
+Campaign Performance Analytics
+:::
+:::
+
+::: {.section-note}
+My work sits at the intersection of data analysis, commercial decision support, and practical marketing strategy.
+:::
+:::

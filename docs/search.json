@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About me\n\n\n\n\nI’m a business analytics graduate student and marketing analytics professional focused on turning consumer, pricing, and campaign data into practical business decisions.\n\nI am currently pursuing an MS in Business Analytics at UC San Diego, expected June 2026, after completing a PGDM in Marketing from the Welingkar Institute in April 2022. My background combines analytics, consumer research, and commercial strategy, with experience supporting decisions across pricing, promotions, portfolio optimization, and marketing performance.\nAt NielsenIQ, I worked on line and price optimization and consumer insights engagements for brands including Unilever, Nestle, Mondelez, Samsung, Reliance, and McCormick. My work included analyzing large retail and survey datasets, building Power BI dashboards, synthesizing findings from 100+ focus groups and interviews, and helping clients translate evidence into clearer growth and pricing decisions.\nI enjoy roles where analytics is closely tied to action, whether that means identifying opportunity areas, strengthening campaign decisions, or helping teams communicate insights with more confidence.\n\nLinkedIn View Resume See Projects"
+  },
+  {
+    "objectID": "about.html#professional-profile",
+    "href": "about.html#professional-profile",
+    "title": "About",
+    "section": "Professional Profile",
+    "text": "Professional Profile\n\n\nWhat I Work On\nBusiness analytics, consumer insights, pricing strategy, campaign performance analytics, and marketing decision support.\n\n\nIndustry Exposure\nExperience supporting globally recognized consumer and retail brands across structured analytics and client-facing insight delivery.\n\n\nHow I Add Value\nI connect quantitative analysis with business context so recommendations are clear, credible, and useful to decision-makers."
+  },
+  {
+    "objectID": "about.html#skills-and-tools",
+    "href": "about.html#skills-and-tools",
+    "title": "About",
+    "section": "Skills and Tools",
+    "text": "Skills and Tools\n\n\nSQL\n\n\nPython\n\n\nPolars\n\n\nPandas\n\n\nNumPy\n\n\nMatplotlib\n\n\nTableau\n\n\nPower BI\n\n\nExcel\n\n\nGoogle Analytics\n\n\nA/B Testing\n\n\nSegmentation\n\n\nPricing and Promotion Strategy\n\n\nAd Effectiveness\n\n\nNielsen Retail and Survey Data\n\n\n\nMy toolkit reflects a mix of analytics, visualization, experimentation, and insight generation used in real business decision support."
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\n\n\nLocation\nSan Diego, CA\n\n\nLinkedIn\nlinkedin.com/in/prabhlinkm"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Portfolio work\n\n\n\n\nSelected analytics projects focused on offer optimization, promotion performance, and marketing decision support.\n\n\nThese projects reflect how I approach business problems by combining structured analysis, practical methods, and commercially relevant recommendations."
+  },
+  {
+    "objectID": "projects.html#targeting-offer-optimization",
+    "href": "projects.html#targeting-offer-optimization",
+    "title": "Projects",
+    "section": "Targeting & Offer Optimization",
+    "text": "Targeting & Offer Optimization\nA customer targeting and offer strategy project designed to improve decision quality around who to reach, what to offer, and how to align incentives with business goals.\n\nBusiness Problem\nHow can a business improve campaign efficiency by identifying the right customer segments and matching them with stronger promotional offers?\n\n\nMethods\nSegmentation analysis, offer performance evaluation, business rule interpretation, and decision-focused recommendation design.\n\n\nTools\nSQL, Python, Excel, and analytics workflows built to support targeting logic and performance review.\n\n\nValue Delivered\nFramed a clearer approach to customer prioritization and offer strategy, with recommendations that support more effective allocation of marketing effort.\n\n\nSegmentation\n\n\nA/B Testing\n\n\nMarketing Decision Support"
+  },
+  {
+    "objectID": "projects.html#retail-promotion-uplift-demand-modeling",
+    "href": "projects.html#retail-promotion-uplift-demand-modeling",
+    "title": "Projects",
+    "section": "Retail Promotion Uplift & Demand Modeling",
+    "text": "Retail Promotion Uplift & Demand Modeling\nA retail analytics project focused on measuring promotional impact and understanding how pricing and demand signals can support stronger planning decisions.\n\nBusiness Problem\nHow can retail and consumer brands evaluate whether promotions are truly driving incremental demand and where pricing or promotional changes may improve outcomes?\n\n\nMethods\nPromotion uplift analysis, demand modeling, retail record analysis, exploratory data review, and interpretation for commercial decision-making.\n\n\nTools\nSQL, Python, Pandas, NumPy, Matplotlib, Excel, and retail data workflows spanning 10K+ records.\n\n\nValue Delivered\nDeveloped an evidence-based view of promotion performance that helps stakeholders compare demand response, identify patterns, and make more informed pricing and promotion decisions.\n\n\nPricing Strategy\n\n\nPromotion Analytics\n\n\nDemand Modeling"
+  },
+  {
+    "objectID": "projects.html#what-these-projects-show",
+    "href": "projects.html#what-these-projects-show",
+    "title": "Projects",
+    "section": "What These Projects Show",
+    "text": "What These Projects Show\nAcross both projects, my focus is on using analytics to make marketing choices more measurable, more targeted, and easier for stakeholders to act on."
+  },
+  {
+    "objectID": "Projects/Project1/index.html",
+    "href": "Projects/Project1/index.html",
+    "title": "Campaign Planning Case Study",
+    "section": "",
+    "text": "This project page can be used for a marketing case study, campaign brief, or class project. It is intentionally structured so you can replace the text with your own content while keeping the portfolio presentation polished."
+  },
+  {
+    "objectID": "Projects/Project1/index.html#overview",
+    "href": "Projects/Project1/index.html#overview",
+    "title": "Campaign Planning Case Study",
+    "section": "",
+    "text": "This project page can be used for a marketing case study, campaign brief, or class project. It is intentionally structured so you can replace the text with your own content while keeping the portfolio presentation polished."
+  },
+  {
+    "objectID": "Projects/Project1/index.html#focus",
+    "href": "Projects/Project1/index.html#focus",
+    "title": "Campaign Planning Case Study",
+    "section": "Focus",
+    "text": "Focus\n\nAudience understanding\nMessaging strategy\nDeliverable organization"
+  },
+  {
+    "objectID": "Projects/Project1/index.html#outcome",
+    "href": "Projects/Project1/index.html#outcome",
+    "title": "Campaign Planning Case Study",
+    "section": "Outcome",
+    "text": "Outcome\nUse this page to summarize the problem, your approach, the tools you used, and what the project demonstrates about your skills."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Professional experience\n\n\n\n\nMy background spans business analytics, consumer insights, pricing strategy, and campaign performance support across global consumer brands.\n\n\nDownload Resume PDF Learn More About Me"
+  },
+  {
+    "objectID": "resume.html#highlights",
+    "href": "resume.html#highlights",
+    "title": "Resume",
+    "section": "Highlights",
+    "text": "Highlights\n\n\nEducation\nMS in Business Analytics, UC San Diego, expected June 2026; PGDM in Marketing, Welingkar Institute, April 2022.\n\n\nAnalytics Experience\nNielsenIQ work spanning line and price optimization, consumer insights, dashboarding, and large-scale retail and survey analysis.\n\n\nBusiness Impact\nSupported brands including Unilever, Nestle, Mondelez, Samsung, Reliance, and McCormick through insight-led decision support."
+  },
+  {
+    "objectID": "Projects/Project2/index.html",
+    "href": "Projects/Project2/index.html",
+    "title": "Analysis of Cars",
+    "section": "",
+    "text": "This project explores the relationship between fuel efficiency and engine displacement using Python, pandas, seaborn, and matplotlib."
+  },
+  {
+    "objectID": "Projects/Project2/index.html#overview",
+    "href": "Projects/Project2/index.html#overview",
+    "title": "Analysis of Cars",
+    "section": "",
+    "text": "This project explores the relationship between fuel efficiency and engine displacement using Python, pandas, seaborn, and matplotlib."
+  },
+  {
+    "objectID": "Projects/Project2/index.html#tools",
+    "href": "Projects/Project2/index.html#tools",
+    "title": "Analysis of Cars",
+    "section": "Tools",
+    "text": "Tools\n\nPython\npandas\nseaborn\nmatplotlib"
+  },
+  {
+    "objectID": "Projects/Project2/index.html#analysis",
+    "href": "Projects/Project2/index.html#analysis",
+    "title": "Analysis of Cars",
+    "section": "Analysis",
+    "text": "Analysis\n\n\n\n\n\n\n\n\n\nThe relationship between fuel efficiency (mpg) and engine displacement is negative, with a correlation of -0.81.\nThis project is a strong example of exploratory analysis and simple visual storytelling. You can expand it with a short interpretation, business takeaway, or key insight section."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Business analytics and marketing portfolio\n\n\n\n\nI use business analytics, consumer insights, and pricing strategy to help teams make sharper marketing decisions.\n\n\nBased in San Diego, I bring experience across campaign performance analytics, line and price optimization, retail data analysis, and insight generation for global consumer brands.\n\n\nExplore Projects About Prabhlin View Resume\n\n\n\n\n\nI am currently completing an MS in Business Analytics at UC San Diego and build decision support that connects data, consumer behavior, and commercial strategy.\n\n\n\n+100 focus groups and interviews translated into actionable recommendations.\n\n\n\nSQL, Excel, and dashboarding workflows applied to 10K+ retail records and optimization studies.\n\n\n\n20+ projects managed across analytics, research, and client-facing stakeholders."
+  },
+  {
+    "objectID": "index.html#professional-snapshot",
+    "href": "index.html#professional-snapshot",
+    "title": "Home",
+    "section": "",
+    "text": "I am currently completing an MS in Business Analytics at UC San Diego and build decision support that connects data, consumer behavior, and commercial strategy.\n\n\n\n+100 focus groups and interviews translated into actionable recommendations.\n\n\n\nSQL, Excel, and dashboarding workflows applied to 10K+ retail records and optimization studies.\n\n\n\n20+ projects managed across analytics, research, and client-facing stakeholders."
+  },
+  {
+    "objectID": "index.html#what-youll-find-here",
+    "href": "index.html#what-youll-find-here",
+    "title": "Home",
+    "section": "What You’ll Find Here",
+    "text": "What You’ll Find Here\n\n\nAbout\nA concise overview of my background, training, and the kinds of business problems I enjoy solving.\nRead the About page\n\n\nResume\nMy academic background, analytics toolkit, and experience supporting pricing, promotion, and insight-led decisions.\nOpen my Resume\n\n\nProjects\nSelected work in offer optimization, promotion analytics, and marketing decision support.\nExplore Projects"
+  },
+  {
+    "objectID": "index.html#core-focus-areas",
+    "href": "index.html#core-focus-areas",
+    "title": "Home",
+    "section": "Core Focus Areas",
+    "text": "Core Focus Areas\n\n\nBusiness Analytics\n\n\nConsumer Insights\n\n\nPricing Strategy\n\n\nCampaign Performance Analytics\n\n\n\nMy work sits at the intersection of data analysis, commercial decision support, and practical marketing strategy."
+  }
+]

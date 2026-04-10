@@ -1,0 +1,38 @@
+---
+title: "Analysis of Cars"
+description: "A data exploration project examining the relationship between fuel efficiency and engine displacement."
+author: "Prabhlin Kaur Matta"
+date: "2026-03-04"
+categories: [Data Analysis, Python, Visualization]
+---
+
+## Overview
+
+This project explores the relationship between fuel efficiency and engine displacement using Python, pandas, seaborn, and matplotlib.
+
+## Tools
+
+- Python
+- pandas
+- seaborn
+- matplotlib
+
+## Analysis
+
+```{python}
+#| message: false
+#| echo: false
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df = sns.load_dataset("mpg").dropna()
+
+sns.scatterplot(x="mpg", y="displacement", data=df)
+plt.show()
+```
+
+The relationship between fuel efficiency (`mpg`) and engine displacement is negative, with a correlation of `{python} float(round(df["mpg"].corr(df["displacement"]), 2))`.
+
+This project is a strong example of exploratory analysis and simple visual storytelling. You can expand it with a short interpretation, business takeaway, or key insight section.

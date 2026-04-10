@@ -1,0 +1,21 @@
+---
+title: "Campaign Planning Case Study"
+description: "A sample portfolio project focused on audience insight, campaign structure, and communication planning."
+author: "Prabhlin Kaur Matta"
+date: "2026-03-14"
+categories: [Marketing Strategy, Research, Communication]
+---
+
+## Overview
+
+This project page can be used for a marketing case study, campaign brief, or class project. It is intentionally structured so you can replace the text with your own content while keeping the portfolio presentation polished.
+
+## Focus
+
+- Audience understanding
+- Messaging strategy
+- Deliverable organization
+
+## Outcome
+
+Use this page to summarize the problem, your approach, the tools you used, and what the project demonstrates about your skills.

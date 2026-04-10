@@ -1,0 +1,99 @@
+---
+title: "Projects"
+---
+
+:::{.section-shell}
+::: {.eyebrow}
+Portfolio work
+:::
+
+# Projects
+
+::: {.hero-lead}
+Selected analytics projects focused on offer optimization, promotion performance, and marketing decision support.
+:::
+
+::: {.hero-text}
+These projects reflect how I approach business problems by combining structured analysis, practical methods, and commercially relevant recommendations.
+:::
+:::
+
+:::{.project-grid}
+::: {.project-card}
+::: {.project-meta}
+Featured project
+:::
+
+## Targeting & Offer Optimization
+
+A customer targeting and offer strategy project designed to improve decision quality around who to reach, what to offer, and how to align incentives with business goals.
+
+### Business Problem
+How can a business improve campaign efficiency by identifying the right customer segments and matching them with stronger promotional offers?
+
+### Methods
+Segmentation analysis, offer performance evaluation, business rule interpretation, and decision-focused recommendation design.
+
+### Tools
+SQL, Python, Excel, and analytics workflows built to support targeting logic and performance review.
+
+### Value Delivered
+Framed a clearer approach to customer prioritization and offer strategy, with recommendations that support more effective allocation of marketing effort.
+
+::: {.pill-row .project-pill-row}
+::: {.pill}
+Segmentation
+:::
+
+::: {.pill}
+A/B Testing
+:::
+
+::: {.pill}
+Marketing Decision Support
+:::
+:::
+:::
+
+::: {.project-card}
+::: {.project-meta}
+Featured project
+:::
+
+## Retail Promotion Uplift & Demand Modeling
+
+A retail analytics project focused on measuring promotional impact and understanding how pricing and demand signals can support stronger planning decisions.
+
+### Business Problem
+How can retail and consumer brands evaluate whether promotions are truly driving incremental demand and where pricing or promotional changes may improve outcomes?
+
+### Methods
+Promotion uplift analysis, demand modeling, retail record analysis, exploratory data review, and interpretation for commercial decision-making.
+
+### Tools
+SQL, Python, Pandas, NumPy, Matplotlib, Excel, and retail data workflows spanning 10K+ records.
+
+### Value Delivered
+Developed an evidence-based view of promotion performance that helps stakeholders compare demand response, identify patterns, and make more informed pricing and promotion decisions.
+
+::: {.pill-row .project-pill-row}
+::: {.pill}
+Pricing Strategy
+:::
+
+::: {.pill}
+Promotion Analytics
+:::
+
+::: {.pill}
+Demand Modeling
+:::
+:::
+:::
+:::
+
+:::{.section-shell .section-accent}
+## What These Projects Show
+
+Across both projects, my focus is on using analytics to make marketing choices more measurable, more targeted, and easier for stakeholders to act on.
+:::

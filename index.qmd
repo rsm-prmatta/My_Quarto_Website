@@ -2,102 +2,55 @@
 title: "Home"
 ---
 
-:::{.hero-shell}
-:::{.hero-copy}
-::: {.eyebrow}
-Business analytics and marketing portfolio
+:::{.landing-hero .landing-hero-compact}
+![](files/PK.jpeg){.landing-photo}
+
+# <span class="landing-name-accent">Hi, I am Prabhlin Kaur</span>
+
+::: {.landing-summary}
+I work across business analytics, consumer insights, marketing analytics, and predictive modeling.
+I build decision support that turns analysis into clear, actionable business recommendations.
 :::
 
-# Prabhlin Kaur Matta
-
-::: {.hero-lead}
-I use business analytics, consumer insights, and pricing strategy to help teams make sharper marketing decisions.
+<div class="landing-contact-row">
+  <a href="mailto:prmatta@ucsd.edu" class="contact-pill contact-icon" aria-label="Email" title="prmatta@ucsd.edu">
+    <i class="bi bi-envelope-fill"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/prabhlinkm/" class="contact-pill contact-icon" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+    <i class="bi bi-linkedin"></i>
+  </a>
+  <a href="https://maps.google.com/?q=San+Diego,+CA" class="contact-pill contact-icon" target="_blank" aria-label="San Diego, CA" title="San Diego, CA">
+    <i class="bi bi-geo-alt-fill"></i>
+  </a>
+</div>
 :::
 
-::: {.hero-text}
-Based in San Diego, I bring experience across campaign performance analytics, line and price optimization, retail data analysis, and insight generation for global consumer brands.
+:::{.section-row .snapshot-section}
+<div class="section-label">Snapshot</div>
+
+::: {.snapshot-stack}
+::: {.snapshot-bar}
+<div class="snapshot-number">11</div>
+<div class="snapshot-title">Projects</div>
+<div class="snapshot-text">Analytics, optimization, experimentation, and risk work</div>
 :::
 
-::: {.button-row}
-[Explore Projects](projects.qmd){.button-primary}
-[About Prabhlin](about.qmd){.button-secondary}
-[View Resume](resume.qmd){.button-secondary}
-:::
-:::
-
-::: {.hero-panel}
-## Professional Snapshot
-
-I am currently completing an MS in Business Analytics at UC San Diego and build decision support that connects data, consumer behavior, and commercial strategy.
-
-::: {.stat-grid}
-::: {.stat-card}
-### Consumer Insights
-+100 focus groups and interviews translated into actionable recommendations.
+::: {.snapshot-bar}
+<div class="snapshot-number">6</div>
+<div class="snapshot-title">Courses</div>
+<div class="snapshot-text">Graduate coursework spanning ML, APIs, and customer analytics</div>
 :::
 
-::: {.stat-card}
-### Pricing and Retail Analytics
-SQL, Excel, and dashboarding workflows applied to 10K+ retail records and optimization studies.
+::: {.snapshot-bar}
+<div class="snapshot-number">4</div>
+<div class="snapshot-title">Certifications</div>
+<div class="snapshot-text">SQL, Python, GenAI, and quant research</div>
 :::
 
-::: {.stat-card}
-### Cross-Functional Delivery
-20+ projects managed across analytics, research, and client-facing stakeholders.
+::: {.snapshot-bar}
+<div class="snapshot-number">20+</div>
+<div class="snapshot-title">Client Projects</div>
+<div class="snapshot-text">Cross-functional delivery for global brands</div>
 :::
-:::
-:::
-:::
-
-:::{.section-shell}
-## What You'll Find Here
-
-::: {.feature-grid}
-::: {.feature-card}
-### About
-A concise overview of my background, training, and the kinds of business problems I enjoy solving.
-
-[Read the About page](about.qmd){.text-link}
-:::
-
-::: {.feature-card}
-### Resume
-My academic background, analytics toolkit, and experience supporting pricing, promotion, and insight-led decisions.
-
-[Open my Resume](resume.qmd){.text-link}
-:::
-
-::: {.feature-card}
-### Projects
-Selected work in offer optimization, promotion analytics, and marketing decision support.
-
-[Explore Projects](projects.qmd){.text-link}
-:::
-:::
-:::
-
-:::{.section-shell .section-accent}
-## Core Focus Areas
-
-::: {.pill-row}
-::: {.pill}
-Business Analytics
-:::
-
-::: {.pill}
-Consumer Insights
-:::
-
-::: {.pill}
-Pricing Strategy
-:::
-
-::: {.pill}
-Campaign Performance Analytics
-:::
-:::
-
-::: {.section-note}
-My work sits at the intersection of data analysis, commercial decision support, and practical marketing strategy.
 :::
 :::

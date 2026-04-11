@@ -1,0 +1,49 @@
+---
+title: "Quantifying Impact of Contextual TV Advertising"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Ad measurement study
+:::
+
+# Quantifying Impact of Contextual TV Advertising
+
+::: {.hero-lead}
+An AI-driven ad effectiveness study built for an audience measurement platform using household-level data.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Measure contextual ad lift and connect it to business-facing attention and visibility KPIs.
+:::
+
+::: {.detail-card}
+### Methods
+Household-level analysis, segment-level driver modeling, and ad effectiveness framework design.
+:::
+
+::: {.detail-card}
+### Output
+Tableau dashboards that made performance easier to monitor and optimize.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+This project focused on quantifying the impact of contextual TV advertising and identifying the drivers behind lift across audience segments.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">Ad effectiveness</span>
+<span class="chip">Audience measurement</span>
+<span class="chip">Tableau</span>
+<span class="chip">KPI tracking</span>
+:::
+:::

@@ -1,0 +1,49 @@
+---
+title: "Credit Card Product Optimization & CLV-Based Targeting"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Product optimization
+:::
+
+# Credit Card Product Optimization & CLV-Based Targeting
+
+::: {.hero-lead}
+A fintech credit card campaign project combining factorial experimentation with CLV-aware offer selection.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Select the best offer mix across 12 variants for roughly 750K customers.
+:::
+
+::: {.detail-card}
+### Methods
+Factorial design, response modeling, CLV simulation, and profit comparison.
+:::
+
+::: {.detail-card}
+### Outcome
+Projected about $866K in profit, with roughly $835K attributed to optimized targeting.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+The project balanced experimentation depth with commercial practicality by evaluating how product features and customer value interact in campaign design.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">CLV</span>
+<span class="chip">Experimentation</span>
+<span class="chip">Response modeling</span>
+<span class="chip">Offer optimization</span>
+:::
+:::

@@ -5,8 +5,10 @@ project:
 website:
   title: "Prabhlin Kaur Matta"
   navbar:
-    background: transparent
-    left:
+    background: "#fffaf7"
+    foreground: "#3c2b29"
+    pinned: true
+    right:
       - href: index.qmd
         text: Home
       - href: about.qmd
@@ -15,12 +17,14 @@ website:
         text: Resume
       - href: projects.qmd
         text: Projects
+      - href: courses.qmd
+        text: Courses
+      - href: certifications.qmd
+        text: Certifications
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
     toc: false
     page-layout: full

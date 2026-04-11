@@ -1,59 +1,80 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "certifications.html",
+    "href": "certifications.html",
+    "title": "Certifications",
     "section": "",
-    "text": "About me\n\n\n\n\nI’m a business analytics graduate student and marketing analytics professional focused on turning consumer, pricing, and campaign data into practical business decisions.\n\nI am currently pursuing an MS in Business Analytics at UC San Diego, expected June 2026, after completing a PGDM in Marketing from the Welingkar Institute in April 2022. My background combines analytics, consumer research, and commercial strategy, with experience supporting decisions across pricing, promotions, portfolio optimization, and marketing performance.\nAt NielsenIQ, I worked on line and price optimization and consumer insights engagements for brands including Unilever, Nestle, Mondelez, Samsung, Reliance, and McCormick. My work included analyzing large retail and survey datasets, building Power BI dashboards, synthesizing findings from 100+ focus groups and interviews, and helping clients translate evidence into clearer growth and pricing decisions.\nI enjoy roles where analytics is closely tied to action, whether that means identifying opportunity areas, strengthening campaign decisions, or helping teams communicate insights with more confidence.\n\nLinkedIn View Resume See Projects"
+    "text": "Credentials\n\n\nCertifications\n\nProfessional credentials that reinforce my SQL, Python, quantitative research, and GenAI analytics toolkit.\n\n\n\n\nDataCamp\n\n\nProfessional Certificate - SQL\nFocused on query writing, analysis workflows, and practical SQL problem solving.\n\n\n\n\nDataCamp\n\n\nProfessional Certificate - Python\nStrengthened applied Python skills for analysis, data handling, and modeling workflows.\n\n\n\n\nForage\n\n\nJPMorgan Chase & Co. Quantitative Research Virtual Experience\nHands-on work in pricing, forecasting, and credit risk framing for finance-oriented decisions.\n\n\n\n\nForage\n\n\nTata GenAI Powered Data Analytics Virtual Experience\nExperience centered on GenAI-enabled analytics thinking and business-facing data work."
   },
   {
-    "objectID": "about.html#professional-profile",
-    "href": "about.html#professional-profile",
-    "title": "About",
-    "section": "Professional Profile",
-    "text": "Professional Profile\n\n\nWhat I Work On\nBusiness analytics, consumer insights, pricing strategy, campaign performance analytics, and marketing decision support.\n\n\nIndustry Exposure\nExperience supporting globally recognized consumer and retail brands across structured analytics and client-facing insight delivery.\n\n\nHow I Add Value\nI connect quantitative analysis with business context so recommendations are clear, credible, and useful to decision-makers."
-  },
-  {
-    "objectID": "about.html#skills-and-tools",
-    "href": "about.html#skills-and-tools",
-    "title": "About",
-    "section": "Skills and Tools",
-    "text": "Skills and Tools\n\n\nSQL\n\n\nPython\n\n\nPolars\n\n\nPandas\n\n\nNumPy\n\n\nMatplotlib\n\n\nTableau\n\n\nPower BI\n\n\nExcel\n\n\nGoogle Analytics\n\n\nA/B Testing\n\n\nSegmentation\n\n\nPricing and Promotion Strategy\n\n\nAd Effectiveness\n\n\nNielsen Retail and Survey Data\n\n\n\nMy toolkit reflects a mix of analytics, visualization, experimentation, and insight generation used in real business decision support."
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About",
-    "section": "Contact",
-    "text": "Contact\n\n\nLocation\nSan Diego, CA\n\n\nLinkedIn\nlinkedin.com/in/prabhlinkm"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
     "section": "",
-    "text": "Portfolio work\n\n\n\n\nSelected analytics projects focused on offer optimization, promotion performance, and marketing decision support.\n\n\nThese projects reflect how I approach business problems by combining structured analysis, practical methods, and commercially relevant recommendations."
+    "text": "Hi, I am Prabhlin Kaur\n\nI work across business analytics, consumer insights, marketing analytics, and predictive modeling. I build decision support that turns analysis into clear, actionable business recommendations.\n\n\n        \n\n\n\n\n\nSnapshot\n\n\n\n\n11\n\n\nProjects\n\n\nAnalytics, optimization, experimentation, and risk work\n\n\n\n\n6\n\n\nCourses\n\n\nGraduate coursework spanning ML, APIs, and customer analytics\n\n\n\n\n4\n\n\nCertifications\n\n\nSQL, Python, GenAI, and quant research\n\n\n\n\n20+\n\n\nClient Projects\n\n\nCross-functional delivery for global brands"
   },
   {
-    "objectID": "projects.html#targeting-offer-optimization",
-    "href": "projects.html#targeting-offer-optimization",
-    "title": "Projects",
-    "section": "Targeting & Offer Optimization",
-    "text": "Targeting & Offer Optimization\nA customer targeting and offer strategy project designed to improve decision quality around who to reach, what to offer, and how to align incentives with business goals.\n\nBusiness Problem\nHow can a business improve campaign efficiency by identifying the right customer segments and matching them with stronger promotional offers?\n\n\nMethods\nSegmentation analysis, offer performance evaluation, business rule interpretation, and decision-focused recommendation design.\n\n\nTools\nSQL, Python, Excel, and analytics workflows built to support targeting logic and performance review.\n\n\nValue Delivered\nFramed a clearer approach to customer prioritization and offer strategy, with recommendations that support more effective allocation of marketing effort.\n\n\nSegmentation\n\n\nA/B Testing\n\n\nMarketing Decision Support"
+    "objectID": "Projects/contextual-tv-ad-measurement/index.html",
+    "href": "Projects/contextual-tv-ad-measurement/index.html",
+    "title": "Quantifying Impact of Contextual TV Advertising",
+    "section": "",
+    "text": "Ad measurement study\n\n\nQuantifying Impact of Contextual TV Advertising\n\nAn AI-driven ad effectiveness study built for an audience measurement platform using household-level data.\n\n\n\nObjective\nMeasure contextual ad lift and connect it to business-facing attention and visibility KPIs.\n\n\nMethods\nHousehold-level analysis, segment-level driver modeling, and ad effectiveness framework design.\n\n\nOutput\nTableau dashboards that made performance easier to monitor and optimize.\n\n\n\n\n\n\nOverview\n\nThis project focused on quantifying the impact of contextual TV advertising and identifying the drivers behind lift across audience segments.\n\n\n\nSkills used\n\n\nAd effectiveness Audience measurement Tableau KPI tracking"
   },
   {
-    "objectID": "projects.html#retail-promotion-uplift-demand-modeling",
-    "href": "projects.html#retail-promotion-uplift-demand-modeling",
-    "title": "Projects",
-    "section": "Retail Promotion Uplift & Demand Modeling",
-    "text": "Retail Promotion Uplift & Demand Modeling\nA retail analytics project focused on measuring promotional impact and understanding how pricing and demand signals can support stronger planning decisions.\n\nBusiness Problem\nHow can retail and consumer brands evaluate whether promotions are truly driving incremental demand and where pricing or promotional changes may improve outcomes?\n\n\nMethods\nPromotion uplift analysis, demand modeling, retail record analysis, exploratory data review, and interpretation for commercial decision-making.\n\n\nTools\nSQL, Python, Pandas, NumPy, Matplotlib, Excel, and retail data workflows spanning 10K+ records.\n\n\nValue Delivered\nDeveloped an evidence-based view of promotion performance that helps stakeholders compare demand response, identify patterns, and make more informed pricing and promotion decisions.\n\n\nPricing Strategy\n\n\nPromotion Analytics\n\n\nDemand Modeling"
+    "objectID": "Projects/ea-product-management-simulation/index.html",
+    "href": "Projects/ea-product-management-simulation/index.html",
+    "title": "Electronic Arts Product Management Job Simulation",
+    "section": "",
+    "text": "Forage simulation\n\n\nElectronic Arts Product Management Job Simulation\n\nA product-focused exercise centered on game performance review and player segmentation.\n\n\n\nObjective\nUnderstand player segments and performance signals that could inform product decisions.\n\n\nMethods\nPerformance review, segmentation thinking, and product recommendation framing.\n\n\nOutcome\nStructured a clearer view of how player behavior can guide prioritization and product direction.\n\n\n\n\n\n\nOverview\n\nThis project translates analytics into product management language by connecting user segments, performance patterns, and decision priorities.\n\n\n\nSkills used\n\n\nSegmentation Product analytics Performance review Recommendation design"
   },
   {
-    "objectID": "projects.html#what-these-projects-show",
-    "href": "projects.html#what-these-projects-show",
-    "title": "Projects",
-    "section": "What These Projects Show",
-    "text": "What These Projects Show\nAcross both projects, my focus is on using analytics to make marketing choices more measurable, more targeted, and easier for stakeholders to act on."
+    "objectID": "Projects/churn-prediction-retention/index.html",
+    "href": "Projects/churn-prediction-retention/index.html",
+    "title": "Churn Prediction & Retention",
+    "section": "",
+    "text": "Retention analytics\n\n\nChurn Prediction & Retention\n\nA telecom churn project built to identify at-risk customers and support more profitable retention decisions.\n\n\n\nObjective\nEnable proactive retention strategies for a telecom carrier.\n\n\nMethods\nLogistic and neural models, threshold-based targeting, and CLV assessment.\n\n\nOutcome\nAchieved AUC 0.72, captured 68% of at-risk customers, and aligned retention with breakeven logic.\n\n\n\n\n\n\nOverview\n\nThe project combined predictive modeling with business constraints so retention outreach could be more targeted and economically grounded.\n\n\n\nSkills used\n\n\nChurn modeling Logistic regression Neural networks CLV"
+  },
+  {
+    "objectID": "Projects/etl-data-pipeline-reporting-automation/index.html",
+    "href": "Projects/etl-data-pipeline-reporting-automation/index.html",
+    "title": "ETL Data Pipeline & Reporting Automation",
+    "section": "",
+    "text": "Data operations\n\n\nETL Data Pipeline & Reporting Automation\n\nA Python-SQL ETL workflow in Snowflake built to standardize multi-source retail and weather data for scalable analysis.\n\n\n\nObjective\nReduce manual effort and improve reporting consistency across combined datasets.\n\n\nMethods\nPython-SQL ETL design, multi-source standardization, and ZIP-level weather mapping.\n\n\nOutcome\nCreated a cleaner pipeline for identifying temperature-driven demand patterns affecting supplier sales.\n\n\n\n\n\n\nOverview\n\nThe project connected engineering discipline with business analytics by making integrated data easier to reuse, analyze, and report.\n\n\n\nSkills used\n\n\nPython SQL Snowflake Reporting automation"
+  },
+  {
+    "objectID": "Projects/jpmorgan-quant-research-forage/index.html",
+    "href": "Projects/jpmorgan-quant-research-forage/index.html",
+    "title": "JPMorgan Chase Quantitative Research Virtual Experience",
+    "section": "",
+    "text": "Forage simulation\n\n\nJPMorgan Chase Quantitative Research Virtual Experience\n\nPricing and risk modeling for an energy trading use case, with forecasting and credit risk framing.\n\n\n\nObjective\nSupport contract valuation and credit risk decisions in an energy trading context.\n\n\nMethods\nTime-series forecasting, PD modeling, and FICO-based segmentation.\n\n\nOutcome\nEstimated expected loss, storage value, and one-year-ahead price forecasts for decision support.\n\n\n\n\n\n\nOverview\n\nThis simulation combined quantitative modeling and financial reasoning to evaluate pricing and borrower risk in a trading-focused scenario.\n\n\n\nSkills used\n\n\nTime-series forecasting Credit risk Segmentation Expected loss"
+  },
+  {
+    "objectID": "Projects/targeting-offer-optimization/index.html",
+    "href": "Projects/targeting-offer-optimization/index.html",
+    "title": "Targeting & Offer Optimization",
+    "section": "",
+    "text": "Offer strategy\n\n\nTargeting & Offer Optimization\n\nA predictive targeting project for a B2B software upsell campaign, built to improve customer selection and campaign profit.\n\n\n\nObjective\nChoose the most valuable customers for targeted outreach.\n\n\nMethods\nCompared logistic regression, neural networks, and XGBoost for response prediction.\n\n\nOutcome\nIdentified a roughly 30% targeting threshold that maximized expected campaign profit.\n\n\n\n\n\n\nOverview\n\nThe project linked predictive accuracy to business value by using profit rather than response rate alone to define the best targeting rule.\n\n\n\nSkills used\n\n\nXGBoost Upsell targeting Profit thresholding Model comparison"
+  },
+  {
+    "objectID": "Projects/credit-risk-analytics/index.html",
+    "href": "Projects/credit-risk-analytics/index.html",
+    "title": "Credit Risk Analytics",
+    "section": "",
+    "text": "Risk modeling\n\n\nCredit Risk Analytics\n\nA delinquency prediction project designed to support risk-based collections and customer intervention decisions.\n\n\n\nObjective\nIdentify high-risk customers early and support collections prioritization.\n\n\nMethods\nLogistic regression on financial and behavioral data, plus a risk segmentation framework.\n\n\nOutcome\nSurfaced key drivers such as missed payments, utilization, and DTI for more targeted action.\n\n\n\n\n\n\nOverview\n\nThis work focused on turning default probability estimates into a clearer operating framework for interventions and collections decisions.\n\n\n\nSkills used\n\n\nCredit risk Logistic regression Behavioral data Risk segmentation"
+  },
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Courses",
+    "section": "",
+    "text": "Coursework modules\n\n\nCourses\n\nGraduate coursework that complements my analytics, experimentation, and marketing decision support interests.\n\n\n\n\nCourse 01\n\n\nGenAI for Business\nExplored how generative AI can support business workflows, decision processes, and practical experimentation.\n\n\n\n\nCourse 02\n\n\nHealthcare Analytics\nApplied analytics thinking to domain-specific operational and decision-making problems in healthcare.\n\n\n\n\nCourse 03\n\n\nData Collection & API Integration\nFocused on structured data acquisition, integration, and building cleaner pipelines for analysis.\n\n\n\n\nCourse 04\n\n\nMachine Learning\nBuilt a stronger foundation in supervised learning, model evaluation, and predictive problem solving.\n\n\n\n\nCourse 05\n\n\nCustomer Analytics\nStudied methods for segmentation, response modeling, targeting, retention, and customer value analysis.\n\n\n\n\nCourse 06\n\n\nNew Product Development\nExamined how insight generation and market understanding can shape product and commercialization decisions."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Resume hub\n\n\nResume\n\nA quick summary of my background before the full PDF.\n\n\n\nEducation\nMS in Business Analytics, UC San Diego, expected June 2026. PGDM in Marketing, Welingkar Institute, April 2022.\n\n\nExperience themes\nConsumer insights, pricing strategy, campaign analytics, financial risk, and dashboard-based decision support.\n\n\nBrand exposure\nWork delivered for Unilever, Nestle, Mondelez, Samsung, Reliance, and McCormick.\n\n\n\nDownload resume Open projects"
   },
   {
     "objectID": "Projects/Project1/index.html",
@@ -84,73 +105,80 @@
     "text": "Outcome\nUse this page to summarize the problem, your approach, the tools you used, and what the project demonstrates about your skills."
   },
   {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
+    "objectID": "Projects/credit-card-product-optimization-clv-targeting/index.html",
+    "href": "Projects/credit-card-product-optimization-clv-targeting/index.html",
+    "title": "Credit Card Product Optimization & CLV-Based Targeting",
     "section": "",
-    "text": "Professional experience\n\n\n\n\nMy background spans business analytics, consumer insights, pricing strategy, and campaign performance support across global consumer brands.\n\n\nDownload Resume PDF Learn More About Me"
+    "text": "Product optimization\n\n\nCredit Card Product Optimization & CLV-Based Targeting\n\nA fintech credit card campaign project combining factorial experimentation with CLV-aware offer selection.\n\n\n\nObjective\nSelect the best offer mix across 12 variants for roughly 750K customers.\n\n\nMethods\nFactorial design, response modeling, CLV simulation, and profit comparison.\n\n\nOutcome\nProjected about $866K in profit, with roughly $835K attributed to optimized targeting.\n\n\n\n\n\n\nOverview\n\nThe project balanced experimentation depth with commercial practicality by evaluating how product features and customer value interact in campaign design.\n\n\n\nSkills used\n\n\nCLV Experimentation Response modeling Offer optimization"
   },
   {
-    "objectID": "resume.html#highlights",
-    "href": "resume.html#highlights",
-    "title": "Resume",
-    "section": "Highlights",
-    "text": "Highlights\n\n\nEducation\nMS in Business Analytics, UC San Diego, expected June 2026; PGDM in Marketing, Welingkar Institute, April 2022.\n\n\nAnalytics Experience\nNielsenIQ work spanning line and price optimization, consumer insights, dashboarding, and large-scale retail and survey analysis.\n\n\nBusiness Impact\nSupported brands including Unilever, Nestle, Mondelez, Samsung, Reliance, and McCormick through insight-led decision support."
+    "objectID": "Projects/personalized-campaign-optimization/index.html",
+    "href": "Projects/personalized-campaign-optimization/index.html",
+    "title": "Personalized Campaign Optimization",
+    "section": "",
+    "text": "Campaign optimization\n\n\nPersonalized Campaign Optimization\n\nA personalized email targeting framework built to match each customer with the highest-value message variant.\n\n\n\nObjective\nImprove response and purchase value by tailoring the message shown to each customer.\n\n\nMethods\nModeled response probability and purchase value across six email variants.\n\n\nOutcome\nEstimated profit lift from about $2.79M to $4.63M relative to random targeting.\n\n\n\n\n\n\nOverview\n\nThis project focused on moving beyond average campaign performance to a more individualized targeting framework with clearer profit implications.\n\n\n\nSkills used\n\n\nPersonalization Response modeling Profit optimization Campaign analytics"
+  },
+  {
+    "objectID": "Projects/uplift-modelling/index.html",
+    "href": "Projects/uplift-modelling/index.html",
+    "title": "Uplift Modelling",
+    "section": "",
+    "text": "Incremental impact\n\n\nUplift Modelling\n\nA treatment-effect modeling project focused on identifying where intervention is likely to create true incremental response.\n\n\n\nObjective\nSeparate customers who are persuadable from those unlikely to change behavior.\n\n\nMethods\nTreatment-versus-control framing, uplift scoring, and targeting prioritization.\n\n\nOutcome\nStructured a clearer decision framework for allocating treatment where it is most likely to drive incremental lift.\n\n\n\n\n\n\nOverview\n\nThis project emphasizes a more disciplined targeting mindset by focusing on incremental effect rather than raw response alone.\n\n\n\nSkills used\n\n\nUplift modeling Treatment effect Targeting Campaign optimization"
+  },
+  {
+    "objectID": "Projects/demand-forecasting-analysis/index.html",
+    "href": "Projects/demand-forecasting-analysis/index.html",
+    "title": "Demand Forecasting Analysis",
+    "section": "",
+    "text": "Forecasting\n\n\nDemand Forecasting Analysis\n\nA machine learning forecasting project designed to improve demand and inventory planning for a large retail chain.\n\n\n\nObjective\nImprove planning accuracy across 45 stores.\n\n\nMethods\nXGBoost forecasting with seasonality and promotion-aware features, benchmarked against a time-series baseline.\n\n\nOutcome\nReduced WAPE from about 10% to 3%.\n\n\n\n\n\n\nOverview\n\nThis work focused on building a more reliable retail demand view so operational decisions could reflect seasonality and promotional effects more effectively.\n\n\n\nSkills used\n\n\nForecasting XGBoost Retail analytics Inventory planning"
   },
   {
     "objectID": "Projects/Project2/index.html",
     "href": "Projects/Project2/index.html",
-    "title": "Analysis of Cars",
+    "title": "Prabhlin",
     "section": "",
-    "text": "This project explores the relationship between fuel efficiency and engine displacement using Python, pandas, seaborn, and matplotlib."
+    "text": "MARKETING • CONSUMER INSIGHTS • ANALYTICS\n\n\n\n\n\n\n\n\nI build analytics-driven solutions across consumer insights, experimentation, pricing, promotion, and predictive modeling. My work focuses on making data useful, strategic, and actionable.\n\nView Projects View Resume"
   },
   {
-    "objectID": "Projects/Project2/index.html#overview",
-    "href": "Projects/Project2/index.html#overview",
-    "title": "Analysis of Cars",
+    "objectID": "Projects/Project2/index.html#turning-customer-campaign-and-business-data-into-clear-decisions.",
+    "href": "Projects/Project2/index.html#turning-customer-campaign-and-business-data-into-clear-decisions.",
+    "title": "Prabhlin",
     "section": "",
-    "text": "This project explores the relationship between fuel efficiency and engine displacement using Python, pandas, seaborn, and matplotlib."
+    "text": "I build analytics-driven solutions across consumer insights, experimentation, pricing, promotion, and predictive modeling. My work focuses on making data useful, strategic, and actionable.\n\nView Projects View Resume"
   },
   {
-    "objectID": "Projects/Project2/index.html#tools",
-    "href": "Projects/Project2/index.html#tools",
-    "title": "Analysis of Cars",
-    "section": "Tools",
-    "text": "Tools\n\nPython\npandas\nseaborn\nmatplotlib"
+    "objectID": "Projects/Project2/index.html#what-i-do",
+    "href": "Projects/Project2/index.html#what-i-do",
+    "title": "Prabhlin",
+    "section": "What I Do",
+    "text": "What I Do\n\n\nMarketing Analytics\nMeasure performance across campaigns, promotions, and customer touchpoints to improve business outcomes.\n\n\nConsumer Insights\nTranslate behavior, research, and segmentation into strategic recommendations.\n\n\nPredictive Modeling\nBuild models that support targeting, forecasting, experimentation, and optimization."
   },
   {
-    "objectID": "Projects/Project2/index.html#analysis",
-    "href": "Projects/Project2/index.html#analysis",
-    "title": "Analysis of Cars",
-    "section": "Analysis",
-    "text": "Analysis\n\n\n\n\n\n\n\n\n\nThe relationship between fuel efficiency (mpg) and engine displacement is negative, with a correlation of -0.81.\nThis project is a strong example of exploratory analysis and simple visual storytelling. You can expand it with a short interpretation, business takeaway, or key insight section."
+    "objectID": "Projects/Project2/index.html#featured-projects",
+    "href": "Projects/Project2/index.html#featured-projects",
+    "title": "Prabhlin",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\n\nRetail Demand Forecasting\nForecasted demand patterns and evaluated promotion impact using analytical modeling.\nTools: Python, SQL, Power BI\nOpen Project\n\n\nUplift Modeling & Profit Optimization\nBuilt treatment-effect models to improve targeting efficiency and maximize expected profit.\nTools: Python, Random Forest, XGBoost\nOpen Project"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
+    "objectID": "Projects/Project2/index.html#a-little-more-about-me",
+    "href": "Projects/Project2/index.html#a-little-more-about-me",
+    "title": "Prabhlin",
+    "section": "A Little More About Me",
+    "text": "A Little More About Me\nI’m interested in the space where analytics, storytelling, and business strategy meet. I enjoy turning messy data into structured insight and building work that is both technically strong and easy for stakeholders to use.\n\nAbout Resume Projects Email"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "Business analytics and marketing portfolio\n\n\n\n\nI use business analytics, consumer insights, and pricing strategy to help teams make sharper marketing decisions.\n\n\nBased in San Diego, I bring experience across campaign performance analytics, line and price optimization, retail data analysis, and insight generation for global consumer brands.\n\n\nExplore Projects About Prabhlin View Resume\n\n\n\n\n\nI am currently completing an MS in Business Analytics at UC San Diego and build decision support that connects data, consumer behavior, and commercial strategy.\n\n\n\n+100 focus groups and interviews translated into actionable recommendations.\n\n\n\nSQL, Excel, and dashboarding workflows applied to 10K+ retail records and optimization studies.\n\n\n\n20+ projects managed across analytics, research, and client-facing stakeholders."
+    "text": "Project dashboard\n\n\nProjects\n\nA structured view of portfolio work across marketing analytics, risk, forecasting, and decision support.\n\n\nEach card links to a dedicated project page with the problem, methods, tools, and key outcomes in a cleaner dashboard-style format.\n\n\n\n\n\nMarketing and customer analytics\n\n\nInsights, targeting, experimentation, and product decisions\n\n\n\n\nAd measurement\n\n\nQuantifying Impact of Contextual TV Advertising\nAI-driven ad effectiveness framework using household-level data to measure contextual lift and surface segment-level drivers.\n\nAI-driven analysis Tableau Ad lift\n\nOpen project\n\n\n\n\nForage simulation\n\n\nElectronic Arts Product Management Job Simulation\nPlayer segmentation and game performance review framed as a product decision-making exercise.\n\nSegmentation Product analytics Forage\n\nOpen project\n\n\n\n\nRetention\n\n\nChurn Prediction & Retention\nTelecom churn modeling with logistic and neural approaches, threshold targeting, and CLV-aware retention logic.\n\nChurn Neural models CLV\n\nOpen project\n\n\n\n\nPersonalization\n\n\nPersonalized Campaign Optimization\nMessage-level response modeling to recommend the best email variant for each customer and improve expected profit.\n\nPersonalization Optimization Campaign analytics\n\nOpen project\n\n\n\n\nOffer strategy\n\n\nTargeting & Offer Optimization\nPredictive targeting for B2B software upsell, with model comparison and profit-based threshold selection.\n\nXGBoost Targeting Profit optimization\n\nOpen project\n\n\n\n\nIncremental impact\n\n\nUplift Modelling\nIncremental-response modeling framed around smarter treatment allocation and more efficient campaign decisions.\n\nUplift Treatment effect Targeting\n\nOpen project\n\n\n\n\n\n\nRisk and finance\n\n\nPricing, credit, and portfolio value decisions\n\n\n\n\nQuant research\n\n\nJPMorgan Chase Quantitative Research Virtual Experience\nPricing and risk modeling for an energy trading use case, including forecasting, storage valuation, and expected loss estimation.\n\nTime series Credit risk Forage\n\nOpen project\n\n\n\n\nRisk modeling\n\n\nCredit Risk Analytics\nDelinquency prediction and risk segmentation to support collections prioritization and customer interventions.\n\nLogistic regression Segmentation Default risk\n\nOpen project\n\n\n\n\nProduct optimization\n\n\nCredit Card Product Optimization & CLV-Based Targeting\nFactorial offer testing and CLV simulation for a fintech campaign targeting roughly 750K customers across 12 variants.\n\nCLV Experimentation Product strategy\n\nOpen project\n\n\n\n\n\n\nForecasting and data operations\n\n\nPlanning, automation, and scalable analysis\n\n\n\n\nForecasting\n\n\nDemand Forecasting Analysis\nML forecasting for a large retail chain using promotion and seasonality features to improve planning accuracy.\n\nXGBoost Retail demand WAPE\n\nOpen project\n\n\n\n\nData pipeline\n\n\nETL Data Pipeline & Reporting Automation\nPython-SQL ETL pipeline in Snowflake for multi-source retail and weather data, with automation to improve reporting consistency.\n\nETL Snowflake Automation\n\nOpen project"
   },
   {
-    "objectID": "index.html#professional-snapshot",
-    "href": "index.html#professional-snapshot",
-    "title": "Home",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "I am currently completing an MS in Business Analytics at UC San Diego and build decision support that connects data, consumer behavior, and commercial strategy.\n\n\n\n+100 focus groups and interviews translated into actionable recommendations.\n\n\n\nSQL, Excel, and dashboarding workflows applied to 10K+ retail records and optimization studies.\n\n\n\n20+ projects managed across analytics, research, and client-facing stakeholders."
-  },
-  {
-    "objectID": "index.html#what-youll-find-here",
-    "href": "index.html#what-youll-find-here",
-    "title": "Home",
-    "section": "What You’ll Find Here",
-    "text": "What You’ll Find Here\n\n\nAbout\nA concise overview of my background, training, and the kinds of business problems I enjoy solving.\nRead the About page\n\n\nResume\nMy academic background, analytics toolkit, and experience supporting pricing, promotion, and insight-led decisions.\nOpen my Resume\n\n\nProjects\nSelected work in offer optimization, promotion analytics, and marketing decision support.\nExplore Projects"
-  },
-  {
-    "objectID": "index.html#core-focus-areas",
-    "href": "index.html#core-focus-areas",
-    "title": "Home",
-    "section": "Core Focus Areas",
-    "text": "Core Focus Areas\n\n\nBusiness Analytics\n\n\nConsumer Insights\n\n\nPricing Strategy\n\n\nCampaign Performance Analytics\n\n\n\nMy work sits at the intersection of data analysis, commercial decision support, and practical marketing strategy."
+    "text": "Profile\n\n\nAbout\n\nBusiness analytics and marketing analytics work grounded in consumer insight, pricing strategy, and practical decision support.\n\n\nI work across business analytics, consumer insights, campaign and pricing analytics, and predictive modeling. My focus is on turning structured analysis into recommendations that are commercially useful, easy to communicate, and grounded in real business decisions.\n\n\n\n\n\nOverview\n\n\n\n\n\n\n\nCore strengths\nConsumer insights, pricing, campaign performance, decision support\n\n\n\n\n\n\n\nProgramming and data\nSQL, Python, Pandas, Polars, NumPy, Snowflake, reporting automation\n\n\n\n\n\n\n\nVisualization and reporting\nTableau, Power BI, Excel, PowerPoint, business-facing dashboards\n\n\n\n\n\n\n\nAnalytical methods\nA/B testing, segmentation, forecasting, regression, pricing analysis"
   }
 ]

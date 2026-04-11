@@ -1,0 +1,49 @@
+---
+title: "Churn Prediction & Retention"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Retention analytics
+:::
+
+# Churn Prediction & Retention
+
+::: {.hero-lead}
+A telecom churn project built to identify at-risk customers and support more profitable retention decisions.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Enable proactive retention strategies for a telecom carrier.
+:::
+
+::: {.detail-card}
+### Methods
+Logistic and neural models, threshold-based targeting, and CLV assessment.
+:::
+
+::: {.detail-card}
+### Outcome
+Achieved AUC 0.72, captured 68% of at-risk customers, and aligned retention with breakeven logic.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+The project combined predictive modeling with business constraints so retention outreach could be more targeted and economically grounded.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">Churn modeling</span>
+<span class="chip">Logistic regression</span>
+<span class="chip">Neural networks</span>
+<span class="chip">CLV</span>
+:::
+:::

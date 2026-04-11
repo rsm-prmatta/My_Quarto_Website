@@ -1,0 +1,49 @@
+---
+title: "Personalized Campaign Optimization"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Campaign optimization
+:::
+
+# Personalized Campaign Optimization
+
+::: {.hero-lead}
+A personalized email targeting framework built to match each customer with the highest-value message variant.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Improve response and purchase value by tailoring the message shown to each customer.
+:::
+
+::: {.detail-card}
+### Methods
+Modeled response probability and purchase value across six email variants.
+:::
+
+::: {.detail-card}
+### Outcome
+Estimated profit lift from about $2.79M to $4.63M relative to random targeting.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+This project focused on moving beyond average campaign performance to a more individualized targeting framework with clearer profit implications.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">Personalization</span>
+<span class="chip">Response modeling</span>
+<span class="chip">Profit optimization</span>
+<span class="chip">Campaign analytics</span>
+:::
+:::

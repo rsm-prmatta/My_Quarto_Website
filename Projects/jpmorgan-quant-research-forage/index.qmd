@@ -1,0 +1,49 @@
+---
+title: "JPMorgan Chase Quantitative Research Virtual Experience"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Forage simulation
+:::
+
+# JPMorgan Chase Quantitative Research Virtual Experience
+
+::: {.hero-lead}
+Pricing and risk modeling for an energy trading use case, with forecasting and credit risk framing.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Support contract valuation and credit risk decisions in an energy trading context.
+:::
+
+::: {.detail-card}
+### Methods
+Time-series forecasting, PD modeling, and FICO-based segmentation.
+:::
+
+::: {.detail-card}
+### Outcome
+Estimated expected loss, storage value, and one-year-ahead price forecasts for decision support.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+This simulation combined quantitative modeling and financial reasoning to evaluate pricing and borrower risk in a trading-focused scenario.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">Time-series forecasting</span>
+<span class="chip">Credit risk</span>
+<span class="chip">Segmentation</span>
+<span class="chip">Expected loss</span>
+:::
+:::

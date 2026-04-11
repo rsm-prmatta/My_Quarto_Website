@@ -1,0 +1,41 @@
+---
+title: "Certifications"
+---
+
+:::{.page-shell}
+::: {.eyebrow}
+Credentials
+:::
+
+# Certifications
+
+::: {.hero-lead}
+Professional credentials that reinforce my SQL, Python, quantitative research, and GenAI analytics toolkit.
+:::
+
+::: {.cert-grid}
+::: {.cert-card}
+<div class="cert-tag">DataCamp</div>
+### Professional Certificate - SQL
+Focused on query writing, analysis workflows, and practical SQL problem solving.
+:::
+
+::: {.cert-card}
+<div class="cert-tag">DataCamp</div>
+### Professional Certificate - Python
+Strengthened applied Python skills for analysis, data handling, and modeling workflows.
+:::
+
+::: {.cert-card}
+<div class="cert-tag">Forage</div>
+### JPMorgan Chase & Co. Quantitative Research Virtual Experience
+Hands-on work in pricing, forecasting, and credit risk framing for finance-oriented decisions.
+:::
+
+::: {.cert-card}
+<div class="cert-tag">Forage</div>
+### Tata GenAI Powered Data Analytics Virtual Experience
+Experience centered on GenAI-enabled analytics thinking and business-facing data work.
+:::
+:::
+:::

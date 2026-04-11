@@ -2,98 +2,193 @@
 title: "Projects"
 ---
 
-:::{.section-shell}
+:::{.page-shell}
 ::: {.eyebrow}
-Portfolio work
+Project dashboard
 :::
 
 # Projects
 
 ::: {.hero-lead}
-Selected analytics projects focused on offer optimization, promotion performance, and marketing decision support.
+A structured view of portfolio work across marketing analytics, risk, forecasting, and decision support.
 :::
 
-::: {.hero-text}
-These projects reflect how I approach business problems by combining structured analysis, practical methods, and commercially relevant recommendations.
+::: {.section-copy}
+Each card links to a dedicated project page with the problem, methods, tools, and key outcomes in a cleaner dashboard-style format.
 :::
 :::
 
-:::{.project-grid}
+:::{.group-shell}
+<div class="group-kicker">Marketing and customer analytics</div>
+<h2>Insights, targeting, experimentation, and product decisions</h2>
+
+::: {.project-grid}
 ::: {.project-card}
-::: {.project-meta}
-Featured project
+<div class="card-meta">Ad measurement</div>
+### Quantifying Impact of Contextual TV Advertising
+AI-driven ad effectiveness framework using household-level data to measure contextual lift and surface segment-level drivers.
+
+::: {.chip-row}
+<span class="chip">AI-driven analysis</span>
+<span class="chip">Tableau</span>
+<span class="chip">Ad lift</span>
 :::
 
-## Targeting & Offer Optimization
-
-A customer targeting and offer strategy project designed to improve decision quality around who to reach, what to offer, and how to align incentives with business goals.
-
-### Business Problem
-How can a business improve campaign efficiency by identifying the right customer segments and matching them with stronger promotional offers?
-
-### Methods
-Segmentation analysis, offer performance evaluation, business rule interpretation, and decision-focused recommendation design.
-
-### Tools
-SQL, Python, Excel, and analytics workflows built to support targeting logic and performance review.
-
-### Value Delivered
-Framed a clearer approach to customer prioritization and offer strategy, with recommendations that support more effective allocation of marketing effort.
-
-::: {.pill-row .project-pill-row}
-::: {.pill}
-Segmentation
-:::
-
-::: {.pill}
-A/B Testing
-:::
-
-::: {.pill}
-Marketing Decision Support
-:::
-:::
+[Open project](Projects/contextual-tv-ad-measurement/index.qmd){.btn-link}
 :::
 
 ::: {.project-card}
-::: {.project-meta}
-Featured project
+<div class="card-meta">Forage simulation</div>
+### Electronic Arts Product Management Job Simulation
+Player segmentation and game performance review framed as a product decision-making exercise.
+
+::: {.chip-row}
+<span class="chip">Segmentation</span>
+<span class="chip">Product analytics</span>
+<span class="chip">Forage</span>
 :::
 
-## Retail Promotion Uplift & Demand Modeling
-
-A retail analytics project focused on measuring promotional impact and understanding how pricing and demand signals can support stronger planning decisions.
-
-### Business Problem
-How can retail and consumer brands evaluate whether promotions are truly driving incremental demand and where pricing or promotional changes may improve outcomes?
-
-### Methods
-Promotion uplift analysis, demand modeling, retail record analysis, exploratory data review, and interpretation for commercial decision-making.
-
-### Tools
-SQL, Python, Pandas, NumPy, Matplotlib, Excel, and retail data workflows spanning 10K+ records.
-
-### Value Delivered
-Developed an evidence-based view of promotion performance that helps stakeholders compare demand response, identify patterns, and make more informed pricing and promotion decisions.
-
-::: {.pill-row .project-pill-row}
-::: {.pill}
-Pricing Strategy
+[Open project](Projects/ea-product-management-simulation/index.qmd){.btn-link}
 :::
 
-::: {.pill}
-Promotion Analytics
+::: {.project-card}
+<div class="card-meta">Retention</div>
+### Churn Prediction & Retention
+Telecom churn modeling with logistic and neural approaches, threshold targeting, and CLV-aware retention logic.
+
+::: {.chip-row}
+<span class="chip">Churn</span>
+<span class="chip">Neural models</span>
+<span class="chip">CLV</span>
 :::
 
-::: {.pill}
-Demand Modeling
+[Open project](Projects/churn-prediction-retention/index.qmd){.btn-link}
 :::
+
+::: {.project-card}
+<div class="card-meta">Personalization</div>
+### Personalized Campaign Optimization
+Message-level response modeling to recommend the best email variant for each customer and improve expected profit.
+
+::: {.chip-row}
+<span class="chip">Personalization</span>
+<span class="chip">Optimization</span>
+<span class="chip">Campaign analytics</span>
+:::
+
+[Open project](Projects/personalized-campaign-optimization/index.qmd){.btn-link}
+:::
+
+::: {.project-card}
+<div class="card-meta">Offer strategy</div>
+### Targeting & Offer Optimization
+Predictive targeting for B2B software upsell, with model comparison and profit-based threshold selection.
+
+::: {.chip-row}
+<span class="chip">XGBoost</span>
+<span class="chip">Targeting</span>
+<span class="chip">Profit optimization</span>
+:::
+
+[Open project](Projects/targeting-offer-optimization/index.qmd){.btn-link}
+:::
+
+::: {.project-card}
+<div class="card-meta">Incremental impact</div>
+### Uplift Modelling
+Incremental-response modeling framed around smarter treatment allocation and more efficient campaign decisions.
+
+::: {.chip-row}
+<span class="chip">Uplift</span>
+<span class="chip">Treatment effect</span>
+<span class="chip">Targeting</span>
+:::
+
+[Open project](Projects/uplift-modelling/index.qmd){.btn-link}
 :::
 :::
 :::
 
-:::{.section-shell .section-accent}
-## What These Projects Show
+:::{.group-shell}
+<div class="group-kicker">Risk and finance</div>
+<h2>Pricing, credit, and portfolio value decisions</h2>
 
-Across both projects, my focus is on using analytics to make marketing choices more measurable, more targeted, and easier for stakeholders to act on.
+::: {.project-grid}
+::: {.project-card}
+<div class="card-meta">Quant research</div>
+### JPMorgan Chase Quantitative Research Virtual Experience
+Pricing and risk modeling for an energy trading use case, including forecasting, storage valuation, and expected loss estimation.
+
+::: {.chip-row}
+<span class="chip">Time series</span>
+<span class="chip">Credit risk</span>
+<span class="chip">Forage</span>
+:::
+
+[Open project](Projects/jpmorgan-quant-research-forage/index.qmd){.btn-link}
+:::
+
+::: {.project-card}
+<div class="card-meta">Risk modeling</div>
+### Credit Risk Analytics
+Delinquency prediction and risk segmentation to support collections prioritization and customer interventions.
+
+::: {.chip-row}
+<span class="chip">Logistic regression</span>
+<span class="chip">Segmentation</span>
+<span class="chip">Default risk</span>
+:::
+
+[Open project](Projects/credit-risk-analytics/index.qmd){.btn-link}
+:::
+
+::: {.project-card}
+<div class="card-meta">Product optimization</div>
+### Credit Card Product Optimization & CLV-Based Targeting
+Factorial offer testing and CLV simulation for a fintech campaign targeting roughly 750K customers across 12 variants.
+
+::: {.chip-row}
+<span class="chip">CLV</span>
+<span class="chip">Experimentation</span>
+<span class="chip">Product strategy</span>
+:::
+
+[Open project](Projects/credit-card-product-optimization-clv-targeting/index.qmd){.btn-link}
+:::
+:::
+:::
+
+:::{.group-shell}
+<div class="group-kicker">Forecasting and data operations</div>
+<h2>Planning, automation, and scalable analysis</h2>
+
+::: {.project-grid}
+::: {.project-card}
+<div class="card-meta">Forecasting</div>
+### Demand Forecasting Analysis
+ML forecasting for a large retail chain using promotion and seasonality features to improve planning accuracy.
+
+::: {.chip-row}
+<span class="chip">XGBoost</span>
+<span class="chip">Retail demand</span>
+<span class="chip">WAPE</span>
+:::
+
+[Open project](Projects/demand-forecasting-analysis/index.qmd){.btn-link}
+:::
+
+::: {.project-card}
+<div class="card-meta">Data pipeline</div>
+### ETL Data Pipeline & Reporting Automation
+Python-SQL ETL pipeline in Snowflake for multi-source retail and weather data, with automation to improve reporting consistency.
+
+::: {.chip-row}
+<span class="chip">ETL</span>
+<span class="chip">Snowflake</span>
+<span class="chip">Automation</span>
+:::
+
+[Open project](Projects/etl-data-pipeline-reporting-automation/index.qmd){.btn-link}
+:::
+:::
 :::

@@ -16,5 +16,47 @@
   },
   "Projects/Project2/index.qmd": {
     "index.html": "b3fffc2e"
+  },
+  "courses.qmd": {
+    "courses.html": "b88b8bb5"
+  },
+  "Projects/credit-risk-analytics/index.qmd": {
+    "index.html": "e02a0630"
+  },
+  "Projects/targeting-offer-optimization/index.qmd": {
+    "index.html": "31877b86"
+  },
+  "Projects/credit-card-product-optimization-clv-targeting/index.qmd": {
+    "index.html": "97d608ba"
+  },
+  "Projects/jpmorgan-quant-research-forage/index.qmd": {
+    "index.html": "40736c69"
+  },
+  "Projects/personalized-campaign-optimization/index.qmd": {
+    "index.html": "d605b34a"
+  },
+  "Projects/etl-data-pipeline-reporting-automation/index.qmd": {
+    "index.html": "679c8b91"
+  },
+  "Projects/uplift-modelling/index.qmd": {
+    "index.html": "ac04d1c1"
+  },
+  "Projects/churn-prediction-retention/index.qmd": {
+    "index.html": "4c6250d8"
+  },
+  "Projects/demand-forecasting-analysis/index.qmd": {
+    "index.html": "462e1f00"
+  },
+  "Projects/ea-product-management-simulation/index.qmd": {
+    "index.html": "dc85bbdf"
+  },
+  "Projects/contextual-tv-ad-measurement/index.qmd": {
+    "index.html": "d9ef3a78"
+  },
+  "certifications.qmd": {
+    "certifications.html": "f02a36af"
+  },
+  "hobbies.qmd": {
+    "hobbies.html": "0779e7ac"
   }
 }

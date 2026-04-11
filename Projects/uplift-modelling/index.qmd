@@ -1,0 +1,49 @@
+---
+title: "Uplift Modelling"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Incremental impact
+:::
+
+# Uplift Modelling
+
+::: {.hero-lead}
+A treatment-effect modeling project focused on identifying where intervention is likely to create true incremental response.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Separate customers who are persuadable from those unlikely to change behavior.
+:::
+
+::: {.detail-card}
+### Methods
+Treatment-versus-control framing, uplift scoring, and targeting prioritization.
+:::
+
+::: {.detail-card}
+### Outcome
+Structured a clearer decision framework for allocating treatment where it is most likely to drive incremental lift.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+This project emphasizes a more disciplined targeting mindset by focusing on incremental effect rather than raw response alone.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">Uplift modeling</span>
+<span class="chip">Treatment effect</span>
+<span class="chip">Targeting</span>
+<span class="chip">Campaign optimization</span>
+:::
+:::

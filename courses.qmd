@@ -1,0 +1,53 @@
+---
+title: "Courses"
+---
+
+:::{.page-shell}
+::: {.eyebrow}
+Coursework modules
+:::
+
+# Courses
+
+::: {.hero-lead}
+Graduate coursework that complements my analytics, experimentation, and marketing decision support interests.
+:::
+
+::: {.course-grid}
+::: {.course-card}
+<div class="course-tag">Course 01</div>
+### GenAI for Business
+Explored how generative AI can support business workflows, decision processes, and practical experimentation.
+:::
+
+::: {.course-card}
+<div class="course-tag">Course 02</div>
+### Healthcare Analytics
+Applied analytics thinking to domain-specific operational and decision-making problems in healthcare.
+:::
+
+::: {.course-card}
+<div class="course-tag">Course 03</div>
+### Data Collection & API Integration
+Focused on structured data acquisition, integration, and building cleaner pipelines for analysis.
+:::
+
+::: {.course-card}
+<div class="course-tag">Course 04</div>
+### Machine Learning
+Built a stronger foundation in supervised learning, model evaluation, and predictive problem solving.
+:::
+
+::: {.course-card}
+<div class="course-tag">Course 05</div>
+### Customer Analytics
+Studied methods for segmentation, response modeling, targeting, retention, and customer value analysis.
+:::
+
+::: {.course-card}
+<div class="course-tag">Course 06</div>
+### New Product Development
+Examined how insight generation and market understanding can shape product and commercialization decisions.
+:::
+:::
+:::

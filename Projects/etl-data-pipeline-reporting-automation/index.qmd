@@ -1,0 +1,49 @@
+---
+title: "ETL Data Pipeline & Reporting Automation"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Data operations
+:::
+
+# ETL Data Pipeline & Reporting Automation
+
+::: {.hero-lead}
+A Python-SQL ETL workflow in Snowflake built to standardize multi-source retail and weather data for scalable analysis.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Reduce manual effort and improve reporting consistency across combined datasets.
+:::
+
+::: {.detail-card}
+### Methods
+Python-SQL ETL design, multi-source standardization, and ZIP-level weather mapping.
+:::
+
+::: {.detail-card}
+### Outcome
+Created a cleaner pipeline for identifying temperature-driven demand patterns affecting supplier sales.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+The project connected engineering discipline with business analytics by making integrated data easier to reuse, analyze, and report.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">Python</span>
+<span class="chip">SQL</span>
+<span class="chip">Snowflake</span>
+<span class="chip">Reporting automation</span>
+:::
+:::

@@ -1,38 +1,83 @@
 ---
-title: "Analysis of Cars"
-description: "A data exploration project examining the relationship between fuel efficiency and engine displacement."
-author: "Prabhlin Kaur Matta"
-date: "2026-03-04"
-categories: [Data Analysis, Python, Visualization]
+title: ""
 ---
 
-## Overview
+::: {.hero-shell}
+::: {.hero-grid}
 
-This project explores the relationship between fuel efficiency and engine displacement using Python, pandas, seaborn, and matplotlib.
+::: {.hero-copy}
+<div class="eyebrow">MARKETING • CONSUMER INSIGHTS • ANALYTICS</div>
 
-## Tools
+# Prabhlin
+# Kaur Matta
 
-- Python
-- pandas
-- seaborn
-- matplotlib
+## Turning customer, campaign, and business data into clear decisions.
 
-## Analysis
+I build analytics-driven solutions across consumer insights, experimentation, pricing, promotion, and predictive modeling. My work focuses on making data useful, strategic, and actionable.
 
-```{python}
-#| message: false
-#| echo: false
+<div class="hero-buttons">
+  <a href="projects.html" class="btn-main">View Projects</a>
+  <a href="resume.html" class="btn-ghost">View Resume</a>
+</div>
+:::
 
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
+::: {.hero-visual}
+![](files/PK.jpeg){.hero-photo}
+:::
 
-df = sns.load_dataset("mpg").dropna()
+:::
+:::
 
-sns.scatterplot(x="mpg", y="displacement", data=df)
-plt.show()
-```
+## What I Do
 
-The relationship between fuel efficiency (`mpg`) and engine displacement is negative, with a correlation of `{python} float(round(df["mpg"].corr(df["displacement"]), 2))`.
+::: {.info-grid}
+::: {.info-card}
+### Marketing Analytics
+Measure performance across campaigns, promotions, and customer touchpoints to improve business outcomes.
+:::
 
-This project is a strong example of exploratory analysis and simple visual storytelling. You can expand it with a short interpretation, business takeaway, or key insight section.
+::: {.info-card}
+### Consumer Insights
+Translate behavior, research, and segmentation into strategic recommendations.
+:::
+
+::: {.info-card}
+### Predictive Modeling
+Build models that support targeting, forecasting, experimentation, and optimization.
+:::
+:::
+
+## Featured Projects
+
+::: {.project-grid}
+::: {.project-card}
+### Retail Demand Forecasting
+
+Forecasted demand patterns and evaluated promotion impact using analytical modeling.
+
+**Tools:** Python, SQL, Power BI
+
+<a href="Projects/Project1/index.html" class="card-link">Open Project</a>
+:::
+
+::: {.project-card}
+### Uplift Modeling & Profit Optimization
+
+Built treatment-effect models to improve targeting efficiency and maximize expected profit.
+
+**Tools:** Python, Random Forest, XGBoost
+
+<a href="Projects/Project2/index.html" class="card-link">Open Project</a>
+:::
+:::
+
+## A Little More About Me
+
+I’m interested in the space where analytics, storytelling, and business strategy meet. I enjoy turning messy data into structured insight and building work that is both technically strong and easy for stakeholders to use.
+
+<div class="footer-links">
+  <a href="about.html">About</a>
+  <a href="resume.html">Resume</a>
+  <a href="projects.html">Projects</a>
+  <a href="mailto:your_email@example.com">Email</a>
+</div>

@@ -2,44 +2,40 @@
 title: "Resume"
 ---
 
-:::{.section-shell}
+:::{.page-shell}
 ::: {.eyebrow}
-Professional experience
+Resume hub
 :::
 
 # Resume
 
 ::: {.hero-lead}
-My background spans business analytics, consumer insights, pricing strategy, and campaign performance support across global consumer brands.
+A quick summary of my background before the full PDF.
 :::
 
-::: {.resume-actions}
-[Download Resume PDF](files/PrabhlinKaur_MasterResume.pdf){.button-primary target="_blank"}
-[Learn More About Me](about.qmd){.button-secondary}
-:::
-:::
-
-:::{.section-shell .section-accent}
-## Highlights
-
-::: {.feature-grid}
-::: {.feature-card}
+::: {.dashboard-grid}
+::: {.summary-card}
 ### Education
-MS in Business Analytics, UC San Diego, expected June 2026; PGDM in Marketing, Welingkar Institute, April 2022.
+MS in Business Analytics, UC San Diego, expected June 2026. PGDM in Marketing, Welingkar Institute, April 2022.
 :::
 
-::: {.feature-card}
-### Analytics Experience
-NielsenIQ work spanning line and price optimization, consumer insights, dashboarding, and large-scale retail and survey analysis.
+::: {.summary-card}
+### Experience themes
+Consumer insights, pricing strategy, campaign analytics, financial risk, and dashboard-based decision support.
 :::
 
-::: {.feature-card}
-### Business Impact
-Supported brands including Unilever, Nestle, Mondelez, Samsung, Reliance, and McCormick through insight-led decision support.
+::: {.summary-card}
+### Brand exposure
+Work delivered for Unilever, Nestle, Mondelez, Samsung, Reliance, and McCormick.
 :::
+:::
+
+::: {.inline-actions}
+[Download resume](files/PrabhlinKaur_MasterResume.pdf){.btn-main target="_blank"}
+[Open projects](projects.qmd){.btn-ghost}
 :::
 :::
 
 :::{.resume-frame}
-{{< pdf files/PrabhlinKaur_MasterResume.pdf width=100% height=900 >}}
+<iframe src="files/PrabhlinKaur_MasterResume.pdf" width="100%" height="920"></iframe>
 :::

@@ -1,0 +1,49 @@
+---
+title: "Credit Risk Analytics"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Risk modeling
+:::
+
+# Credit Risk Analytics
+
+::: {.hero-lead}
+A delinquency prediction project designed to support risk-based collections and customer intervention decisions.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Identify high-risk customers early and support collections prioritization.
+:::
+
+::: {.detail-card}
+### Methods
+Logistic regression on financial and behavioral data, plus a risk segmentation framework.
+:::
+
+::: {.detail-card}
+### Outcome
+Surfaced key drivers such as missed payments, utilization, and DTI for more targeted action.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+This work focused on turning default probability estimates into a clearer operating framework for interventions and collections decisions.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">Credit risk</span>
+<span class="chip">Logistic regression</span>
+<span class="chip">Behavioral data</span>
+<span class="chip">Risk segmentation</span>
+:::
+:::

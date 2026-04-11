@@ -1,0 +1,49 @@
+---
+title: "Targeting & Offer Optimization"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Offer strategy
+:::
+
+# Targeting & Offer Optimization
+
+::: {.hero-lead}
+A predictive targeting project for a B2B software upsell campaign, built to improve customer selection and campaign profit.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Choose the most valuable customers for targeted outreach.
+:::
+
+::: {.detail-card}
+### Methods
+Compared logistic regression, neural networks, and XGBoost for response prediction.
+:::
+
+::: {.detail-card}
+### Outcome
+Identified a roughly 30% targeting threshold that maximized expected campaign profit.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+The project linked predictive accuracy to business value by using profit rather than response rate alone to define the best targeting rule.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">XGBoost</span>
+<span class="chip">Upsell targeting</span>
+<span class="chip">Profit thresholding</span>
+<span class="chip">Model comparison</span>
+:::
+:::

@@ -1,0 +1,49 @@
+---
+title: "Demand Forecasting Analysis"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Forecasting
+:::
+
+# Demand Forecasting Analysis
+
+::: {.hero-lead}
+A machine learning forecasting project designed to improve demand and inventory planning for a large retail chain.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Improve planning accuracy across 45 stores.
+:::
+
+::: {.detail-card}
+### Methods
+XGBoost forecasting with seasonality and promotion-aware features, benchmarked against a time-series baseline.
+:::
+
+::: {.detail-card}
+### Outcome
+Reduced WAPE from about 10% to 3%.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+This work focused on building a more reliable retail demand view so operational decisions could reflect seasonality and promotional effects more effectively.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">Forecasting</span>
+<span class="chip">XGBoost</span>
+<span class="chip">Retail analytics</span>
+<span class="chip">Inventory planning</span>
+:::
+:::

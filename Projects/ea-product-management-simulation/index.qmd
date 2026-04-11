@@ -1,0 +1,49 @@
+---
+title: "Electronic Arts Product Management Job Simulation"
+---
+
+:::{.project-shell}
+::: {.eyebrow}
+Forage simulation
+:::
+
+# Electronic Arts Product Management Job Simulation
+
+::: {.hero-lead}
+A product-focused exercise centered on game performance review and player segmentation.
+:::
+
+::: {.metrics-grid}
+::: {.detail-card}
+### Objective
+Understand player segments and performance signals that could inform product decisions.
+:::
+
+::: {.detail-card}
+### Methods
+Performance review, segmentation thinking, and product recommendation framing.
+:::
+
+::: {.detail-card}
+### Outcome
+Structured a clearer view of how player behavior can guide prioritization and product direction.
+:::
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">Overview</div>
+
+This project translates analytics into product management language by connecting user segments, performance patterns, and decision priorities.
+:::
+
+:::{.section-row}
+<div class="section-label">Skills used</div>
+
+::: {.chip-row}
+<span class="chip">Segmentation</span>
+<span class="chip">Product analytics</span>
+<span class="chip">Performance review</span>
+<span class="chip">Recommendation design</span>
+:::
+:::

@@ -58,5 +58,20 @@
   },
   "hobbies.qmd": {
     "hobbies.html": "0779e7ac"
+  },
+  "hw1_completed.qmd": {
+    "hw1_completed.html": "7a391525"
+  },
+  "hw1_questions.qmd": {
+    "hw1_questions.html": "6e350eca"
+  },
+  "hw1_final.qmd": {
+    "hw1_final.html": "1029e279"
+  },
+  "articles.qmd": {
+    "articles.html": "25b1b9fa"
+  },
+  "ab_testing_cta.qmd": {
+    "ab_testing_cta.html": "703d6e85"
   }
 }

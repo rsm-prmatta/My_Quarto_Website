@@ -1,0 +1,14 @@
+---
+title: "Articles"
+format: html
+---
+
+# Articles
+
+Welcome to the writing section of my portfolio, where I share applied work in experimentation, analytics, and decision-making.
+
+## Featured Post
+
+### [A/B Testing a Call to Action](ab_testing_cta.qmd)
+
+An applied walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and why peeking can inflate false positives.

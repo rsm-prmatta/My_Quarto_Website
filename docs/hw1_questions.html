@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Prabhlin Kaur Matta">
+<meta name="dcterms.date" content="2026-04-14">
 
-<title>Home – Prabhlin Kaur Matta</title>
+<title>A/B Testing a Call to Action – Prabhlin Kaur Matta</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -90,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -138,14 +169,27 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Home</h1>
+<h1 class="title">A/B Testing a Call to Action</h1>
+<p class="subtitle lead">Simulating Key Ideas from Classical Frequentist Statistics</p>
 </div>
 
 
 
 <div class="quarto-title-meta column-page">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prabhlin Kaur Matta </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 14, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -155,71 +199,255 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="landing-hero landing-hero-compact">
-<p><img src="files/PK.jpeg" class="landing-photo img-fluid"></p>
-<section id="hi-i-am-prabhlin-kaur" class="level1">
-<h1><span class="landing-name-accent">Hi, I am Prabhlin Kaur</span></h1>
-<div class="landing-summary">
-<p>I work across business analytics, consumer insights, marketing analytics, and predictive modeling. I build decision support that turns analysis into clear, actionable business recommendations.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="landing-contact-row">
-<p><a href="mailto:prmatta@ucsd.edu" class="contact-pill contact-icon" aria-label="Email" title="prmatta@ucsd.edu"> <i class="bi bi-envelope-fill"></i> </a> <a href="https://www.linkedin.com/in/prabhlinkm/" class="contact-pill contact-icon" target="_blank" aria-label="LinkedIn" title="LinkedIn"> <i class="bi bi-linkedin"></i> </a> <a href="https://maps.google.com/?q=San+Diego,+CA" class="contact-pill contact-icon" target="_blank" aria-label="San Diego, CA" title="San Diego, CA"> <i class="bi bi-geo-alt-fill"></i> </a></p>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In digital marketing, every word on a landing page can influence a visitor’s decision to engage. For our website, we are specifically focused on optimizing our newsletter sign-up rate. We have developed two competing “calls to action” (CTAs) to test: +1</p>
+<p>CTA A: “Sign up for our newsletter here!” CTA B: “Stay up to date by signing up!”</p>
+<p>To determine which version is more effective, we will conduct an A/B test. In this framework, visitors are randomly assigned to see either CTA A or CTA B, allowing us to directly compare the sign-up rates between the two groups to identify the superior performer</p>
+</div>
 </div>
 </section>
+<section id="the-ab-test-as-a-statistical-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-ab-test-as-a-statistical-problem">The A/B Test as a Statistical Problem</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="section-row snapshot-section">
-<div class="section-label">
-Snapshot
-</div>
-<div class="snapshot-stack">
-<div class="snapshot-bar">
-<div class="snapshot-number">
-11
-</div>
-<div class="snapshot-title">
-Projects
-</div>
-<div class="snapshot-text">
-Analytics, optimization, experimentation, and risk work
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
-<div class="snapshot-bar">
-<div class="snapshot-number">
-6
-</div>
-<div class="snapshot-title">
-Courses
-</div>
-<div class="snapshot-text">
-Graduate coursework spanning ML, APIs, and customer analytics
+<div class="callout-body-container callout-body">
+<p>To evaluate this experiment rigorously, we model each visitor’s action—signing up or not—as a Bernoulli random variable. Let: $ _A $ = probability of signup under CTA A $ _B $ = probability of signup under CTA B</p>
+<p>Our quantity of interest is: <span class="math inline">\(\theta = \pi_A - \pi_B\)</span></p>
+<p>Since we cannot observe the entire population, we estimate this using sample data: <span class="math inline">\(\hat{\theta} = \bar{X}_A - \bar{X}_B\)</span></p>
+<p>Because the data consists of 0s and 1s, these sample means represent the observed conversion rates in each group.</p>
 </div>
 </div>
-<div class="snapshot-bar">
-<div class="snapshot-number">
-4
+</section>
+<section id="simulating-data" class="level2">
+<h2 class="anchored" data-anchor-id="simulating-data">Simulating Data</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="snapshot-title">
-Certifications
-</div>
-<div class="snapshot-text">
-SQL, Python, GenAI, and quant research
-</div>
-</div>
-<div class="snapshot-bar">
-<div class="snapshot-number">
-20+
-</div>
-<div class="snapshot-title">
-Client Projects
-</div>
-<div class="snapshot-text">
-Cross-functional delivery for global brands
+<div class="callout-title-container flex-fill">
+Note
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>In real experiments, the true values of <span class="math inline">\(\pi_A\)</span> and <span class="math inline">\(\pi_B\)</span> are unknown. To understand how our estimator behaves, we simulate data where the truth is known. We assume: <span class="math inline">\(\pi_A = 0.22\)</span> <span class="math inline">\(\pi_B = 0.18\)</span> So the true effect is: <span class="math inline">\(\theta = 0.04\)</span></p>
+<pre><code>#| label: simulate-data
+#| message: false
+library(tidyverse)
+library(gt)
+
+set.seed(42)
+
+n &lt;- 1000
+pi_a &lt;- 0.22
+pi_b &lt;- 0.18
+
+cta_a_results &lt;- rbinom(n, 1, pi_a)
+cta_b_results &lt;- rbinom(n, 1, pi_b)</code></pre>
+<p>This simulation mimics an A/B test with 1,000 users in each group.</p>
+</div>
+</div>
+</section>
+<section id="the-law-of-large-numbers" class="level2">
+<h2 class="anchored" data-anchor-id="the-law-of-large-numbers">The Law of Large Numbers</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Law of Large Numbers (LLN) tells us that as sample size increases, our estimate <span class="math inline">\(\hat{\theta}\)</span> will converge to the true value <span class="math inline">\(\theta\)</span>.</p>
+<pre><code>#| label: lln-demonstration
+differences &lt;- cta_a_results - cta_b_results
+cumulative_avg &lt;- cumsum(differences) / seq_along(differences)
+
+plot_data &lt;- data.frame(
+  n = 1:n,
+  avg = cumulative_avg
+)
+
+ggplot(plot_data, aes(x = n, y = avg)) +
+  geom_line() +
+  geom_hline(yintercept = 0.04, linetype = "dashed") +
+  labs(title = "Law of Large Numbers in Action",
+       x = "Number of Observations",
+       y = "Estimated Difference") +
+  theme_minimal()
+`````````````````````````````````````````
+
+At small sample sizes, the estimate fluctuates significantly. As more observations are collected, the estimate stabilizes around the true value of 0.04.
+
+Key takeaway: More data leads to more reliable estimates.
+:::
+
+Even with the same true probabilities, repeated experiments produce different estimates due to randomness. This is known as sampling variability.
+</code></pre>
+<p>#| label: sampling-variation theta_hats &lt;- replicate(1000, { A &lt;- rbinom(n, 1, pi_a) B &lt;- rbinom(n, 1, pi_b) mean(A) - mean(B) })</p>
+<p>ggplot(data.frame(theta_hats), aes(x = theta_hats)) + geom_histogram(bins = 30) + labs(title = “Sampling Distribution of Theta Hat”, x = “Estimated Difference”, y = “Frequency”) + theme_minimal() ````````````````````````````````````````````````````</p>
+<p>This distribution shows how much our estimate can vary across repeated experiments.</p>
+<section id="bootstrap-standard-errors" class="level2">
+<h2 class="anchored" data-anchor-id="bootstrap-standard-errors">Bootstrap Standard Errors</h2>
+<div class="callout callout-style-default callout-note callout-empty-content callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+</section>
+<section id="the-central-limit-theorem" class="level2">
+<h2 class="anchored" data-anchor-id="the-central-limit-theorem">The Central Limit Theorem</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Write a short introduction explaining the Central Limit Theorem to the reader: regardless of the shape of the underlying population distribution, the sampling distribution of the sample mean (and therefore of the difference in sample means) becomes approximately Normal as the sample size grows.</p></li>
+<li><p>Then demonstrate this visually by creating four histograms, one for each of the following sample sizes: <span class="math inline">\(n \in \{25, 50, 100, 500\}\)</span>.</p></li>
+<li><p>For each sample size <span class="math inline">\(n\)</span>:</p>
+<ol type="1">
+<li>Draw <span class="math inline">\(n\)</span> observations from the CTA A distribution and <span class="math inline">\(n\)</span> observations from the CTA B distribution.</li>
+<li>Compute <span class="math inline">\(\hat\theta = \bar{X}_A - \bar{X}_B\)</span>.</li>
+<li>Repeat steps 1–2 a total of 1,000 times to produce 1,000 values of <span class="math inline">\(\hat\theta\)</span>.</li>
+<li>Plot a histogram of those 1,000 values.</li>
+</ol></li>
+<li><p>Arrange the four histograms so they can be compared easily (e.g., in a 2x2 grid with consistent x-axis scales).</p></li>
+<li><p>After the plots, write a few sentences explaining what the reader should observe: at small sample sizes the histogram may look rough or asymmetric, but as <span class="math inline">\(n\)</span> increases the distribution of <span class="math inline">\(\hat\theta\)</span> becomes smoother and more bell-shaped, illustrating the Central Limit Theorem in action.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="hypothesis-testing" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-testing">Hypothesis Testing</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Now that we have seen the CLT in action — that the sampling distribution of <span class="math inline">\(\hat\theta\)</span> is approximately Normal for large samples — we can use this result to perform a formal hypothesis test.</p></li>
+<li><p>Write a paragraph explaining what a hypothesis test is to the reader. We set up a null hypothesis <span class="math inline">\(H_0: \theta = 0\)</span> (i.e., the two CTAs produce the same sign-up rate) and an alternative hypothesis <span class="math inline">\(H_1: \theta \neq 0\)</span>. The goal is to assess whether the data provide enough evidence to reject <span class="math inline">\(H_0\)</span>.</p></li>
+<li><p>Then explain why we standardize <span class="math inline">\(\hat\theta\)</span> to form a test statistic. We compute:</p></li>
+</ul>
+<p><span class="math display">\[
+z = \frac{\hat\theta - 0}{SE(\hat\theta)}
+\]</span></p>
+<ul>
+<li><p>Walk the reader through the logic of this standardization step by step:</p>
+<ol type="1">
+<li>By the CLT, we know that <span class="math inline">\(\hat\theta\)</span> is approximately Normal for large samples. Under <span class="math inline">\(H_0\)</span>, the mean of that distribution is 0.</li>
+<li>When we divide a Normal random variable by its standard deviation, we get a standard Normal <span class="math inline">\(N(0,1)\)</span>. So under <span class="math inline">\(H_0\)</span>, <span class="math inline">\(z \;\dot\sim\; N(0,1)\)</span>.</li>
+<li>This means we know the distribution of our test statistic under the null, which is exactly what we need to compute a p-value.</li>
+</ol></li>
+<li><p>Explain to the reader why this is sometimes called a “t-test” even though the test statistic follows an approximate Normal distribution, not a t-distribution. The classical t-test arises when the data are drawn from a Normal distribution and the variance must be estimated — the ratio then follows an exact t-distribution. In our setting the data are Bernoulli (not Normal), so there is no exact t-distribution result. The CLT gives us approximate Normality, and since we estimate the SE from the data, what we are really doing is closer to a z-test. In practice, for large samples the t-distribution and the standard Normal are nearly identical, so the distinction has little practical consequence — but it is important to understand why.</p></li>
+<li><p>Using your simulated data, compute the test statistic and its associated p-value (using the standard Normal distribution as the reference). Interpret the result for the reader.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="the-t-test-as-a-regression" class="level2">
+<h2 class="anchored" data-anchor-id="the-t-test-as-a-regression">The T-Test as a Regression</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>It turns out that the two-sample test we just ran is mathematically equivalent to a simple linear regression. Understanding this connection is useful because it means the same machinery — and the same software — that you use for regression can also perform hypothesis tests, and it generalizes naturally to more complex experimental designs.</p></li>
+<li><p>Explain the setup to the reader. Stack the CTA A and CTA B data into a single dataset with two columns: an outcome <span class="math inline">\(Y_i\)</span> (1 if the visitor signed up, 0 otherwise) and an indicator <span class="math inline">\(D_i\)</span> (1 if the visitor saw CTA A, 0 if they saw CTA B). Then fit the regression:</p></li>
+</ul>
+<p><span class="math display">\[
+Y_i = \beta_0 + \beta_1 D_i + \varepsilon_i
+\]</span></p>
+<ul>
+<li><p>Walk through the interpretation of the coefficients:</p>
+<ol type="1">
+<li><span class="math inline">\(\beta_0\)</span> is the expected value of <span class="math inline">\(Y_i\)</span> when <span class="math inline">\(D_i = 0\)</span> — i.e., the mean of the B group, which estimates <span class="math inline">\(\pi_B\)</span>.</li>
+<li><span class="math inline">\(\beta_0 + \beta_1\)</span> is the expected value of <span class="math inline">\(Y_i\)</span> when <span class="math inline">\(D_i = 1\)</span> — i.e., the mean of the A group, which estimates <span class="math inline">\(\pi_A\)</span>.</li>
+<li>Therefore <span class="math inline">\(\beta_1 = \pi_A - \pi_B = \theta\)</span>, and the OLS estimate <span class="math inline">\(\hat\beta_1\)</span> is numerically identical to <span class="math inline">\(\hat\theta = \bar{X}_A - \bar{X}_B\)</span>.</li>
+</ol></li>
+<li><p>Fit this regression using your simulated data. Report the coefficient estimate <span class="math inline">\(\hat\beta_1\)</span>, its standard error, its t-statistic, and its p-value. Compare these to the values you computed in the previous section using the two-sample approach — they should match (up to a small difference in how the standard error is computed; standard OLS assumes a single pooled variance, while the two-sample formula we used assumes separate variances for each group).</p></li>
+<li><p>Explain to the reader why this equivalence matters: the regression framework makes it easy to add controls, interactions, or additional treatment arms, all while producing the same inference in the simple case.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="the-problem-with-peeking" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-with-peeking">The Problem with Peeking</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Your boss is impatient. Rather than waiting until all 1,000 visitors have been assigned to each group, she wants to run the hypothesis test after every 100 visitors per group — peeking at the results after 100, 200, 300, …, up to 1,000 visitors per group (10 tests in total). If any of those tests comes back significant at the <span class="math inline">\(\alpha = 0.05\)</span> level, she wants to declare a winner and stop the experiment early.</p></li>
+<li><p>Explain to the reader why this is problematic under classical frequentist statistics. The key issue is that a single test at <span class="math inline">\(\alpha = 0.05\)</span> has a 5% chance of a false positive (rejecting <span class="math inline">\(H_0\)</span> when it is actually true). But when you conduct multiple tests on accumulating data, each peek is another opportunity to get a false positive. The overall probability of at least one false rejection across all the peeks is much higher than 5%.</p></li>
+<li><p>Demonstrate this with a simulation. The idea is as follows:</p>
+<ol type="1">
+<li>Set up a world where the null hypothesis is true: <span class="math inline">\(\pi_A = \pi_B = 0.20\)</span> (i.e., <span class="math inline">\(\theta = 0\)</span>, there is no difference between the CTAs).</li>
+<li>Simulate a single experiment: draw 1,000 observations for group A and 1,000 for group B. After every 100 observations per group (at <span class="math inline">\(n = 100, 200, \ldots, 1000\)</span>), compute the z-statistic and p-value. Record whether any of the 10 p-values falls below 0.05.</li>
+<li>Repeat step 2 a total of 10,000 times to simulate 10,000 experiments.</li>
+<li>Compute the fraction of those 10,000 experiments in which at least one peek produced a significant result. This is the empirical false positive rate under peeking.</li>
+</ol></li>
+<li><p>Compare this to the nominal 5% false positive rate of a single test. Report the result and explain to the reader why peeking inflates the Type I error rate and what this means in practice for running A/B tests.</p></li>
+</ul>
 </div>
 </div>
 
 
+</section>
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -21,6 +21,9 @@ website:
         text: Courses
       - href: certifications.qmd
         text: Certifications
+      - href: articles.qmd
+        text: Articles
+
 
 format:
   html:

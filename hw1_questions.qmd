@@ -1,0 +1,213 @@
+---
+title: A/B Testing a Call to Action
+subtitle: "Simulating Key Ideas from Classical Frequentist Statistics"
+author: "Prabhlin Kaur Matta"
+date: April 14, 2026
+---
+
+
+## Introduction
+
+::: {.callout-note}
+In digital marketing, every word on a landing page can influence a visitor's decision to engage. For our website, we are specifically focused on optimizing our newsletter sign-up rate. We have developed two competing "calls to action" (CTAs) to test:
++1
+
+CTA A: "Sign up for our newsletter here!" 
+CTA B: "Stay up to date by signing up!" 
+
+To determine which version is more effective, we will conduct an A/B test. In this framework, visitors are randomly assigned to see either CTA A or CTA B, allowing us to directly compare the sign-up rates between the two groups to identify the superior performer
+:::
+
+
+## The A/B Test as a Statistical Problem
+
+::: {.callout-note}
+
+To evaluate this experiment rigorously, we model each visitor’s action—signing up or not—as a Bernoulli random variable.
+Let:
+$ \pi_A $ = probability of signup under CTA A
+$ \pi_B $ = probability of signup under CTA B
+
+Our quantity of interest is:
+$\theta = \pi_A - \pi_B$
+
+Since we cannot observe the entire population, we estimate this using sample data:
+$\hat{\theta} = \bar{X}_A - \bar{X}_B$
+
+Because the data consists of 0s and 1s, these sample means represent the observed conversion rates in each group.
+:::
+
+
+## Simulating Data
+
+::: {.callout-note}
+In real experiments, the true values of $\pi_A$ and $\pi_B$ are unknown. To understand how our estimator behaves, we simulate data where the truth is known.
+We assume:
+$\pi_A = 0.22$
+$\pi_B = 0.18$
+So the true effect is:
+$\theta = 0.04$
+
+``````````````````````````
+#| label: simulate-data
+#| message: false
+library(tidyverse)
+library(gt)
+
+set.seed(42)
+
+n <- 1000
+pi_a <- 0.22
+pi_b <- 0.18
+
+cta_a_results <- rbinom(n, 1, pi_a)
+cta_b_results <- rbinom(n, 1, pi_b)
+```````````````````````````````````
+
+This simulation mimics an A/B test with 1,000 users in each group.
+
+:::
+
+
+## The Law of Large Numbers
+
+::: {.callout-note}
+The Law of Large Numbers (LLN) tells us that as sample size increases, our estimate $\hat{\theta}$ will converge to the true value $\theta$.
+
+````````````````````````````````````````````
+#| label: lln-demonstration
+differences <- cta_a_results - cta_b_results
+cumulative_avg <- cumsum(differences) / seq_along(differences)
+
+plot_data <- data.frame(
+  n = 1:n,
+  avg = cumulative_avg
+)
+
+ggplot(plot_data, aes(x = n, y = avg)) +
+  geom_line() +
+  geom_hline(yintercept = 0.04, linetype = "dashed") +
+  labs(title = "Law of Large Numbers in Action",
+       x = "Number of Observations",
+       y = "Estimated Difference") +
+  theme_minimal()
+`````````````````````````````````````````
+
+At small sample sizes, the estimate fluctuates significantly. As more observations are collected, the estimate stabilizes around the true value of 0.04.
+
+Key takeaway: More data leads to more reliable estimates.
+:::
+
+Even with the same true probabilities, repeated experiments produce different estimates due to randomness. This is known as sampling variability.
+
+````````````````````````````````````````````````
+#| label: sampling-variation
+theta_hats <- replicate(1000, {
+  A <- rbinom(n, 1, pi_a)
+  B <- rbinom(n, 1, pi_b)
+  mean(A) - mean(B)
+})
+
+ggplot(data.frame(theta_hats), aes(x = theta_hats)) +
+  geom_histogram(bins = 30) +
+  labs(title = "Sampling Distribution of Theta Hat",
+       x = "Estimated Difference",
+       y = "Frequency") +
+  theme_minimal()
+````````````````````````````````````````````````````
+
+This distribution shows how much our estimate can vary across repeated experiments.
+
+
+
+## Bootstrap Standard Errors
+
+::: {.callout-note}
+
+:::
+
+
+## The Central Limit Theorem
+
+::: {.callout-note}
+- Write a short introduction explaining the Central Limit Theorem to the reader: regardless of the shape of the underlying population distribution, the sampling distribution of the sample mean (and therefore of the difference in sample means) becomes approximately Normal as the sample size grows.
+
+- Then demonstrate this visually by creating four histograms, one for each of the following sample sizes: $n \in \{25, 50, 100, 500\}$.
+
+- For each sample size $n$:
+
+    1. Draw $n$ observations from the CTA A distribution and $n$ observations from the CTA B distribution.
+    2. Compute $\hat\theta = \bar{X}_A - \bar{X}_B$.
+    3. Repeat steps 1--2 a total of 1,000 times to produce 1,000 values of $\hat\theta$.
+    4. Plot a histogram of those 1,000 values.
+
+- Arrange the four histograms so they can be compared easily (e.g., in a 2x2 grid with consistent x-axis scales).
+
+- After the plots, write a few sentences explaining what the reader should observe: at small sample sizes the histogram may look rough or asymmetric, but as $n$ increases the distribution of $\hat\theta$ becomes smoother and more bell-shaped, illustrating the Central Limit Theorem in action.
+:::
+
+
+## Hypothesis Testing
+
+::: {.callout-note}
+- Now that we have seen the CLT in action — that the sampling distribution of $\hat\theta$ is approximately Normal for large samples — we can use this result to perform a formal hypothesis test.
+
+- Write a paragraph explaining what a hypothesis test is to the reader. We set up a null hypothesis $H_0: \theta = 0$ (i.e., the two CTAs produce the same sign-up rate) and an alternative hypothesis $H_1: \theta \neq 0$. The goal is to assess whether the data provide enough evidence to reject $H_0$.
+
+- Then explain why we standardize $\hat\theta$ to form a test statistic. We compute:
+
+$$
+z = \frac{\hat\theta - 0}{SE(\hat\theta)}
+$$
+
+- Walk the reader through the logic of this standardization step by step:
+
+    1. By the CLT, we know that $\hat\theta$ is approximately Normal for large samples. Under $H_0$, the mean of that distribution is 0.
+    2. When we divide a Normal random variable by its standard deviation, we get a standard Normal $N(0,1)$. So under $H_0$, $z \;\dot\sim\; N(0,1)$.
+    3. This means we know the distribution of our test statistic under the null, which is exactly what we need to compute a p-value.
+
+- Explain to the reader why this is sometimes called a "t-test" even though the test statistic follows an approximate Normal distribution, not a t-distribution. The classical t-test arises when the data are drawn from a Normal distribution and the variance must be estimated --- the ratio then follows an exact t-distribution. In our setting the data are Bernoulli (not Normal), so there is no exact t-distribution result. The CLT gives us approximate Normality, and since we estimate the SE from the data, what we are really doing is closer to a z-test. In practice, for large samples the t-distribution and the standard Normal are nearly identical, so the distinction has little practical consequence --- but it is important to understand why.
+
+- Using your simulated data, compute the test statistic and its associated p-value (using the standard Normal distribution as the reference). Interpret the result for the reader.
+:::
+
+
+## The T-Test as a Regression
+
+::: {.callout-note}
+- It turns out that the two-sample test we just ran is mathematically equivalent to a simple linear regression. Understanding this connection is useful because it means the same machinery --- and the same software --- that you use for regression can also perform hypothesis tests, and it generalizes naturally to more complex experimental designs.
+
+- Explain the setup to the reader. Stack the CTA A and CTA B data into a single dataset with two columns: an outcome $Y_i$ (1 if the visitor signed up, 0 otherwise) and an indicator $D_i$ (1 if the visitor saw CTA A, 0 if they saw CTA B). Then fit the regression:
+
+$$
+Y_i = \beta_0 + \beta_1 D_i + \varepsilon_i
+$$
+
+- Walk through the interpretation of the coefficients:
+
+    1. $\beta_0$ is the expected value of $Y_i$ when $D_i = 0$ --- i.e., the mean of the B group, which estimates $\pi_B$.
+    2. $\beta_0 + \beta_1$ is the expected value of $Y_i$ when $D_i = 1$ --- i.e., the mean of the A group, which estimates $\pi_A$.
+    3. Therefore $\beta_1 = \pi_A - \pi_B = \theta$, and the OLS estimate $\hat\beta_1$ is numerically identical to $\hat\theta = \bar{X}_A - \bar{X}_B$.
+
+- Fit this regression using your simulated data. Report the coefficient estimate $\hat\beta_1$, its standard error, its t-statistic, and its p-value. Compare these to the values you computed in the previous section using the two-sample approach --- they should match (up to a small difference in how the standard error is computed; standard OLS assumes a single pooled variance, while the two-sample formula we used assumes separate variances for each group).
+
+- Explain to the reader why this equivalence matters: the regression framework makes it easy to add controls, interactions, or additional treatment arms, all while producing the same inference in the simple case.
+:::
+
+
+## The Problem with Peeking
+
+::: {.callout-note}
+- Your boss is impatient. Rather than waiting until all 1,000 visitors have been assigned to each group, she wants to run the hypothesis test after every 100 visitors per group — peeking at the results after 100, 200, 300, ..., up to 1,000 visitors per group (10 tests in total). If any of those tests comes back significant at the $\alpha = 0.05$ level, she wants to declare a winner and stop the experiment early.
+
+- Explain to the reader why this is problematic under classical frequentist statistics. The key issue is that a single test at $\alpha = 0.05$ has a 5% chance of a false positive (rejecting $H_0$ when it is actually true). But when you conduct multiple tests on accumulating data, each peek is another opportunity to get a false positive. The overall probability of at least one false rejection across all the peeks is much higher than 5%.
+
+- Demonstrate this with a simulation. The idea is as follows:
+
+    1. Set up a world where the null hypothesis is true: $\pi_A = \pi_B = 0.20$ (i.e., $\theta = 0$, there is no difference between the CTAs).
+    2. Simulate a single experiment: draw 1,000 observations for group A and 1,000 for group B. After every 100 observations per group (at $n = 100, 200, \ldots, 1000$), compute the z-statistic and p-value. Record whether any of the 10 p-values falls below 0.05.
+    3. Repeat step 2 a total of 10,000 times to simulate 10,000 experiments.
+    4. Compute the fraction of those 10,000 experiments in which at least one peek produced a significant result. This is the empirical false positive rate under peeking.
+
+- Compare this to the nominal 5% false positive rate of a single test. Report the result and explain to the reader why peeking inflates the Type I error rate and what this means in practice for running A/B tests.
+:::

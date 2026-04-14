@@ -260,7 +260,9 @@ hypothesis_tbl |>
   tab_header(title = "Hypothesis Test for Difference in Signup Rates")
 ```
 
-The p-value is very small, which means the observed difference would be unlikely if the true effect were actually zero. On that basis, we would reject $H_0$ and conclude that the data provide evidence that CTA A and CTA B produce different sign-up rates. In this simulation, CTA A appears to perform better.
+The p-value is approximately 0.13, which is greater than the standard significance level of 0.05. Therefore, we fail to reject the null hypothesis. This means there is not sufficient evidence to conclude that the two CTAs have different conversion rates. While CTA A shows a higher observed signup rate in this sample, the difference is not statistically significant.
+
+This result is consistent with the confidence interval, which includes zero, further suggesting that the true effect may be small or nonexistent.
 
 ## The T-Test as a Regression
 

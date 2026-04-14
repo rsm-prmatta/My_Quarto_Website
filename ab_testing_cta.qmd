@@ -1,14 +1,11 @@
 ---
 title: "A/B Testing a Call to Action"
-subtitle: "Simulating Key Ideas from Classical Frequentist Statistics"
 author: "Prabhlin Kaur Matta"
-date: "April 14, 2026"
+date: "2026-04-14"
 format:
   html:
-    toc: true
-    number-sections: false
-    theme: cosmo
-    code-fold: false
+    toc: false
+    page-layout: full
 execute:
   echo: true
   warning: false

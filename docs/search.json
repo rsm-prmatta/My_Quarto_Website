@@ -4,14 +4,28 @@
     "href": "articles.html",
     "title": "Articles",
     "section": "",
-    "text": "Writing\n\n\n\n\nA curated set of analytical writing pieces on experimentation, economics, and decision-making.\n\n\nThis section collects article-style walkthroughs that turn statistical ideas and applied research into something readable, visual, and useful. Each piece is written to feel practical, polished, and easy to revisit."
+    "text": "This page collects article-style writing that sits alongside the rest of the portfolio. The goal is simple: make analytical work feel readable, visual, and worth exploring.\nEach piece is designed to be practical rather than ornamental. Some articles walk through experimental logic step by step. Others translate well-known research into a cleaner, more intuitive story."
   },
   {
-    "objectID": "articles.html#ab-testing-a-call-to-action",
-    "href": "articles.html#ab-testing-a-call-to-action",
+    "objectID": "articles.html#introduction",
+    "href": "articles.html#introduction",
     "title": "Articles",
-    "section": "A/B Testing a Call to Action",
-    "text": "A/B Testing a Call to Action\nAn applied walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and why peeking can inflate false positives.\nRead article →"
+    "section": "",
+    "text": "This page collects article-style writing that sits alongside the rest of the portfolio. The goal is simple: make analytical work feel readable, visual, and worth exploring.\nEach piece is designed to be practical rather than ornamental. Some articles walk through experimental logic step by step. Others translate well-known research into a cleaner, more intuitive story."
+  },
+  {
+    "objectID": "articles.html#featured-post",
+    "href": "articles.html#featured-post",
+    "title": "Articles",
+    "section": "Featured Post",
+    "text": "Featured Post\n\n\n\n\n\n\nFeatured\n\n\nA/B Testing a Call to Action\nA polished walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and the risks of peeking too early.\nRead article →"
+  },
+  {
+    "objectID": "articles.html#more-writing",
+    "href": "articles.html#more-writing",
+    "title": "Articles",
+    "section": "More Writing",
+    "text": "More Writing\n\n\n\n\n\n\nEconomics\n\n\nDoes Raising Minimum Wage Kill Jobs?\nA replication-style economics article on Card and Krueger (1994), showing the core Difference-in-Differences result, comparing the estimates to the paper, and explaining where small mismatches come from.\nOpen article →"
   },
   {
     "objectID": "ab_testing_cta.html",
@@ -271,6 +285,34 @@
     "title": "Courses",
     "section": "",
     "text": "Coursework modules\n\n\nCourses\n\nGraduate coursework that complements my analytics, experimentation, and marketing decision support interests.\n\n\n\n\nCourse 01\n\n\nGenAI for Business\nExplored how generative AI can support business workflows, decision processes, and practical experimentation.\n\n\n\n\nCourse 02\n\n\nHealthcare Analytics\nApplied analytics thinking to domain-specific operational and decision-making problems in healthcare.\n\n\n\n\nCourse 03\n\n\nData Collection & API Integration\nFocused on structured data acquisition, integration, and building cleaner pipelines for analysis.\n\n\n\n\nCourse 04\n\n\nMachine Learning\nBuilt a stronger foundation in supervised learning, model evaluation, and predictive problem solving.\n\n\n\n\nCourse 05\n\n\nCustomer Analytics\nStudied methods for segmentation, response modeling, targeting, retention, and customer value analysis.\n\n\n\n\nCourse 06\n\n\nNew Product Development\nExamined how insight generation and market understanding can shape product and commercialization decisions."
+  },
+  {
+    "objectID": "hw2_questions.html",
+    "href": "hw2_questions.html",
+    "title": "Replication of Author1 and Author2 (year)",
+    "section": "",
+    "text": "add"
+  },
+  {
+    "objectID": "hw2_questions.html#introduction",
+    "href": "hw2_questions.html#introduction",
+    "title": "Replication of Author1 and Author2 (year)",
+    "section": "",
+    "text": "add"
+  },
+  {
+    "objectID": "hw2_questions.html#main-analysis",
+    "href": "hw2_questions.html#main-analysis",
+    "title": "Replication of Author1 and Author2 (year)",
+    "section": "Main Analysis",
+    "text": "Main Analysis\nadd"
+  },
+  {
+    "objectID": "hw2_questions.html#something-additional",
+    "href": "hw2_questions.html#something-additional",
+    "title": "Replication of Author1 and Author2 (year)",
+    "section": "Something Additional",
+    "text": "Something Additional\nadd"
   },
   {
     "objectID": "resume.html",

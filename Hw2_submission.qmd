@@ -13,10 +13,30 @@ format:
           max-width: 760px;
           margin: 0 auto;
         }
+        #title-block-header {
+          display: block !important;
+          max-width: 860px;
+          margin: 0 auto 2rem auto;
+          padding-top: 0.5rem;
+        }
         .quarto-title-block .title {
-          font-size: 2.7rem;
+          font-size: clamp(2.1rem, 4vw, 2.8rem);
           line-height: 1.08;
           letter-spacing: -0.03em;
+          margin-bottom: 0.55rem;
+        }
+        #title-block-header .quarto-title-meta {
+          margin-top: 0.4rem;
+        }
+        #title-block-header .quarto-title-meta-heading {
+          font-size: 0.78rem;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #7a6660;
+        }
+        #title-block-header .quarto-title-meta-contents {
+          color: #4b3a36;
+          font-size: 0.96rem;
         }
         .hero {
           margin: 1.5rem 0 3rem 0;

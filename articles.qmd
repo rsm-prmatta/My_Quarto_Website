@@ -1,52 +1,52 @@
 ---
 title: "Articles"
-format: html
+subtitle: "Curated writing on experimentation, economics, and practical decision-making"
+author: "Prabhlin Kaur Matta"
+date: today
 ---
 
-:::{.page-shell}
-::: {.eyebrow}
-Writing
-:::
+## Introduction
 
-# Articles
+This page collects article-style writing that sits alongside the rest of the portfolio. The goal is simple: make analytical work feel readable, visual, and worth exploring.
 
-::: {.hero-lead}
-A curated set of analytical writing pieces on experimentation, economics, and decision-making.
-:::
+Each piece is designed to be practical rather than ornamental. Some articles walk through experimental logic step by step. Others translate well-known research into a cleaner, more intuitive story.
 
-::: {.section-copy}
-This section collects article-style walkthroughs that turn statistical ideas and applied research into something readable, visual, and useful. Each piece is written to feel practical, polished, and easy to revisit.
-:::
-:::
-
-:::{.section-row}
-<div class="section-label">Featured Post</div>
+## Featured Post
 
 ::: {.article-feature-card}
-<div class="article-feature-icon"><i class="bi bi-bezier2"></i></div>
-<div class="article-feature-content">
-<div class="card-meta">Featured</div>
-## [A/B Testing a Call to Action](ab_testing_cta.qmd)
+::: {.article-feature-icon}
+<i class="bi bi-bezier2"></i>
+:::
 
-An applied walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and why peeking can inflate false positives.
+::: {.article-feature-content}
+::: {.card-meta}
+Featured
+:::
+
+### [A/B Testing a Call to Action](ab_testing_cta.qmd)
+
+A polished walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and the risks of peeking too early.
 
 [Read article →](ab_testing_cta.qmd){.btn-link}
-</div>
 :::
 :::
 
-:::{.section-row}
-<div class="section-label">More Writing</div>
+## More Writing
 
 ::: {.article-card-grid}
 ::: {.article-card}
-<div class="card-icon"><i class="bi bi-graph-up-arrow"></i></div>
-<div class="card-meta">Economics</div>
+::: {.card-icon}
+<i class="bi bi-graph-up-arrow"></i>
+:::
+
+::: {.card-meta}
+Economics
+:::
+
 ### [Does Raising Minimum Wage Kill Jobs?](Hw2_submission.qmd)
 
-A replication-style post on Card and Krueger (1994), showing the core Difference-in-Differences result, comparing the estimates to the paper, and explaining why small mismatches can appear in classroom summaries.
+A replication-style economics article on Card and Krueger (1994), showing the core Difference-in-Differences result, comparing the estimates to the paper, and explaining where small mismatches come from.
 
 [Open article →](Hw2_submission.qmd){.btn-link}
-:::
 :::
 :::

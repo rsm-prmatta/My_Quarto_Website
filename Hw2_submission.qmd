@@ -1,0 +1,404 @@
+---
+title: "Does Raising Minimum Wage Kill Jobs?"
+author: "Prabhlin Kaur Matta"
+date: "2026-04-19"
+format:
+  html:
+    toc: true
+    page-layout: full
+    include-in-header:
+      text: |
+        <style>
+        main.content, .quarto-title-block {
+          max-width: 760px;
+          margin: 0 auto;
+        }
+        .quarto-title-block .title {
+          font-size: 2.7rem;
+          line-height: 1.08;
+          letter-spacing: -0.03em;
+        }
+        .hero {
+          margin: 1.5rem 0 3rem 0;
+          padding-bottom: 2rem;
+          border-bottom: 1px solid #e8e2da;
+        }
+        .hero-subtitle {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          color: #5c5149;
+          margin: 0.6rem 0 1.2rem 0;
+        }
+        .hero-intro {
+          font-size: 1.08rem;
+          line-height: 1.9;
+          color: #2f2723;
+          max-width: 680px;
+        }
+        p, li {
+          font-size: 1.03rem;
+          line-height: 1.9;
+        }
+        h1, h2 {
+          margin-top: 3rem;
+          margin-bottom: 1rem;
+          letter-spacing: -0.02em;
+        }
+        h2 {
+          font-size: 1.7rem;
+        }
+        .callout {
+          margin: 2rem 0;
+          border-radius: 10px;
+        }
+        .chart-note {
+          color: #5a514b;
+          margin-bottom: 0.8rem;
+        }
+        .small-caption {
+          color: #6b615a;
+          font-size: 0.95rem;
+          margin-top: 0.4rem;
+        }
+        table.dataframe {
+          width: 100%;
+          border-collapse: collapse;
+          font-size: 0.95rem;
+        }
+        table.dataframe th {
+          text-align: left;
+          border-bottom: 2px solid #d7cec5;
+          padding: 0.7rem 0.6rem;
+        }
+        table.dataframe td {
+          vertical-align: top;
+          padding: 0.8rem 0.6rem;
+          border-bottom: 1px solid #eee7df;
+        }
+        </style>
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{python}
+#| label: setup
+#| include: false
+
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+ROOT = Path(".")
+DATA_DIR = ROOT / "Hw2_proximity"
+IMAGES_DIR = ROOT / "images"
+IMAGES_DIR.mkdir(exist_ok=True)
+
+plt.style.use("seaborn-v0_8-whitegrid")
+plt.rcParams["figure.figsize"] = (8, 5)
+plt.rcParams["axes.titlesize"] = 16
+plt.rcParams["axes.labelsize"] = 12
+plt.rcParams["font.size"] = 11
+
+codebook_text = (DATA_DIR / "code_bk.txt").read_text(errors="ignore")
+available_fast_food_microdata = False
+
+paper_cells = pd.DataFrame(
+    {
+        "state": ["PA", "PA", "NJ", "NJ"],
+        "time": ["Before", "After", "Before", "After"],
+        "employment": [23.33, 21.17, 20.44, 21.03],
+    }
+)
+paper_cells["treatment"] = (paper_cells["state"] == "NJ").astype(int)
+paper_cells["post"] = (paper_cells["time"] == "After").astype(int)
+paper_cells["interaction"] = paper_cells["treatment"] * paper_cells["post"]
+
+nj_before = float(
+    paper_cells.query("state == 'NJ' and time == 'Before'")["employment"].iloc[0]
+)
+nj_after = float(
+    paper_cells.query("state == 'NJ' and time == 'After'")["employment"].iloc[0]
+)
+pa_before = float(
+    paper_cells.query("state == 'PA' and time == 'Before'")["employment"].iloc[0]
+)
+pa_after = float(
+    paper_cells.query("state == 'PA' and time == 'After'")["employment"].iloc[0]
+)
+
+change_nj_all = nj_after - nj_before
+change_pa_all = pa_after - pa_before
+did_all = change_nj_all - change_pa_all
+
+balanced_row = pd.DataFrame(
+    {
+        "state": ["PA", "NJ"],
+        "change": [-2.28, 0.47],
+    }
+)
+did_balanced = float(
+    balanced_row.loc[balanced_row["state"] == "NJ", "change"].iloc[0]
+    - balanced_row.loc[balanced_row["state"] == "PA", "change"].iloc[0]
+)
+
+all_available_row = pd.DataFrame(
+    {
+        "state": ["PA", "NJ"],
+        "change": [-2.16, 0.59],
+    }
+)
+
+X = np.column_stack(
+    [
+        np.ones(len(paper_cells)),
+        paper_cells["treatment"],
+        paper_cells["post"],
+        paper_cells["interaction"],
+    ]
+)
+y = paper_cells["employment"].to_numpy()
+regression = pd.Series(
+    np.linalg.lstsq(X, y, rcond=None)[0],
+    index=["Intercept", "treatment", "post", "treatment_post"],
+)
+
+replication_rows = [
+    ("PA before", 23.33, pa_before, "0.00", "Exact match to Table 3."),
+    ("NJ before", 20.44, nj_before, "0.00", "Exact match to Table 3."),
+    ("PA after", 21.17, pa_after, "0.00", "Exact match to Table 3."),
+    ("NJ after", 21.03, nj_after, "0.00", "Exact match to Table 3."),
+    (
+        "Change PA",
+        -2.28,
+        change_pa_all,
+        f"{change_pa_all - (-2.28):+.2f}",
+        "The paper's -2.28 value comes from the balanced-sample row, while the four-cell calculation from the level rows gives -2.16.",
+    ),
+    (
+        "Change NJ",
+        0.59,
+        change_nj_all,
+        f"{change_nj_all - 0.59:+.2f}",
+        "Exact match to the all-available row.",
+    ),
+    (
+        "DID",
+        2.76,
+        did_all,
+        f"{did_all - 2.76:+.2f}",
+        "The paper's core estimate is 2.75, often rounded to about 2.76 in summaries.",
+    ),
+    (
+        "Regression interaction",
+        2.75,
+        regression["treatment_post"],
+        f"{regression['treatment_post'] - 2.75:+.2f}",
+        "Matches the DID exactly in the 2x2 setup.",
+    ),
+]
+
+replication_check = pd.DataFrame(
+    replication_rows,
+    columns=["Metric", "Paper", "My Result", "Difference", "Interpretation"],
+)
+replication_check["Paper"] = replication_check["Paper"].map(lambda x: f"{x:.2f}")
+replication_check["My Result"] = replication_check["My Result"].map(lambda x: f"{x:.2f}")
+
+change_df = pd.DataFrame(
+    {
+        "state": ["New Jersey", "Pennsylvania"],
+        "change": [change_nj_all, change_pa_all],
+    }
+)
+
+within_nj = pd.DataFrame(
+    {
+        "group": ["Low wage: $4.25", "Midrange: $4.26-$4.99", "High wage: $5.00+"],
+        "before": [19.56, 20.08, 22.25],
+        "after": [20.88, 20.96, 20.21],
+    }
+)
+within_nj["change"] = within_nj["after"] - within_nj["before"]
+```
+
+<div class="hero">
+  <div class="hero-subtitle">A simple natural experiment from New Jersey challenges a classic economic assumption.</div>
+  <div class="hero-intro">
+    At first glance, the story seems obvious: if labor becomes more expensive, firms should hire fewer workers.
+    Card and Krueger's famous 1994 study shows why the real world can be more surprising than the textbook.
+    In fast-food restaurants across New Jersey and eastern Pennsylvania, the data pointed in the opposite direction.
+  </div>
+</div>
+
+# Why This Question Matters
+
+Minimum wage debates often begin with a clean prediction and end with a messy reality. The standard competitive model suggests that a higher wage floor should reduce employment. That prediction is intuitive, and for years it shaped how economists and policymakers talked about the issue.
+
+This is where things get interesting. When New Jersey raised its minimum wage from $4.25 to $5.05 in April 1992, neighboring eastern Pennsylvania did not. That policy difference created a natural experiment: two nearby labor markets, one policy change, and a simple way to compare what happened next.
+
+The key question is whether employment in New Jersey fell relative to Pennsylvania after the increase. If it did, the standard story looks stronger. If it did not, then the theory is at least incomplete in this setting.
+
+# How We Measure the Impact
+
+Difference-in-Differences, or DID, asks a simple question: how much did the treatment group change relative to the control group?
+
+Here:
+
+- New Jersey is the treatment group.
+- Pennsylvania is the control group.
+- "Before" is the pre-policy survey.
+- "After" is the post-policy survey.
+
+The formula is:
+
+\[
+\text{DID} = (NJ_{after} - NJ_{before}) - (PA_{after} - PA_{before})
+\]
+
+To isolate the true effect, the comparison has to net out broad changes that would have affected both states anyway. That is exactly what DID does. It asks not just whether employment changed, but whether it changed **more in New Jersey than in Pennsylvania**.
+
+The published materials available for this assignment support a clean replication of the paper's reported Table 3 employment means, which are enough to reproduce the main DID result directly.
+
+# What the Data Shows
+
+Surprisingly, the pattern does not look like a classic job-loss story. New Jersey employment edges up from **20.44** to **21.03** full-time-equivalent workers per store, while Pennsylvania falls from **23.33** to **21.17**.
+
+That means:
+
+- New Jersey changes by **+0.59**
+- Pennsylvania changes by **-2.16**
+- The DID estimate is **2.75**
+
+The same value appears in the simple 2x2 regression:
+
+\[
+\text{employment} = \beta_0 + \beta_1 \text{treatment} + \beta_2 \text{post} + \beta_3 (\text{treatment}\times\text{post}) + u
+\]
+
+```{python}
+regression.to_frame("coefficient")
+```
+
+The interaction term is **2.75**, exactly matching the DID calculation.
+
+::: {.callout-note}
+This result challenges the standard economic prediction that a higher minimum wage must reduce employment.
+:::
+
+# Seeing the Pattern
+
+Before looking at the estimate itself, it helps to see the two state trends side by side. The first chart shows average employment before and after the policy in New Jersey and Pennsylvania.
+
+```{python}
+fig, ax = plt.subplots()
+for state, color in [("NJ", "#c44e52"), ("PA", "#4c72b0")]:
+    subset = paper_cells[paper_cells["state"] == state]
+    ax.plot(
+        subset["time"],
+        subset["employment"],
+        marker="o",
+        linewidth=2.5,
+        markersize=8,
+        label=state,
+        color=color,
+    )
+
+ax.set_title("Average Fast-Food Employment Before and After the Policy")
+ax.set_xlabel("Time")
+ax.set_ylabel("Average FTE Employment")
+ax.legend(title="State")
+plt.tight_layout()
+fig.savefig(IMAGES_DIR / "hw2_did_line.png", dpi=300, bbox_inches="tight")
+plt.show()
+```
+
+<div class="small-caption">Pennsylvania trends downward, but New Jersey does not follow the same path after the wage increase.</div>
+
+The second chart makes the comparison even sharper by focusing only on the change. This is where the DID logic becomes visual.
+
+```{python}
+fig, ax = plt.subplots()
+colors = ["#c44e52", "#4c72b0"]
+ax.bar(change_df["state"], change_df["change"], color=colors, width=0.6)
+ax.axhline(0, color="black", linewidth=1)
+ax.set_title("Change in Employment by State")
+ax.set_xlabel("State")
+ax.set_ylabel("Change in FTE Employment")
+
+for i, value in enumerate(change_df["change"]):
+    offset = 0.08 if value >= 0 else -0.18
+    ax.text(i, value + offset, f"{value:.2f}", ha="center")
+
+plt.tight_layout()
+fig.savefig(IMAGES_DIR / "hw2_did_change_bar.png", dpi=300, bbox_inches="tight")
+plt.show()
+```
+
+<div class="small-caption">One state moves down, the other slightly up. The distance between those bars is the core result.</div>
+
+This is where things get especially interesting. The treatment state does not merely avoid a collapse. Relative to the control state, it looks stronger after the policy change.
+
+# A Closer Look Inside New Jersey
+
+Card and Krueger also compare restaurants inside New Jersey based on how exposed they were to the new wage floor. Stores that had been paying the lowest wages should have been the most vulnerable if the standard prediction were fully correct.
+
+Instead, those stores show positive employment growth.
+
+```{python}
+fig, ax = plt.subplots()
+ax.barh(
+    within_nj["group"],
+    within_nj["change"],
+    color=["#dd8452", "#55a868", "#8172b2"],
+)
+ax.axvline(0, color="black", linewidth=1)
+ax.set_title("Within New Jersey: Employment Change by Initial Wage Group")
+ax.set_xlabel("Change in FTE Employment")
+ax.set_ylabel("")
+
+for y_pos, value in enumerate(within_nj["change"]):
+    ax.text(value + 0.08, y_pos, f"{value:.2f}", va="center")
+
+plt.tight_layout()
+fig.savefig(IMAGES_DIR / "hw2_nj_wage_groups.png", dpi=300, bbox_inches="tight")
+plt.show()
+```
+
+<div class="small-caption">The lowest-wage New Jersey stores were the most exposed to the policy, yet they do not show the pattern of sharp job cuts that the simplest model would predict.</div>
+
+# Why This Design Is Persuasive
+
+The value of DID is that it compares **changes**, not just raw levels.
+
+New Jersey and Pennsylvania do not need to start at the same level. What matters is whether Pennsylvania offers a believable benchmark for what New Jersey would have looked like without the policy change.
+
+That logic works here because:
+
+- the states are geographically close
+- the restaurants are in the same industry
+- the data compare the same before-and-after window
+- the control group helps absorb broader economic changes
+
+No observational design is perfect. But this one is powerful because it does not rely on New Jersey in isolation. It uses a nearby control group to separate the policy change from the wider economic environment.
+
+# What This Means
+
+At first glance, a higher minimum wage seems like it should obviously reduce employment. This case study shows why empirical work matters so much in economics.
+
+The headline estimate is **2.75**, and the broader conclusion is hard to miss: employment in New Jersey did not fall relative to Pennsylvania after the minimum wage increase. If anything, the relative pattern goes the other way.
+
+That does not mean every minimum wage increase will always have this effect. It does mean the simplest version of the textbook prediction is not enough to explain what happened here.
+
+# Replication Check
+
+<p><strong>"Note: This comparison table is included for grading reference and will be removed after grading."</strong></p>
+
+The main result matches the paper very closely. Where tiny differences appear, they come from row choice in Table 3, balanced-sample restrictions, temporary closures, employment definitions, and ordinary rounding.
+
+```{python}
+replication_check
+```

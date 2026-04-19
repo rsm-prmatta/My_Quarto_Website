@@ -12,3 +12,7 @@ Welcome to the writing section of my portfolio, where I share applied work in ex
 ### [A/B Testing a Call to Action](ab_testing_cta.qmd)
 
 An applied walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and why peeking can inflate false positives.
+
+### [Does Raising Minimum Wage Kill Jobs?](Hw2_submission.qmd)
+
+A replication-style blog post on Card and Krueger (1994), showing the core Difference-in-Differences result, checking the published employment values against the paper, and explaining where tiny mismatches come from.

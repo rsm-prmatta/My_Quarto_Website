@@ -3,16 +3,50 @@ title: "Articles"
 format: html
 ---
 
+:::{.page-shell}
+::: {.eyebrow}
+Writing
+:::
+
 # Articles
 
-Welcome to the writing section of my portfolio, where I share applied work in experimentation, analytics, and decision-making.
+::: {.hero-lead}
+A curated set of analytical writing pieces on experimentation, economics, and decision-making.
+:::
 
-## Featured Post
+::: {.section-copy}
+This section collects article-style walkthroughs that turn statistical ideas and applied research into something readable, visual, and useful. Each piece is written to feel practical, polished, and easy to revisit.
+:::
+:::
 
-### [A/B Testing a Call to Action](ab_testing_cta.qmd)
+:::{.section-row}
+<div class="section-label">Featured Post</div>
+
+::: {.article-feature-card}
+<div class="article-feature-icon"><i class="bi bi-bezier2"></i></div>
+<div class="article-feature-content">
+<div class="card-meta">Featured</div>
+## [A/B Testing a Call to Action](ab_testing_cta.qmd)
 
 An applied walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and why peeking can inflate false positives.
 
+[Read article →](ab_testing_cta.qmd){.btn-link}
+</div>
+:::
+:::
+
+:::{.section-row}
+<div class="section-label">More Writing</div>
+
+::: {.article-card-grid}
+::: {.article-card}
+<div class="card-icon"><i class="bi bi-graph-up-arrow"></i></div>
+<div class="card-meta">Economics</div>
 ### [Does Raising Minimum Wage Kill Jobs?](Hw2_submission.qmd)
 
-A replication-style blog post on Card and Krueger (1994), showing the core Difference-in-Differences result, checking the published employment values against the paper, and explaining where tiny mismatches come from.
+A replication-style post on Card and Krueger (1994), showing the core Difference-in-Differences result, comparing the estimates to the paper, and explaining why small mismatches can appear in classroom summaries.
+
+[Open article →](Hw2_submission.qmd){.btn-link}
+:::
+:::
+:::

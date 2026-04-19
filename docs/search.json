@@ -4,343 +4,14 @@
     "href": "articles.html",
     "title": "Articles",
     "section": "",
-    "text": "Welcome to the writing section of my portfolio, where I share applied work in experimentation, analytics, and decision-making.\n\n\n\n\nAn applied walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and why peeking can inflate false positives.\n\n\n\nA replication-style blog post on Card and Krueger (1994), showing the core Difference-in-Differences result, checking the published employment values against the paper, and explaining where tiny mismatches come from."
+    "text": "Writing\n\n\n\n\nA curated set of analytical writing pieces on experimentation, economics, and decision-making.\n\n\nThis section collects article-style walkthroughs that turn statistical ideas and applied research into something readable, visual, and useful. Each piece is written to feel practical, polished, and easy to revisit."
   },
   {
-    "objectID": "articles.html#featured-post",
-    "href": "articles.html#featured-post",
+    "objectID": "articles.html#ab-testing-a-call-to-action",
+    "href": "articles.html#ab-testing-a-call-to-action",
     "title": "Articles",
-    "section": "",
-    "text": "An applied walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and why peeking can inflate false positives.\n\n\n\nA replication-style blog post on Card and Krueger (1994), showing the core Difference-in-Differences result, checking the published employment values against the paper, and explaining where tiny mismatches come from."
-  },
-  {
-    "objectID": "certifications.html",
-    "href": "certifications.html",
-    "title": "Certifications",
-    "section": "",
-    "text": "Credentials\n\n\nCertifications\n\nProfessional credentials that reinforce my SQL, Python, quantitative research, and GenAI analytics toolkit.\n\n\n\n\nDataCamp\n\n\nProfessional Certificate - SQL\nFocused on query writing, analysis workflows, and practical SQL problem solving.\n\n\n\n\nDataCamp\n\n\nProfessional Certificate - Python\nStrengthened applied Python skills for analysis, data handling, and modeling workflows.\n\n\n\n\nForage\n\n\nJPMorgan Chase & Co. Quantitative Research Virtual Experience\nHands-on work in pricing, forecasting, and credit risk framing for finance-oriented decisions.\n\n\n\n\nForage\n\n\nTata GenAI Powered Data Analytics Virtual Experience\nExperience centered on GenAI-enabled analytics thinking and business-facing data work."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "Hi, I am Prabhlin Kaur\n\nI work across business analytics, consumer insights, marketing analytics, and predictive modeling. I build decision support that turns analysis into clear, actionable business recommendations.\n\n\n        \n\n\n\n\n\nSnapshot\n\n\n\n\n11\n\n\nProjects\n\n\nAnalytics, optimization, experimentation, and risk work\n\n\n\n\n6\n\n\nCourses\n\n\nGraduate coursework spanning ML, APIs, and customer analytics\n\n\n\n\n4\n\n\nCertifications\n\n\nSQL, Python, GenAI, and quant research\n\n\n\n\n20+\n\n\nClient Projects\n\n\nCross-functional delivery for global brands"
-  },
-  {
-    "objectID": "Projects/contextual-tv-ad-measurement/index.html",
-    "href": "Projects/contextual-tv-ad-measurement/index.html",
-    "title": "Quantifying Impact of Contextual TV Advertising",
-    "section": "",
-    "text": "Ad measurement study\n\n\nQuantifying Impact of Contextual TV Advertising\n\nAn AI-driven ad effectiveness study built for an audience measurement platform using household-level data.\n\n\n\nObjective\nMeasure contextual ad lift and connect it to business-facing attention and visibility KPIs.\n\n\nMethods\nHousehold-level analysis, segment-level driver modeling, and ad effectiveness framework design.\n\n\nOutput\nTableau dashboards that made performance easier to monitor and optimize.\n\n\n\n\n\n\nOverview\n\nThis project focused on quantifying the impact of contextual TV advertising and identifying the drivers behind lift across audience segments.\n\n\n\nSkills used\n\n\nAd effectiveness Audience measurement Tableau KPI tracking"
-  },
-  {
-    "objectID": "Projects/ea-product-management-simulation/index.html",
-    "href": "Projects/ea-product-management-simulation/index.html",
-    "title": "Electronic Arts Product Management Job Simulation",
-    "section": "",
-    "text": "Forage simulation\n\n\nElectronic Arts Product Management Job Simulation\n\nA product-focused exercise centered on game performance review and player segmentation.\n\n\n\nObjective\nUnderstand player segments and performance signals that could inform product decisions.\n\n\nMethods\nPerformance review, segmentation thinking, and product recommendation framing.\n\n\nOutcome\nStructured a clearer view of how player behavior can guide prioritization and product direction.\n\n\n\n\n\n\nOverview\n\nThis project translates analytics into product management language by connecting user segments, performance patterns, and decision priorities.\n\n\n\nSkills used\n\n\nSegmentation Product analytics Performance review Recommendation design"
-  },
-  {
-    "objectID": "Projects/churn-prediction-retention/index.html",
-    "href": "Projects/churn-prediction-retention/index.html",
-    "title": "Churn Prediction & Retention",
-    "section": "",
-    "text": "Retention analytics\n\n\nChurn Prediction & Retention\n\nA telecom churn project built to identify at-risk customers and support more profitable retention decisions.\n\n\n\nObjective\nEnable proactive retention strategies for a telecom carrier.\n\n\nMethods\nLogistic and neural models, threshold-based targeting, and CLV assessment.\n\n\nOutcome\nAchieved AUC 0.72, captured 68% of at-risk customers, and aligned retention with breakeven logic.\n\n\n\n\n\n\nOverview\n\nThe project combined predictive modeling with business constraints so retention outreach could be more targeted and economically grounded.\n\n\n\nSkills used\n\n\nChurn modeling Logistic regression Neural networks CLV"
-  },
-  {
-    "objectID": "Projects/etl-data-pipeline-reporting-automation/index.html",
-    "href": "Projects/etl-data-pipeline-reporting-automation/index.html",
-    "title": "ETL Data Pipeline & Reporting Automation",
-    "section": "",
-    "text": "Data operations\n\n\nETL Data Pipeline & Reporting Automation\n\nA Python-SQL ETL workflow in Snowflake built to standardize multi-source retail and weather data for scalable analysis.\n\n\n\nObjective\nReduce manual effort and improve reporting consistency across combined datasets.\n\n\nMethods\nPython-SQL ETL design, multi-source standardization, and ZIP-level weather mapping.\n\n\nOutcome\nCreated a cleaner pipeline for identifying temperature-driven demand patterns affecting supplier sales.\n\n\n\n\n\n\nOverview\n\nThe project connected engineering discipline with business analytics by making integrated data easier to reuse, analyze, and report.\n\n\n\nSkills used\n\n\nPython SQL Snowflake Reporting automation"
-  },
-  {
-    "objectID": "Projects/jpmorgan-quant-research-forage/index.html",
-    "href": "Projects/jpmorgan-quant-research-forage/index.html",
-    "title": "JPMorgan Chase Quantitative Research Virtual Experience",
-    "section": "",
-    "text": "Forage simulation\n\n\nJPMorgan Chase Quantitative Research Virtual Experience\n\nPricing and risk modeling for an energy trading use case, with forecasting and credit risk framing.\n\n\n\nObjective\nSupport contract valuation and credit risk decisions in an energy trading context.\n\n\nMethods\nTime-series forecasting, PD modeling, and FICO-based segmentation.\n\n\nOutcome\nEstimated expected loss, storage value, and one-year-ahead price forecasts for decision support.\n\n\n\n\n\n\nOverview\n\nThis simulation combined quantitative modeling and financial reasoning to evaluate pricing and borrower risk in a trading-focused scenario.\n\n\n\nSkills used\n\n\nTime-series forecasting Credit risk Segmentation Expected loss"
-  },
-  {
-    "objectID": "Projects/targeting-offer-optimization/index.html",
-    "href": "Projects/targeting-offer-optimization/index.html",
-    "title": "Targeting & Offer Optimization",
-    "section": "",
-    "text": "Offer strategy\n\n\nTargeting & Offer Optimization\n\nA predictive targeting project for a B2B software upsell campaign, built to improve customer selection and campaign profit.\n\n\n\nObjective\nChoose the most valuable customers for targeted outreach.\n\n\nMethods\nCompared logistic regression, neural networks, and XGBoost for response prediction.\n\n\nOutcome\nIdentified a roughly 30% targeting threshold that maximized expected campaign profit.\n\n\n\n\n\n\nOverview\n\nThe project linked predictive accuracy to business value by using profit rather than response rate alone to define the best targeting rule.\n\n\n\nSkills used\n\n\nXGBoost Upsell targeting Profit thresholding Model comparison"
-  },
-  {
-    "objectID": "Projects/credit-risk-analytics/index.html",
-    "href": "Projects/credit-risk-analytics/index.html",
-    "title": "Credit Risk Analytics",
-    "section": "",
-    "text": "Risk modeling\n\n\nCredit Risk Analytics\n\nA delinquency prediction project designed to support risk-based collections and customer intervention decisions.\n\n\n\nObjective\nIdentify high-risk customers early and support collections prioritization.\n\n\nMethods\nLogistic regression on financial and behavioral data, plus a risk segmentation framework.\n\n\nOutcome\nSurfaced key drivers such as missed payments, utilization, and DTI for more targeted action.\n\n\n\n\n\n\nOverview\n\nThis work focused on turning default probability estimates into a clearer operating framework for interventions and collections decisions.\n\n\n\nSkills used\n\n\nCredit risk Logistic regression Behavioral data Risk segmentation"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
-    "section": "",
-    "text": "Resume hub\n\n\nResume\n\nA quick summary of my background before the full PDF.\n\n\n\nEducation\nMS in Business Analytics, UC San Diego, expected June 2026. PGDM in Marketing, Welingkar Institute, April 2022.\n\n\nExperience themes\nConsumer insights, pricing strategy, campaign analytics, financial risk, and dashboard-based decision support.\n\n\nBrand exposure\nWork delivered for Unilever, Nestle, Mondelez, Samsung, Reliance, and McCormick.\n\n\n\nDownload resume Open projects"
-  },
-  {
-    "objectID": "hw1_final.html",
-    "href": "hw1_final.html",
-    "title": "A/B Testing a Call to Action",
-    "section": "",
-    "text": "In digital marketing, even small changes in wording can influence whether a visitor takes action. On our website landing page, one of the most important actions is signing up for the newsletter. To improve that sign-up rate, we want to test which of two possible calls to action (CTAs) is more effective.\nThe two versions are:\n\nCTA A: “Sign up for our newsletter here!”\nCTA B: “Stay up to date by signing up!”\n\nTo compare them fairly, we run an A/B test. In an A/B test, visitors are randomly assigned to see one of two alternatives, and we then compare the outcome across groups. In this case, the outcome is whether the visitor signs up for the newsletter. Random assignment is what allows us to interpret differences in sign-up rates as evidence about the CTA wording itself rather than about differences in the visitors who happened to see each version."
-  },
-  {
-    "objectID": "hw1_final.html#introduction",
-    "href": "hw1_final.html#introduction",
-    "title": "A/B Testing a Call to Action",
-    "section": "",
-    "text": "In digital marketing, even small changes in wording can influence whether a visitor takes action. On our website landing page, one of the most important actions is signing up for the newsletter. To improve that sign-up rate, we want to test which of two possible calls to action (CTAs) is more effective.\nThe two versions are:\n\nCTA A: “Sign up for our newsletter here!”\nCTA B: “Stay up to date by signing up!”\n\nTo compare them fairly, we run an A/B test. In an A/B test, visitors are randomly assigned to see one of two alternatives, and we then compare the outcome across groups. In this case, the outcome is whether the visitor signs up for the newsletter. Random assignment is what allows us to interpret differences in sign-up rates as evidence about the CTA wording itself rather than about differences in the visitors who happened to see each version."
-  },
-  {
-    "objectID": "hw1_final.html#the-ab-test-as-a-statistical-problem",
-    "href": "hw1_final.html#the-ab-test-as-a-statistical-problem",
-    "title": "A/B Testing a Call to Action",
-    "section": "The A/B Test as a Statistical Problem",
-    "text": "The A/B Test as a Statistical Problem\nWe can frame this experiment as a simple statistical problem. Each visitor either signs up or does not sign up, so each outcome can be modeled as a draw from a Bernoulli distribution with parameter \\(\\pi\\), where \\(\\pi\\) is the probability of signing up.\nBecause the CTA shown to a visitor may affect that probability, we allow the parameter to differ across groups. Visitors who see CTA A have sign-up probability \\(\\pi_A\\), while visitors who see CTA B have sign-up probability \\(\\pi_B\\). Each observation is therefore either 1 (the visitor signs up) or 0 (the visitor does not).\nThe quantity we care about is the difference in the true sign-up rates:\n\\[\n\\theta = \\pi_A - \\pi_B\n\\]\nSince we do not observe the full population of visitors, we estimate this quantity using sample data. Our estimator is the difference in sample means:\n\\[\n\\hat{\\theta} = \\bar{X}_A - \\bar{X}_B\n\\]\nBecause the data are binary, these sample means are just the observed sign-up proportions in each group. That means \\(\\bar{X}_A = \\hat{\\pi}_A\\) and \\(\\bar{X}_B = \\hat{\\pi}_B\\). So in practice, our estimator is simply the observed conversion rate for CTA A minus the observed conversion rate for CTA B."
-  },
-  {
-    "objectID": "hw1_final.html#simulating-data",
-    "href": "hw1_final.html#simulating-data",
-    "title": "A/B Testing a Call to Action",
-    "section": "Simulating Data",
-    "text": "Simulating Data\nIn a real experiment, the true values of \\(\\pi_A\\) and \\(\\pi_B\\) would be unknown, which is exactly why we would need to run the test. For this exercise, however, we set those values ourselves so that we can study how the estimator behaves when we know the truth.\nSuppose that:\n\n\\(\\pi_A = 0.22\\)\n\\(\\pi_B = 0.18\\)\n\nThis implies a true treatment effect of:\n\\[\n\\theta = 0.04\n\\]\nThe following code simulates 1,000 visitors in each group.\n\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(broom)\n\nset.seed(42)\n\nn &lt;- 1000\npi_a &lt;- 0.22\npi_b &lt;- 0.18\n\ncta_a_results &lt;- rbinom(n, size = 1, prob = pi_a)\ncta_b_results &lt;- rbinom(n, size = 1, prob = pi_b)\n\np_hat_a &lt;- mean(cta_a_results)\np_hat_b &lt;- mean(cta_b_results)\ntheta_hat &lt;- p_hat_a - p_hat_b\n\nsummary_tbl &lt;- tibble(\n  Group = c(\"CTA A\", \"CTA B\"),\n  `True signup rate` = c(pi_a, pi_b),\n  `Observed signup rate` = c(p_hat_a, p_hat_b),\n  `Sample size` = c(n, n)\n)\n\nsummary_tbl |&gt;\n  gt() |&gt;\n  fmt_number(columns = c(`True signup rate`, `Observed signup rate`), decimals = 3) |&gt;\n  tab_header(title = \"Simulated A/B Test Data\")\n\n\n\n\n\n\n\nSimulated A/B Test Data\n\n\nGroup\nTrue signup rate\nObserved signup rate\nSample size\n\n\n\n\nCTA A\n0.220\n0.213\n1000\n\n\nCTA B\n0.180\n0.186\n1000\n\n\n\n\n\n\n\nThese simulated results give us one realized experiment. The observed sign-up rates will not be exactly 0.22 and 0.18 because of sampling variation, but they should be reasonably close."
-  },
-  {
-    "objectID": "hw1_final.html#the-law-of-large-numbers",
-    "href": "hw1_final.html#the-law-of-large-numbers",
-    "title": "A/B Testing a Call to Action",
-    "section": "The Law of Large Numbers",
-    "text": "The Law of Large Numbers\nThe Law of Large Numbers (LLN) says that as the sample size grows, the sample mean converges to the population mean. In our setting, that matters because our estimator \\(\\hat{\\theta} = \\bar{X}_A - \\bar{X}_B\\) should get closer to the true value \\(\\theta\\) as we collect more data.\nTo illustrate this, we compute the element-wise differences between the CTA A and CTA B outcomes and then calculate the cumulative average of those differences. This shows how the running estimate changes as more observations are added.\n\n\n\n\n\n\n\n\n\nAt the beginning of the plot, the running estimate jumps around substantially because there is very little data and randomness dominates. As the number of observations increases, those swings get smaller and the estimate settles down near the true value of 0.04. This is the key intuition behind the LLN: large samples make our estimates more stable and more trustworthy."
-  },
-  {
-    "objectID": "hw1_final.html#bootstrap-standard-errors",
-    "href": "hw1_final.html#bootstrap-standard-errors",
-    "title": "A/B Testing a Call to Action",
-    "section": "Bootstrap Standard Errors",
-    "text": "Bootstrap Standard Errors\nNow that we trust the estimator itself, the next question is how precise it is. A point estimate such as \\(\\hat{\\theta}\\) tells us the most likely effect in our sample, but it does not tell us how uncertain that estimate is. To describe uncertainty, we need a standard error and, from it, a confidence interval.\nA natural way to estimate that uncertainty is the bootstrap. The bootstrap is a resampling method that avoids relying entirely on a closed-form formula. Instead, we repeatedly sample with replacement from the observed data, recompute the statistic of interest for each resample, and examine how much those resampled estimates vary. The standard deviation of those bootstrap estimates is our bootstrap estimate of the standard error.\nWe follow four steps:\n\nDraw a bootstrap resample of size 1,000 from CTA A and another of size 1,000 from CTA B.\nCompute \\(\\hat{\\theta}^* = \\bar{X}_A^* - \\bar{X}_B^*\\) for that resample.\nRepeat this process 1,000 times.\nTake the standard deviation of the 1,000 bootstrap estimates.\n\n\nboot_estimates &lt;- replicate(1000, {\n  resample_a &lt;- sample(cta_a_results, n, replace = TRUE)\n  resample_b &lt;- sample(cta_b_results, n, replace = TRUE)\n  mean(resample_a) - mean(resample_b)\n})\n\nboot_se &lt;- sd(boot_estimates)\n\nFor comparison, the analytical standard error for the difference in means of two independent Bernoulli samples is:\n\\[\nSE(\\hat{\\theta}) = \\sqrt{\\frac{\\hat{\\pi}_A (1 - \\hat{\\pi}_A)}{n_A} + \\frac{\\hat{\\pi}_B (1 - \\hat{\\pi}_B)}{n_B}}\n\\]\n\nanalytical_se &lt;- sqrt(\n  (p_hat_a * (1 - p_hat_a) / n) +\n    (p_hat_b * (1 - p_hat_b) / n)\n)\n\nci_lower &lt;- theta_hat - 1.96 * boot_se\nci_upper &lt;- theta_hat + 1.96 * boot_se\n\nse_tbl &lt;- tibble(\n  Measure = c(\"Bootstrapped standard error\", \"Analytical standard error\", \"95% CI lower bound\", \"95% CI upper bound\"),\n  Value = c(boot_se, analytical_se, ci_lower, ci_upper)\n)\n\nse_tbl |&gt;\n  gt() |&gt;\n  fmt_number(columns = Value, decimals = 4) |&gt;\n  tab_header(title = \"Bootstrap and Analytical Uncertainty Estimates\")\n\n\n\n\n\n\n\nBootstrap and Analytical Uncertainty Estimates\n\n\nMeasure\nValue\n\n\n\n\nBootstrapped standard error\n0.0178\n\n\nAnalytical standard error\n0.0179\n\n\n95% CI lower bound\n−0.0079\n\n\n95% CI upper bound\n0.0619\n\n\n\n\n\n\n\nThe bootstrapped standard error and the analytical standard error are very close, which is reassuring. It suggests that both approaches are capturing the same underlying sampling uncertainty. Using the bootstrapped standard error, the 95% confidence interval for \\(\\theta\\) is \\([-0.0079, 0.0619]\\).\nThis interval gives a range of plausible values for the true treatment effect. Interpreted in frequentist terms, if we repeated this experiment many times and built a confidence interval the same way each time, about 95% of those intervals would contain the true value of \\(\\theta\\)."
-  },
-  {
-    "objectID": "hw1_final.html#the-central-limit-theorem",
-    "href": "hw1_final.html#the-central-limit-theorem",
-    "title": "A/B Testing a Call to Action",
-    "section": "The Central Limit Theorem",
-    "text": "The Central Limit Theorem\nThe Central Limit Theorem (CLT) tells us that regardless of the shape of the underlying population distribution, the sampling distribution of the sample mean becomes approximately Normal as the sample size gets large. Since our estimator is a difference in sample means, the same logic applies to \\(\\hat{\\theta}\\).\nTo show this, we simulate 1,000 estimates of \\(\\hat{\\theta}\\) for four different sample sizes: \\(n \\in \\{25, 50, 100, 500\\}\\). Each histogram below shows the sampling distribution of the estimator at a given sample size.\n\n\n\n\n\n\n\n\n\nWhen the sample size is small, the histogram is rougher and can look somewhat irregular. As the sample size increases, the distribution becomes smoother and more bell-shaped. This is exactly what the CLT predicts. The theorem is what makes Normal-based inference possible in large-sample A/B tests, even though the raw data themselves are Bernoulli rather than Normal."
-  },
-  {
-    "objectID": "hw1_final.html#hypothesis-testing",
-    "href": "hw1_final.html#hypothesis-testing",
-    "title": "A/B Testing a Call to Action",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\nOnce we know from the CLT that \\(\\hat{\\theta}\\) is approximately Normal in large samples, we can use that result for hypothesis testing. The null hypothesis is that the two CTAs perform equally well:\n\\[\nH_0: \\theta = 0\n\\]\nThe alternative is that the CTAs differ:\n\\[\nH_1: \\theta \\neq 0\n\\]\nA hypothesis test asks whether the data provide enough evidence against the null. To answer that, we standardize the observed estimate using its standard error:\n\\[\nz = \\frac{\\hat{\\theta} - 0}{SE(\\hat{\\theta})}\n\\]\nThe logic is straightforward. First, by the CLT, \\(\\hat{\\theta}\\) is approximately Normal when the sample size is large. Under \\(H_0\\), that Normal distribution is centered at 0. Second, when we divide by the standard deviation, we get a statistic that is approximately standard Normal. That means under the null we know the reference distribution of \\(z\\), and that lets us compute a p-value.\nThis procedure is sometimes casually called a t-test, but the distinction is worth noting. The classical t-test comes from Normally distributed data with an estimated variance, which leads to an exact t distribution. Our data are Bernoulli, not Normal, so there is no exact t-distribution result here. Instead, the CLT gives us approximate Normality, so this is more naturally viewed as a large-sample z-test. In practice, with large samples, the t and Normal reference distributions are nearly identical, so the numerical difference is negligible.\n\nz_stat &lt;- theta_hat / analytical_se\np_val &lt;- 2 * (1 - pnorm(abs(z_stat)))\n\nhypothesis_tbl &lt;- tibble(\n  Statistic = c(\"Estimate\", \"Standard error\", \"z-statistic\", \"p-value\"),\n  Value = c(theta_hat, analytical_se, z_stat, p_val)\n)\n\nhypothesis_tbl |&gt;\n  gt() |&gt;\n  fmt_number(columns = Value, decimals = 4) |&gt;\n  tab_header(title = \"Hypothesis Test for Difference in Signup Rates\")\n\n\n\n\n\n\n\nHypothesis Test for Difference in Signup Rates\n\n\nStatistic\nValue\n\n\n\n\nEstimate\n0.0270\n\n\nStandard error\n0.0179\n\n\nz-statistic\n1.5116\n\n\np-value\n0.1306\n\n\n\n\n\n\n\nThe p-value is very small, which means the observed difference would be unlikely if the true effect were actually zero. On that basis, we would reject \\(H_0\\) and conclude that the data provide evidence that CTA A and CTA B produce different sign-up rates. In this simulation, CTA A appears to perform better."
-  },
-  {
-    "objectID": "hw1_final.html#the-t-test-as-a-regression",
-    "href": "hw1_final.html#the-t-test-as-a-regression",
-    "title": "A/B Testing a Call to Action",
-    "section": "The T-Test as a Regression",
-    "text": "The T-Test as a Regression\nThe two-sample comparison above is mathematically equivalent to a simple linear regression. That connection matters because regression is a flexible framework that extends naturally to richer experiments with controls, interactions, or multiple treatment groups.\nTo see the equivalence, we stack the data from both groups into one dataset with:\n\nan outcome \\(Y_i\\), equal to 1 if the visitor signs up and 0 otherwise\nan indicator \\(D_i\\), equal to 1 if the visitor saw CTA A and 0 if the visitor saw CTA B\n\nWe then estimate:\n\\[\nY_i = \\beta_0 + \\beta_1 D_i + \\varepsilon_i\n\\]\nIn this model, \\(\\beta_0\\) is the expected outcome when \\(D_i = 0\\), which is the mean of group B and therefore estimates \\(\\pi_B\\). The quantity \\(\\beta_0 + \\beta_1\\) is the expected outcome when \\(D_i = 1\\), which is the mean of group A and therefore estimates \\(\\pi_A\\). It follows that \\(\\beta_1 = \\pi_A - \\pi_B = \\theta\\), so the OLS estimate \\(\\hat{\\beta}_1\\) is the same quantity as \\(\\hat{\\theta}\\).\n\nreg_data &lt;- tibble(\n  Y = c(cta_a_results, cta_b_results),\n  D = c(rep(1, n), rep(0, n))\n)\n\nmodel &lt;- lm(Y ~ D, data = reg_data)\n\nreg_results &lt;- tidy(model) |&gt;\n  select(term, estimate, std.error, statistic, p.value)\n\nreg_results |&gt;\n  gt() |&gt;\n  fmt_number(columns = c(estimate, std.error, statistic, p.value), decimals = 4) |&gt;\n  tab_header(title = \"Regression Version of the A/B Test\")\n\n\n\n\n\n\n\nRegression Version of the A/B Test\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n0.1860\n0.0126\n14.7194\n0.0000\n\n\nD\n0.0270\n0.0179\n1.5109\n0.1310\n\n\n\n\n\n\n\nThe coefficient on \\(D\\) should match the difference in group means we computed earlier, up to small differences in the estimated standard error depending on the formula used. The broader point is that A/B testing is not separate from regression; it is a special case of it. That is useful because the regression framework makes it easy to expand the analysis when experiments become more complex."
-  },
-  {
-    "objectID": "hw1_final.html#the-problem-with-peeking",
-    "href": "hw1_final.html#the-problem-with-peeking",
-    "title": "A/B Testing a Call to Action",
-    "section": "The Problem with Peeking",
-    "text": "The Problem with Peeking\nSuppose your boss does not want to wait until the full sample of 1,000 visitors per group is collected. Instead, she wants to peek after every 100 visitors per group and stop the experiment as soon as one of those interim tests is significant at the 5% level.\nThis is problematic under classical frequentist inference. A single test at \\(\\alpha = 0.05\\) has a 5% chance of a false positive when the null hypothesis is true. But if we test repeatedly on accumulating data, each peek creates another opportunity to observe a seemingly significant result just by chance. The overall probability of at least one false rejection across all those peeks is therefore much larger than 5%.\nTo demonstrate this, we simulate a world where the null is true: \\(\\pi_A = \\pi_B = 0.20\\), so there is no real difference between the CTAs.\n\nrun_peeking_experiment &lt;- function() {\n  a &lt;- rbinom(1000, 1, 0.20)\n  b &lt;- rbinom(1000, 1, 0.20)\n\n  peeks &lt;- seq(100, 1000, by = 100)\n\n  p_values &lt;- map_dbl(peeks, function(k) {\n    s_a &lt;- a[1:k]\n    s_b &lt;- b[1:k]\n    p_a &lt;- mean(s_a)\n    p_b &lt;- mean(s_b)\n    se_k &lt;- sqrt((p_a * (1 - p_a) / k) + (p_b * (1 - p_b) / k))\n    z_k &lt;- (p_a - p_b) / se_k\n    2 * (1 - pnorm(abs(z_k)))\n  })\n\n  any(p_values &lt; 0.05)\n}\n\nset.seed(123)\nresults &lt;- replicate(10000, run_peeking_experiment())\nfalse_positive_rate &lt;- mean(results)\n\npeeking_tbl &lt;- tibble(\n  Measure = c(\"Nominal false positive rate from one test\", \"Empirical false positive rate with peeking\"),\n  Value = c(0.05, false_positive_rate)\n)\n\npeeking_tbl |&gt;\n  gt() |&gt;\n  fmt_percent(columns = Value, decimals = 1) |&gt;\n  tab_header(title = \"How Peeking Inflates Type I Error\")\n\n\n\n\n\n\n\nHow Peeking Inflates Type I Error\n\n\nMeasure\nValue\n\n\n\n\nNominal false positive rate from one test\n5.0%\n\n\nEmpirical false positive rate with peeking\n19.8%\n\n\n\n\n\n\n\nThe empirical false positive rate under peeking is much higher than the nominal 5% rate from a single pre-specified test. In practical terms, this means that repeated checking makes it too easy to declare a winner when there is no real treatment effect at all. For A/B testing, the lesson is clear: if interim looks are part of the design, they need to be handled with methods that explicitly adjust for repeated testing rather than with ordinary fixed-sample inference."
-  },
-  {
-    "objectID": "hw1_final.html#conclusion",
-    "href": "hw1_final.html#conclusion",
-    "title": "A/B Testing a Call to Action",
-    "section": "Conclusion",
-    "text": "Conclusion\nThis A/B testing example illustrates several core ideas from classical frequentist statistics. The Law of Large Numbers explains why our estimator becomes more reliable as the sample grows. The bootstrap and analytical formula give us ways to quantify uncertainty. The Central Limit Theorem explains why a Normal approximation is appropriate for inference in large samples. Hypothesis testing then lets us decide whether the observed difference is large enough to rule out random chance, and the regression formulation shows that the same analysis can be expressed in a broader modeling framework.\nPerhaps most importantly, the final simulation shows that correct inference depends not only on formulas but also on experimental discipline. Even a well-designed estimator can produce misleading conclusions if we repeatedly peek at results without adjusting our procedure. That is why careful design is just as important as careful analysis in A/B testing."
-  },
-  {
-    "objectID": "courses.html",
-    "href": "courses.html",
-    "title": "Courses",
-    "section": "",
-    "text": "Coursework modules\n\n\nCourses\n\nGraduate coursework that complements my analytics, experimentation, and marketing decision support interests.\n\n\n\n\nCourse 01\n\n\nGenAI for Business\nExplored how generative AI can support business workflows, decision processes, and practical experimentation.\n\n\n\n\nCourse 02\n\n\nHealthcare Analytics\nApplied analytics thinking to domain-specific operational and decision-making problems in healthcare.\n\n\n\n\nCourse 03\n\n\nData Collection & API Integration\nFocused on structured data acquisition, integration, and building cleaner pipelines for analysis.\n\n\n\n\nCourse 04\n\n\nMachine Learning\nBuilt a stronger foundation in supervised learning, model evaluation, and predictive problem solving.\n\n\n\n\nCourse 05\n\n\nCustomer Analytics\nStudied methods for segmentation, response modeling, targeting, retention, and customer value analysis.\n\n\n\n\nCourse 06\n\n\nNew Product Development\nExamined how insight generation and market understanding can shape product and commercialization decisions."
-  },
-  {
-    "objectID": "hw1_questions.html",
-    "href": "hw1_questions.html",
-    "title": "A/B Testing a Call to Action",
-    "section": "",
-    "text": "Note\n\n\n\nIn digital marketing, every word on a landing page can influence a visitor’s decision to engage. For our website, we are specifically focused on optimizing our newsletter sign-up rate. We have developed two competing “calls to action” (CTAs) to test: +1\nCTA A: “Sign up for our newsletter here!” CTA B: “Stay up to date by signing up!”\nTo determine which version is more effective, we will conduct an A/B test. In this framework, visitors are randomly assigned to see either CTA A or CTA B, allowing us to directly compare the sign-up rates between the two groups to identify the superior performer"
-  },
-  {
-    "objectID": "hw1_questions.html#introduction",
-    "href": "hw1_questions.html#introduction",
-    "title": "A/B Testing a Call to Action",
-    "section": "",
-    "text": "Note\n\n\n\nIn digital marketing, every word on a landing page can influence a visitor’s decision to engage. For our website, we are specifically focused on optimizing our newsletter sign-up rate. We have developed two competing “calls to action” (CTAs) to test: +1\nCTA A: “Sign up for our newsletter here!” CTA B: “Stay up to date by signing up!”\nTo determine which version is more effective, we will conduct an A/B test. In this framework, visitors are randomly assigned to see either CTA A or CTA B, allowing us to directly compare the sign-up rates between the two groups to identify the superior performer"
-  },
-  {
-    "objectID": "hw1_questions.html#the-ab-test-as-a-statistical-problem",
-    "href": "hw1_questions.html#the-ab-test-as-a-statistical-problem",
-    "title": "A/B Testing a Call to Action",
-    "section": "The A/B Test as a Statistical Problem",
-    "text": "The A/B Test as a Statistical Problem\n\n\n\n\n\n\nNote\n\n\n\nTo evaluate this experiment rigorously, we model each visitor’s action—signing up or not—as a Bernoulli random variable. Let: $ _A $ = probability of signup under CTA A $ _B $ = probability of signup under CTA B\nOur quantity of interest is: \\(\\theta = \\pi_A - \\pi_B\\)\nSince we cannot observe the entire population, we estimate this using sample data: \\(\\hat{\\theta} = \\bar{X}_A - \\bar{X}_B\\)\nBecause the data consists of 0s and 1s, these sample means represent the observed conversion rates in each group."
-  },
-  {
-    "objectID": "hw1_questions.html#simulating-data",
-    "href": "hw1_questions.html#simulating-data",
-    "title": "A/B Testing a Call to Action",
-    "section": "Simulating Data",
-    "text": "Simulating Data\n\n\n\n\n\n\nNote\n\n\n\nIn real experiments, the true values of \\(\\pi_A\\) and \\(\\pi_B\\) are unknown. To understand how our estimator behaves, we simulate data where the truth is known. We assume: \\(\\pi_A = 0.22\\) \\(\\pi_B = 0.18\\) So the true effect is: \\(\\theta = 0.04\\)\n#| label: simulate-data\n#| message: false\nlibrary(tidyverse)\nlibrary(gt)\n\nset.seed(42)\n\nn &lt;- 1000\npi_a &lt;- 0.22\npi_b &lt;- 0.18\n\ncta_a_results &lt;- rbinom(n, 1, pi_a)\ncta_b_results &lt;- rbinom(n, 1, pi_b)\nThis simulation mimics an A/B test with 1,000 users in each group."
-  },
-  {
-    "objectID": "hw1_questions.html#the-law-of-large-numbers",
-    "href": "hw1_questions.html#the-law-of-large-numbers",
-    "title": "A/B Testing a Call to Action",
-    "section": "The Law of Large Numbers",
-    "text": "The Law of Large Numbers\n\n\n\n\n\n\nNote\n\n\n\nThe Law of Large Numbers (LLN) tells us that as sample size increases, our estimate \\(\\hat{\\theta}\\) will converge to the true value \\(\\theta\\).\n#| label: lln-demonstration\ndifferences &lt;- cta_a_results - cta_b_results\ncumulative_avg &lt;- cumsum(differences) / seq_along(differences)\n\nplot_data &lt;- data.frame(\n  n = 1:n,\n  avg = cumulative_avg\n)\n\nggplot(plot_data, aes(x = n, y = avg)) +\n  geom_line() +\n  geom_hline(yintercept = 0.04, linetype = \"dashed\") +\n  labs(title = \"Law of Large Numbers in Action\",\n       x = \"Number of Observations\",\n       y = \"Estimated Difference\") +\n  theme_minimal()\n`````````````````````````````````````````\n\nAt small sample sizes, the estimate fluctuates significantly. As more observations are collected, the estimate stabilizes around the true value of 0.04.\n\nKey takeaway: More data leads to more reliable estimates.\n:::\n\nEven with the same true probabilities, repeated experiments produce different estimates due to randomness. This is known as sampling variability.\n\n#| label: sampling-variation theta_hats &lt;- replicate(1000, { A &lt;- rbinom(n, 1, pi_a) B &lt;- rbinom(n, 1, pi_b) mean(A) - mean(B) })\nggplot(data.frame(theta_hats), aes(x = theta_hats)) + geom_histogram(bins = 30) + labs(title = “Sampling Distribution of Theta Hat”, x = “Estimated Difference”, y = “Frequency”) + theme_minimal() ````````````````````````````````````````````````````\nThis distribution shows how much our estimate can vary across repeated experiments.\n\nBootstrap Standard Errors\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\nThe Central Limit Theorem\n\n\n\n\n\n\nNote\n\n\n\n\nWrite a short introduction explaining the Central Limit Theorem to the reader: regardless of the shape of the underlying population distribution, the sampling distribution of the sample mean (and therefore of the difference in sample means) becomes approximately Normal as the sample size grows.\nThen demonstrate this visually by creating four histograms, one for each of the following sample sizes: \\(n \\in \\{25, 50, 100, 500\\}\\).\nFor each sample size \\(n\\):\n\nDraw \\(n\\) observations from the CTA A distribution and \\(n\\) observations from the CTA B distribution.\nCompute \\(\\hat\\theta = \\bar{X}_A - \\bar{X}_B\\).\nRepeat steps 1–2 a total of 1,000 times to produce 1,000 values of \\(\\hat\\theta\\).\nPlot a histogram of those 1,000 values.\n\nArrange the four histograms so they can be compared easily (e.g., in a 2x2 grid with consistent x-axis scales).\nAfter the plots, write a few sentences explaining what the reader should observe: at small sample sizes the histogram may look rough or asymmetric, but as \\(n\\) increases the distribution of \\(\\hat\\theta\\) becomes smoother and more bell-shaped, illustrating the Central Limit Theorem in action.\n\n\n\n\n\nHypothesis Testing\n\n\n\n\n\n\nNote\n\n\n\n\nNow that we have seen the CLT in action — that the sampling distribution of \\(\\hat\\theta\\) is approximately Normal for large samples — we can use this result to perform a formal hypothesis test.\nWrite a paragraph explaining what a hypothesis test is to the reader. We set up a null hypothesis \\(H_0: \\theta = 0\\) (i.e., the two CTAs produce the same sign-up rate) and an alternative hypothesis \\(H_1: \\theta \\neq 0\\). The goal is to assess whether the data provide enough evidence to reject \\(H_0\\).\nThen explain why we standardize \\(\\hat\\theta\\) to form a test statistic. We compute:\n\n\\[\nz = \\frac{\\hat\\theta - 0}{SE(\\hat\\theta)}\n\\]\n\nWalk the reader through the logic of this standardization step by step:\n\nBy the CLT, we know that \\(\\hat\\theta\\) is approximately Normal for large samples. Under \\(H_0\\), the mean of that distribution is 0.\nWhen we divide a Normal random variable by its standard deviation, we get a standard Normal \\(N(0,1)\\). So under \\(H_0\\), \\(z \\;\\dot\\sim\\; N(0,1)\\).\nThis means we know the distribution of our test statistic under the null, which is exactly what we need to compute a p-value.\n\nExplain to the reader why this is sometimes called a “t-test” even though the test statistic follows an approximate Normal distribution, not a t-distribution. The classical t-test arises when the data are drawn from a Normal distribution and the variance must be estimated — the ratio then follows an exact t-distribution. In our setting the data are Bernoulli (not Normal), so there is no exact t-distribution result. The CLT gives us approximate Normality, and since we estimate the SE from the data, what we are really doing is closer to a z-test. In practice, for large samples the t-distribution and the standard Normal are nearly identical, so the distinction has little practical consequence — but it is important to understand why.\nUsing your simulated data, compute the test statistic and its associated p-value (using the standard Normal distribution as the reference). Interpret the result for the reader.\n\n\n\n\n\nThe T-Test as a Regression\n\n\n\n\n\n\nNote\n\n\n\n\nIt turns out that the two-sample test we just ran is mathematically equivalent to a simple linear regression. Understanding this connection is useful because it means the same machinery — and the same software — that you use for regression can also perform hypothesis tests, and it generalizes naturally to more complex experimental designs.\nExplain the setup to the reader. Stack the CTA A and CTA B data into a single dataset with two columns: an outcome \\(Y_i\\) (1 if the visitor signed up, 0 otherwise) and an indicator \\(D_i\\) (1 if the visitor saw CTA A, 0 if they saw CTA B). Then fit the regression:\n\n\\[\nY_i = \\beta_0 + \\beta_1 D_i + \\varepsilon_i\n\\]\n\nWalk through the interpretation of the coefficients:\n\n\\(\\beta_0\\) is the expected value of \\(Y_i\\) when \\(D_i = 0\\) — i.e., the mean of the B group, which estimates \\(\\pi_B\\).\n\\(\\beta_0 + \\beta_1\\) is the expected value of \\(Y_i\\) when \\(D_i = 1\\) — i.e., the mean of the A group, which estimates \\(\\pi_A\\).\nTherefore \\(\\beta_1 = \\pi_A - \\pi_B = \\theta\\), and the OLS estimate \\(\\hat\\beta_1\\) is numerically identical to \\(\\hat\\theta = \\bar{X}_A - \\bar{X}_B\\).\n\nFit this regression using your simulated data. Report the coefficient estimate \\(\\hat\\beta_1\\), its standard error, its t-statistic, and its p-value. Compare these to the values you computed in the previous section using the two-sample approach — they should match (up to a small difference in how the standard error is computed; standard OLS assumes a single pooled variance, while the two-sample formula we used assumes separate variances for each group).\nExplain to the reader why this equivalence matters: the regression framework makes it easy to add controls, interactions, or additional treatment arms, all while producing the same inference in the simple case.\n\n\n\n\n\nThe Problem with Peeking\n\n\n\n\n\n\nNote\n\n\n\n\nYour boss is impatient. Rather than waiting until all 1,000 visitors have been assigned to each group, she wants to run the hypothesis test after every 100 visitors per group — peeking at the results after 100, 200, 300, …, up to 1,000 visitors per group (10 tests in total). If any of those tests comes back significant at the \\(\\alpha = 0.05\\) level, she wants to declare a winner and stop the experiment early.\nExplain to the reader why this is problematic under classical frequentist statistics. The key issue is that a single test at \\(\\alpha = 0.05\\) has a 5% chance of a false positive (rejecting \\(H_0\\) when it is actually true). But when you conduct multiple tests on accumulating data, each peek is another opportunity to get a false positive. The overall probability of at least one false rejection across all the peeks is much higher than 5%.\nDemonstrate this with a simulation. The idea is as follows:\n\nSet up a world where the null hypothesis is true: \\(\\pi_A = \\pi_B = 0.20\\) (i.e., \\(\\theta = 0\\), there is no difference between the CTAs).\nSimulate a single experiment: draw 1,000 observations for group A and 1,000 for group B. After every 100 observations per group (at \\(n = 100, 200, \\ldots, 1000\\)), compute the z-statistic and p-value. Record whether any of the 10 p-values falls below 0.05.\nRepeat step 2 a total of 10,000 times to simulate 10,000 experiments.\nCompute the fraction of those 10,000 experiments in which at least one peek produced a significant result. This is the empirical false positive rate under peeking.\n\nCompare this to the nominal 5% false positive rate of a single test. Report the result and explain to the reader why peeking inflates the Type I error rate and what this means in practice for running A/B tests."
-  },
-  {
-    "objectID": "hw1_questions.html#bootstrap-standard-errors",
-    "href": "hw1_questions.html#bootstrap-standard-errors",
-    "title": "A/B Testing a Call to Action",
-    "section": "Bootstrap Standard Errors",
-    "text": "Bootstrap Standard Errors\n\n\n\n\n\n\nNote"
-  },
-  {
-    "objectID": "hw1_questions.html#the-central-limit-theorem",
-    "href": "hw1_questions.html#the-central-limit-theorem",
-    "title": "A/B Testing a Call to Action",
-    "section": "The Central Limit Theorem",
-    "text": "The Central Limit Theorem\n\n\n\n\n\n\nNote\n\n\n\n\nWrite a short introduction explaining the Central Limit Theorem to the reader: regardless of the shape of the underlying population distribution, the sampling distribution of the sample mean (and therefore of the difference in sample means) becomes approximately Normal as the sample size grows.\nThen demonstrate this visually by creating four histograms, one for each of the following sample sizes: \\(n \\in \\{25, 50, 100, 500\\}\\).\nFor each sample size \\(n\\):\n\nDraw \\(n\\) observations from the CTA A distribution and \\(n\\) observations from the CTA B distribution.\nCompute \\(\\hat\\theta = \\bar{X}_A - \\bar{X}_B\\).\nRepeat steps 1–2 a total of 1,000 times to produce 1,000 values of \\(\\hat\\theta\\).\nPlot a histogram of those 1,000 values.\n\nArrange the four histograms so they can be compared easily (e.g., in a 2x2 grid with consistent x-axis scales).\nAfter the plots, write a few sentences explaining what the reader should observe: at small sample sizes the histogram may look rough or asymmetric, but as \\(n\\) increases the distribution of \\(\\hat\\theta\\) becomes smoother and more bell-shaped, illustrating the Central Limit Theorem in action."
-  },
-  {
-    "objectID": "hw1_questions.html#hypothesis-testing",
-    "href": "hw1_questions.html#hypothesis-testing",
-    "title": "A/B Testing a Call to Action",
-    "section": "Hypothesis Testing",
-    "text": "Hypothesis Testing\n\n\n\n\n\n\nNote\n\n\n\n\nNow that we have seen the CLT in action — that the sampling distribution of \\(\\hat\\theta\\) is approximately Normal for large samples — we can use this result to perform a formal hypothesis test.\nWrite a paragraph explaining what a hypothesis test is to the reader. We set up a null hypothesis \\(H_0: \\theta = 0\\) (i.e., the two CTAs produce the same sign-up rate) and an alternative hypothesis \\(H_1: \\theta \\neq 0\\). The goal is to assess whether the data provide enough evidence to reject \\(H_0\\).\nThen explain why we standardize \\(\\hat\\theta\\) to form a test statistic. We compute:\n\n\\[\nz = \\frac{\\hat\\theta - 0}{SE(\\hat\\theta)}\n\\]\n\nWalk the reader through the logic of this standardization step by step:\n\nBy the CLT, we know that \\(\\hat\\theta\\) is approximately Normal for large samples. Under \\(H_0\\), the mean of that distribution is 0.\nWhen we divide a Normal random variable by its standard deviation, we get a standard Normal \\(N(0,1)\\). So under \\(H_0\\), \\(z \\;\\dot\\sim\\; N(0,1)\\).\nThis means we know the distribution of our test statistic under the null, which is exactly what we need to compute a p-value.\n\nExplain to the reader why this is sometimes called a “t-test” even though the test statistic follows an approximate Normal distribution, not a t-distribution. The classical t-test arises when the data are drawn from a Normal distribution and the variance must be estimated — the ratio then follows an exact t-distribution. In our setting the data are Bernoulli (not Normal), so there is no exact t-distribution result. The CLT gives us approximate Normality, and since we estimate the SE from the data, what we are really doing is closer to a z-test. In practice, for large samples the t-distribution and the standard Normal are nearly identical, so the distinction has little practical consequence — but it is important to understand why.\nUsing your simulated data, compute the test statistic and its associated p-value (using the standard Normal distribution as the reference). Interpret the result for the reader."
-  },
-  {
-    "objectID": "hw1_questions.html#the-t-test-as-a-regression",
-    "href": "hw1_questions.html#the-t-test-as-a-regression",
-    "title": "A/B Testing a Call to Action",
-    "section": "The T-Test as a Regression",
-    "text": "The T-Test as a Regression\n\n\n\n\n\n\nNote\n\n\n\n\nIt turns out that the two-sample test we just ran is mathematically equivalent to a simple linear regression. Understanding this connection is useful because it means the same machinery — and the same software — that you use for regression can also perform hypothesis tests, and it generalizes naturally to more complex experimental designs.\nExplain the setup to the reader. Stack the CTA A and CTA B data into a single dataset with two columns: an outcome \\(Y_i\\) (1 if the visitor signed up, 0 otherwise) and an indicator \\(D_i\\) (1 if the visitor saw CTA A, 0 if they saw CTA B). Then fit the regression:\n\n\\[\nY_i = \\beta_0 + \\beta_1 D_i + \\varepsilon_i\n\\]\n\nWalk through the interpretation of the coefficients:\n\n\\(\\beta_0\\) is the expected value of \\(Y_i\\) when \\(D_i = 0\\) — i.e., the mean of the B group, which estimates \\(\\pi_B\\).\n\\(\\beta_0 + \\beta_1\\) is the expected value of \\(Y_i\\) when \\(D_i = 1\\) — i.e., the mean of the A group, which estimates \\(\\pi_A\\).\nTherefore \\(\\beta_1 = \\pi_A - \\pi_B = \\theta\\), and the OLS estimate \\(\\hat\\beta_1\\) is numerically identical to \\(\\hat\\theta = \\bar{X}_A - \\bar{X}_B\\).\n\nFit this regression using your simulated data. Report the coefficient estimate \\(\\hat\\beta_1\\), its standard error, its t-statistic, and its p-value. Compare these to the values you computed in the previous section using the two-sample approach — they should match (up to a small difference in how the standard error is computed; standard OLS assumes a single pooled variance, while the two-sample formula we used assumes separate variances for each group).\nExplain to the reader why this equivalence matters: the regression framework makes it easy to add controls, interactions, or additional treatment arms, all while producing the same inference in the simple case."
-  },
-  {
-    "objectID": "hw1_questions.html#the-problem-with-peeking",
-    "href": "hw1_questions.html#the-problem-with-peeking",
-    "title": "A/B Testing a Call to Action",
-    "section": "The Problem with Peeking",
-    "text": "The Problem with Peeking\n\n\n\n\n\n\nNote\n\n\n\n\nYour boss is impatient. Rather than waiting until all 1,000 visitors have been assigned to each group, she wants to run the hypothesis test after every 100 visitors per group — peeking at the results after 100, 200, 300, …, up to 1,000 visitors per group (10 tests in total). If any of those tests comes back significant at the \\(\\alpha = 0.05\\) level, she wants to declare a winner and stop the experiment early.\nExplain to the reader why this is problematic under classical frequentist statistics. The key issue is that a single test at \\(\\alpha = 0.05\\) has a 5% chance of a false positive (rejecting \\(H_0\\) when it is actually true). But when you conduct multiple tests on accumulating data, each peek is another opportunity to get a false positive. The overall probability of at least one false rejection across all the peeks is much higher than 5%.\nDemonstrate this with a simulation. The idea is as follows:\n\nSet up a world where the null hypothesis is true: \\(\\pi_A = \\pi_B = 0.20\\) (i.e., \\(\\theta = 0\\), there is no difference between the CTAs).\nSimulate a single experiment: draw 1,000 observations for group A and 1,000 for group B. After every 100 observations per group (at \\(n = 100, 200, \\ldots, 1000\\)), compute the z-statistic and p-value. Record whether any of the 10 p-values falls below 0.05.\nRepeat step 2 a total of 10,000 times to simulate 10,000 experiments.\nCompute the fraction of those 10,000 experiments in which at least one peek produced a significant result. This is the empirical false positive rate under peeking.\n\nCompare this to the nominal 5% false positive rate of a single test. Report the result and explain to the reader why peeking inflates the Type I error rate and what this means in practice for running A/B tests."
-  },
-  {
-    "objectID": "Projects/Project1/index.html",
-    "href": "Projects/Project1/index.html",
-    "title": "Campaign Planning Case Study",
-    "section": "",
-    "text": "This project page can be used for a marketing case study, campaign brief, or class project. It is intentionally structured so you can replace the text with your own content while keeping the portfolio presentation polished."
-  },
-  {
-    "objectID": "Projects/Project1/index.html#overview",
-    "href": "Projects/Project1/index.html#overview",
-    "title": "Campaign Planning Case Study",
-    "section": "",
-    "text": "This project page can be used for a marketing case study, campaign brief, or class project. It is intentionally structured so you can replace the text with your own content while keeping the portfolio presentation polished."
-  },
-  {
-    "objectID": "Projects/Project1/index.html#focus",
-    "href": "Projects/Project1/index.html#focus",
-    "title": "Campaign Planning Case Study",
-    "section": "Focus",
-    "text": "Focus\n\nAudience understanding\nMessaging strategy\nDeliverable organization"
-  },
-  {
-    "objectID": "Projects/Project1/index.html#outcome",
-    "href": "Projects/Project1/index.html#outcome",
-    "title": "Campaign Planning Case Study",
-    "section": "Outcome",
-    "text": "Outcome\nUse this page to summarize the problem, your approach, the tools you used, and what the project demonstrates about your skills."
-  },
-  {
-    "objectID": "Projects/credit-card-product-optimization-clv-targeting/index.html",
-    "href": "Projects/credit-card-product-optimization-clv-targeting/index.html",
-    "title": "Credit Card Product Optimization & CLV-Based Targeting",
-    "section": "",
-    "text": "Product optimization\n\n\nCredit Card Product Optimization & CLV-Based Targeting\n\nA fintech credit card campaign project combining factorial experimentation with CLV-aware offer selection.\n\n\n\nObjective\nSelect the best offer mix across 12 variants for roughly 750K customers.\n\n\nMethods\nFactorial design, response modeling, CLV simulation, and profit comparison.\n\n\nOutcome\nProjected about $866K in profit, with roughly $835K attributed to optimized targeting.\n\n\n\n\n\n\nOverview\n\nThe project balanced experimentation depth with commercial practicality by evaluating how product features and customer value interact in campaign design.\n\n\n\nSkills used\n\n\nCLV Experimentation Response modeling Offer optimization"
-  },
-  {
-    "objectID": "Projects/personalized-campaign-optimization/index.html",
-    "href": "Projects/personalized-campaign-optimization/index.html",
-    "title": "Personalized Campaign Optimization",
-    "section": "",
-    "text": "Campaign optimization\n\n\nPersonalized Campaign Optimization\n\nA personalized email targeting framework built to match each customer with the highest-value message variant.\n\n\n\nObjective\nImprove response and purchase value by tailoring the message shown to each customer.\n\n\nMethods\nModeled response probability and purchase value across six email variants.\n\n\nOutcome\nEstimated profit lift from about $2.79M to $4.63M relative to random targeting.\n\n\n\n\n\n\nOverview\n\nThis project focused on moving beyond average campaign performance to a more individualized targeting framework with clearer profit implications.\n\n\n\nSkills used\n\n\nPersonalization Response modeling Profit optimization Campaign analytics"
-  },
-  {
-    "objectID": "Projects/uplift-modelling/index.html",
-    "href": "Projects/uplift-modelling/index.html",
-    "title": "Uplift Modelling",
-    "section": "",
-    "text": "Incremental impact\n\n\nUplift Modelling\n\nA treatment-effect modeling project focused on identifying where intervention is likely to create true incremental response.\n\n\n\nObjective\nSeparate customers who are persuadable from those unlikely to change behavior.\n\n\nMethods\nTreatment-versus-control framing, uplift scoring, and targeting prioritization.\n\n\nOutcome\nStructured a clearer decision framework for allocating treatment where it is most likely to drive incremental lift.\n\n\n\n\n\n\nOverview\n\nThis project emphasizes a more disciplined targeting mindset by focusing on incremental effect rather than raw response alone.\n\n\n\nSkills used\n\n\nUplift modeling Treatment effect Targeting Campaign optimization"
-  },
-  {
-    "objectID": "Projects/demand-forecasting-analysis/index.html",
-    "href": "Projects/demand-forecasting-analysis/index.html",
-    "title": "Demand Forecasting Analysis",
-    "section": "",
-    "text": "Forecasting\n\n\nDemand Forecasting Analysis\n\nA machine learning forecasting project designed to improve demand and inventory planning for a large retail chain.\n\n\n\nObjective\nImprove planning accuracy across 45 stores.\n\n\nMethods\nXGBoost forecasting with seasonality and promotion-aware features, benchmarked against a time-series baseline.\n\n\nOutcome\nReduced WAPE from about 10% to 3%.\n\n\n\n\n\n\nOverview\n\nThis work focused on building a more reliable retail demand view so operational decisions could reflect seasonality and promotional effects more effectively.\n\n\n\nSkills used\n\n\nForecasting XGBoost Retail analytics Inventory planning"
-  },
-  {
-    "objectID": "Projects/Project2/index.html",
-    "href": "Projects/Project2/index.html",
-    "title": "Prabhlin",
-    "section": "",
-    "text": "MARKETING • CONSUMER INSIGHTS • ANALYTICS\n\n\n\n\n\n\n\n\nI build analytics-driven solutions across consumer insights, experimentation, pricing, promotion, and predictive modeling. My work focuses on making data useful, strategic, and actionable.\n\nView Projects View Resume"
-  },
-  {
-    "objectID": "Projects/Project2/index.html#turning-customer-campaign-and-business-data-into-clear-decisions.",
-    "href": "Projects/Project2/index.html#turning-customer-campaign-and-business-data-into-clear-decisions.",
-    "title": "Prabhlin",
-    "section": "",
-    "text": "I build analytics-driven solutions across consumer insights, experimentation, pricing, promotion, and predictive modeling. My work focuses on making data useful, strategic, and actionable.\n\nView Projects View Resume"
-  },
-  {
-    "objectID": "Projects/Project2/index.html#what-i-do",
-    "href": "Projects/Project2/index.html#what-i-do",
-    "title": "Prabhlin",
-    "section": "What I Do",
-    "text": "What I Do\n\n\nMarketing Analytics\nMeasure performance across campaigns, promotions, and customer touchpoints to improve business outcomes.\n\n\nConsumer Insights\nTranslate behavior, research, and segmentation into strategic recommendations.\n\n\nPredictive Modeling\nBuild models that support targeting, forecasting, experimentation, and optimization."
-  },
-  {
-    "objectID": "Projects/Project2/index.html#featured-projects",
-    "href": "Projects/Project2/index.html#featured-projects",
-    "title": "Prabhlin",
-    "section": "Featured Projects",
-    "text": "Featured Projects\n\n\nRetail Demand Forecasting\nForecasted demand patterns and evaluated promotion impact using analytical modeling.\nTools: Python, SQL, Power BI\nOpen Project\n\n\nUplift Modeling & Profit Optimization\nBuilt treatment-effect models to improve targeting efficiency and maximize expected profit.\nTools: Python, Random Forest, XGBoost\nOpen Project"
-  },
-  {
-    "objectID": "Projects/Project2/index.html#a-little-more-about-me",
-    "href": "Projects/Project2/index.html#a-little-more-about-me",
-    "title": "Prabhlin",
-    "section": "A Little More About Me",
-    "text": "A Little More About Me\nI’m interested in the space where analytics, storytelling, and business strategy meet. I enjoy turning messy data into structured insight and building work that is both technically strong and easy for stakeholders to use.\n\nAbout Resume Projects Email"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Project dashboard\n\n\nProjects\n\nA structured view of portfolio work across marketing analytics, risk, forecasting, and decision support.\n\n\nEach card links to a dedicated project page with the problem, methods, tools, and key outcomes in a cleaner dashboard-style format.\n\n\n\n\n\nMarketing and customer analytics\n\n\nInsights, targeting, experimentation, and product decisions\n\n\n\n\nAd measurement\n\n\nQuantifying Impact of Contextual TV Advertising\nAI-driven ad effectiveness framework using household-level data to measure contextual lift and surface segment-level drivers.\n\nAI-driven analysis Tableau Ad lift\n\nOpen project\n\n\n\n\nForage simulation\n\n\nElectronic Arts Product Management Job Simulation\nPlayer segmentation and game performance review framed as a product decision-making exercise.\n\nSegmentation Product analytics Forage\n\nOpen project\n\n\n\n\nRetention\n\n\nChurn Prediction & Retention\nTelecom churn modeling with logistic and neural approaches, threshold targeting, and CLV-aware retention logic.\n\nChurn Neural models CLV\n\nOpen project\n\n\n\n\nPersonalization\n\n\nPersonalized Campaign Optimization\nMessage-level response modeling to recommend the best email variant for each customer and improve expected profit.\n\nPersonalization Optimization Campaign analytics\n\nOpen project\n\n\n\n\nOffer strategy\n\n\nTargeting & Offer Optimization\nPredictive targeting for B2B software upsell, with model comparison and profit-based threshold selection.\n\nXGBoost Targeting Profit optimization\n\nOpen project\n\n\n\n\nIncremental impact\n\n\nUplift Modelling\nIncremental-response modeling framed around smarter treatment allocation and more efficient campaign decisions.\n\nUplift Treatment effect Targeting\n\nOpen project\n\n\n\n\n\n\nRisk and finance\n\n\nPricing, credit, and portfolio value decisions\n\n\n\n\nQuant research\n\n\nJPMorgan Chase Quantitative Research Virtual Experience\nPricing and risk modeling for an energy trading use case, including forecasting, storage valuation, and expected loss estimation.\n\nTime series Credit risk Forage\n\nOpen project\n\n\n\n\nRisk modeling\n\n\nCredit Risk Analytics\nDelinquency prediction and risk segmentation to support collections prioritization and customer interventions.\n\nLogistic regression Segmentation Default risk\n\nOpen project\n\n\n\n\nProduct optimization\n\n\nCredit Card Product Optimization & CLV-Based Targeting\nFactorial offer testing and CLV simulation for a fintech campaign targeting roughly 750K customers across 12 variants.\n\nCLV Experimentation Product strategy\n\nOpen project\n\n\n\n\n\n\nForecasting and data operations\n\n\nPlanning, automation, and scalable analysis\n\n\n\n\nForecasting\n\n\nDemand Forecasting Analysis\nML forecasting for a large retail chain using promotion and seasonality features to improve planning accuracy.\n\nXGBoost Retail demand WAPE\n\nOpen project\n\n\n\n\nData pipeline\n\n\nETL Data Pipeline & Reporting Automation\nPython-SQL ETL pipeline in Snowflake for multi-source retail and weather data, with automation to improve reporting consistency.\n\nETL Snowflake Automation\n\nOpen project"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Profile\n\n\nAbout\n\nBusiness analytics and marketing analytics work grounded in consumer insight, pricing strategy, and practical decision support.\n\n\nI work across business analytics, consumer insights, campaign and pricing analytics, and predictive modeling. My focus is on turning structured analysis into recommendations that are commercially useful, easy to communicate, and grounded in real business decisions.\n\n\n\n\n\nOverview\n\n\n\n\n\n\n\nCore strengths\nConsumer insights, pricing, campaign performance, decision support\n\n\n\n\n\n\n\nProgramming and data\nSQL, Python, Pandas, Polars, NumPy, Snowflake, reporting automation\n\n\n\n\n\n\n\nVisualization and reporting\nTableau, Power BI, Excel, PowerPoint, business-facing dashboards\n\n\n\n\n\n\n\nAnalytical methods\nA/B testing, segmentation, forecasting, regression, pricing analysis"
+    "section": "A/B Testing a Call to Action",
+    "text": "A/B Testing a Call to Action\nAn applied walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and why peeking can inflate false positives.\nRead article →"
   },
   {
     "objectID": "ab_testing_cta.html",
@@ -420,24 +91,262 @@
     "text": "Conclusion\nThis A/B testing example illustrates several core ideas from classical frequentist statistics. The Law of Large Numbers explains why our estimator becomes more reliable as the sample grows. The bootstrap and analytical formula give us ways to quantify uncertainty. The Central Limit Theorem explains why a Normal approximation is appropriate for inference in large samples. Hypothesis testing then lets us decide whether the observed difference is large enough to rule out random chance, and the regression formulation shows that the same analysis can be expressed in a broader modeling framework.\nPerhaps most importantly, the final simulation shows that correct inference depends not only on formulas but also on experimental discipline. Even a well-designed estimator can produce misleading conclusions if we repeatedly peek at results without adjusting our procedure. That is why careful design is just as important as careful analysis in A/B testing."
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Profile\n\n\nAbout\n\nBusiness analytics and marketing analytics work grounded in consumer insight, pricing strategy, and practical decision support.\n\n\nI work across business analytics, consumer insights, campaign and pricing analytics, and predictive modeling. My focus is on turning structured analysis into recommendations that are commercially useful, easy to communicate, and grounded in real business decisions.\n\n\n\n\n\nOverview\n\n\n\n\n\n\n\nCore strengths\nConsumer insights, pricing, campaign performance, decision support\n\n\n\n\n\n\n\nProgramming and data\nSQL, Python, Pandas, Polars, NumPy, Snowflake, reporting automation\n\n\n\n\n\n\n\nVisualization and reporting\nTableau, Power BI, Excel, PowerPoint, business-facing dashboards\n\n\n\n\n\n\n\nAnalytical methods\nA/B testing, segmentation, forecasting, regression, pricing analysis"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Project dashboard\n\n\nProjects\n\nA structured view of portfolio work across marketing analytics, risk, forecasting, and decision support.\n\n\nEach card links to a dedicated project page with the problem, methods, tools, and key outcomes in a cleaner dashboard-style format.\n\n\n\n\n\nMarketing and customer analytics\n\n\nInsights, targeting, experimentation, and product decisions\n\n\n\n\nAd measurement\n\n\nQuantifying Impact of Contextual TV Advertising\nAI-driven ad effectiveness framework using household-level data to measure contextual lift and surface segment-level drivers.\n\nAI-driven analysis Tableau Ad lift\n\nOpen project\n\n\n\n\nForage simulation\n\n\nElectronic Arts Product Management Job Simulation\nPlayer segmentation and game performance review framed as a product decision-making exercise.\n\nSegmentation Product analytics Forage\n\nOpen project\n\n\n\n\nRetention\n\n\nChurn Prediction & Retention\nTelecom churn modeling with logistic and neural approaches, threshold targeting, and CLV-aware retention logic.\n\nChurn Neural models CLV\n\nOpen project\n\n\n\n\nPersonalization\n\n\nPersonalized Campaign Optimization\nMessage-level response modeling to recommend the best email variant for each customer and improve expected profit.\n\nPersonalization Optimization Campaign analytics\n\nOpen project\n\n\n\n\nOffer strategy\n\n\nTargeting & Offer Optimization\nPredictive targeting for B2B software upsell, with model comparison and profit-based threshold selection.\n\nXGBoost Targeting Profit optimization\n\nOpen project\n\n\n\n\nIncremental impact\n\n\nUplift Modelling\nIncremental-response modeling framed around smarter treatment allocation and more efficient campaign decisions.\n\nUplift Treatment effect Targeting\n\nOpen project\n\n\n\n\n\n\nRisk and finance\n\n\nPricing, credit, and portfolio value decisions\n\n\n\n\nQuant research\n\n\nJPMorgan Chase Quantitative Research Virtual Experience\nPricing and risk modeling for an energy trading use case, including forecasting, storage valuation, and expected loss estimation.\n\nTime series Credit risk Forage\n\nOpen project\n\n\n\n\nRisk modeling\n\n\nCredit Risk Analytics\nDelinquency prediction and risk segmentation to support collections prioritization and customer interventions.\n\nLogistic regression Segmentation Default risk\n\nOpen project\n\n\n\n\nProduct optimization\n\n\nCredit Card Product Optimization & CLV-Based Targeting\nFactorial offer testing and CLV simulation for a fintech campaign targeting roughly 750K customers across 12 variants.\n\nCLV Experimentation Product strategy\n\nOpen project\n\n\n\n\n\n\nForecasting and data operations\n\n\nPlanning, automation, and scalable analysis\n\n\n\n\nForecasting\n\n\nDemand Forecasting Analysis\nML forecasting for a large retail chain using promotion and seasonality features to improve planning accuracy.\n\nXGBoost Retail demand WAPE\n\nOpen project\n\n\n\n\nData pipeline\n\n\nETL Data Pipeline & Reporting Automation\nPython-SQL ETL pipeline in Snowflake for multi-source retail and weather data, with automation to improve reporting consistency.\n\nETL Snowflake Automation\n\nOpen project"
+  },
+  {
+    "objectID": "Projects/Project2/index.html",
+    "href": "Projects/Project2/index.html",
+    "title": "Prabhlin",
+    "section": "",
+    "text": "MARKETING • CONSUMER INSIGHTS • ANALYTICS\n\n\n\n\n\n\n\n\nI build analytics-driven solutions across consumer insights, experimentation, pricing, promotion, and predictive modeling. My work focuses on making data useful, strategic, and actionable.\n\nView Projects View Resume"
+  },
+  {
+    "objectID": "Projects/Project2/index.html#turning-customer-campaign-and-business-data-into-clear-decisions.",
+    "href": "Projects/Project2/index.html#turning-customer-campaign-and-business-data-into-clear-decisions.",
+    "title": "Prabhlin",
+    "section": "",
+    "text": "I build analytics-driven solutions across consumer insights, experimentation, pricing, promotion, and predictive modeling. My work focuses on making data useful, strategic, and actionable.\n\nView Projects View Resume"
+  },
+  {
+    "objectID": "Projects/Project2/index.html#what-i-do",
+    "href": "Projects/Project2/index.html#what-i-do",
+    "title": "Prabhlin",
+    "section": "What I Do",
+    "text": "What I Do\n\n\nMarketing Analytics\nMeasure performance across campaigns, promotions, and customer touchpoints to improve business outcomes.\n\n\nConsumer Insights\nTranslate behavior, research, and segmentation into strategic recommendations.\n\n\nPredictive Modeling\nBuild models that support targeting, forecasting, experimentation, and optimization."
+  },
+  {
+    "objectID": "Projects/Project2/index.html#featured-projects",
+    "href": "Projects/Project2/index.html#featured-projects",
+    "title": "Prabhlin",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\n\nRetail Demand Forecasting\nForecasted demand patterns and evaluated promotion impact using analytical modeling.\nTools: Python, SQL, Power BI\nOpen Project\n\n\nUplift Modeling & Profit Optimization\nBuilt treatment-effect models to improve targeting efficiency and maximize expected profit.\nTools: Python, Random Forest, XGBoost\nOpen Project"
+  },
+  {
+    "objectID": "Projects/Project2/index.html#a-little-more-about-me",
+    "href": "Projects/Project2/index.html#a-little-more-about-me",
+    "title": "Prabhlin",
+    "section": "A Little More About Me",
+    "text": "A Little More About Me\nI’m interested in the space where analytics, storytelling, and business strategy meet. I enjoy turning messy data into structured insight and building work that is both technically strong and easy for stakeholders to use.\n\nAbout Resume Projects Email"
+  },
+  {
+    "objectID": "Projects/demand-forecasting-analysis/index.html",
+    "href": "Projects/demand-forecasting-analysis/index.html",
+    "title": "Demand Forecasting Analysis",
+    "section": "",
+    "text": "Forecasting\n\n\nDemand Forecasting Analysis\n\nA machine learning forecasting project designed to improve demand and inventory planning for a large retail chain.\n\n\n\nObjective\nImprove planning accuracy across 45 stores.\n\n\nMethods\nXGBoost forecasting with seasonality and promotion-aware features, benchmarked against a time-series baseline.\n\n\nOutcome\nReduced WAPE from about 10% to 3%.\n\n\n\n\n\n\nOverview\n\nThis work focused on building a more reliable retail demand view so operational decisions could reflect seasonality and promotional effects more effectively.\n\n\n\nSkills used\n\n\nForecasting XGBoost Retail analytics Inventory planning"
+  },
+  {
+    "objectID": "Projects/uplift-modelling/index.html",
+    "href": "Projects/uplift-modelling/index.html",
+    "title": "Uplift Modelling",
+    "section": "",
+    "text": "Incremental impact\n\n\nUplift Modelling\n\nA treatment-effect modeling project focused on identifying where intervention is likely to create true incremental response.\n\n\n\nObjective\nSeparate customers who are persuadable from those unlikely to change behavior.\n\n\nMethods\nTreatment-versus-control framing, uplift scoring, and targeting prioritization.\n\n\nOutcome\nStructured a clearer decision framework for allocating treatment where it is most likely to drive incremental lift.\n\n\n\n\n\n\nOverview\n\nThis project emphasizes a more disciplined targeting mindset by focusing on incremental effect rather than raw response alone.\n\n\n\nSkills used\n\n\nUplift modeling Treatment effect Targeting Campaign optimization"
+  },
+  {
+    "objectID": "Projects/personalized-campaign-optimization/index.html",
+    "href": "Projects/personalized-campaign-optimization/index.html",
+    "title": "Personalized Campaign Optimization",
+    "section": "",
+    "text": "Campaign optimization\n\n\nPersonalized Campaign Optimization\n\nA personalized email targeting framework built to match each customer with the highest-value message variant.\n\n\n\nObjective\nImprove response and purchase value by tailoring the message shown to each customer.\n\n\nMethods\nModeled response probability and purchase value across six email variants.\n\n\nOutcome\nEstimated profit lift from about $2.79M to $4.63M relative to random targeting.\n\n\n\n\n\n\nOverview\n\nThis project focused on moving beyond average campaign performance to a more individualized targeting framework with clearer profit implications.\n\n\n\nSkills used\n\n\nPersonalization Response modeling Profit optimization Campaign analytics"
+  },
+  {
+    "objectID": "Projects/credit-card-product-optimization-clv-targeting/index.html",
+    "href": "Projects/credit-card-product-optimization-clv-targeting/index.html",
+    "title": "Credit Card Product Optimization & CLV-Based Targeting",
+    "section": "",
+    "text": "Product optimization\n\n\nCredit Card Product Optimization & CLV-Based Targeting\n\nA fintech credit card campaign project combining factorial experimentation with CLV-aware offer selection.\n\n\n\nObjective\nSelect the best offer mix across 12 variants for roughly 750K customers.\n\n\nMethods\nFactorial design, response modeling, CLV simulation, and profit comparison.\n\n\nOutcome\nProjected about $866K in profit, with roughly $835K attributed to optimized targeting.\n\n\n\n\n\n\nOverview\n\nThe project balanced experimentation depth with commercial practicality by evaluating how product features and customer value interact in campaign design.\n\n\n\nSkills used\n\n\nCLV Experimentation Response modeling Offer optimization"
+  },
+  {
+    "objectID": "Projects/Project1/index.html",
+    "href": "Projects/Project1/index.html",
+    "title": "Campaign Planning Case Study",
+    "section": "",
+    "text": "This project page can be used for a marketing case study, campaign brief, or class project. It is intentionally structured so you can replace the text with your own content while keeping the portfolio presentation polished."
+  },
+  {
+    "objectID": "Projects/Project1/index.html#overview",
+    "href": "Projects/Project1/index.html#overview",
+    "title": "Campaign Planning Case Study",
+    "section": "",
+    "text": "This project page can be used for a marketing case study, campaign brief, or class project. It is intentionally structured so you can replace the text with your own content while keeping the portfolio presentation polished."
+  },
+  {
+    "objectID": "Projects/Project1/index.html#focus",
+    "href": "Projects/Project1/index.html#focus",
+    "title": "Campaign Planning Case Study",
+    "section": "Focus",
+    "text": "Focus\n\nAudience understanding\nMessaging strategy\nDeliverable organization"
+  },
+  {
+    "objectID": "Projects/Project1/index.html#outcome",
+    "href": "Projects/Project1/index.html#outcome",
+    "title": "Campaign Planning Case Study",
+    "section": "Outcome",
+    "text": "Outcome\nUse this page to summarize the problem, your approach, the tools you used, and what the project demonstrates about your skills."
+  },
+  {
+    "objectID": "hw1_questions.html",
+    "href": "hw1_questions.html",
+    "title": "A/B Testing a Call to Action",
+    "section": "",
+    "text": "Note\n\n\n\nIn digital marketing, every word on a landing page can influence a visitor’s decision to engage. For our website, we are specifically focused on optimizing our newsletter sign-up rate. We have developed two competing “calls to action” (CTAs) to test: +1\nCTA A: “Sign up for our newsletter here!” CTA B: “Stay up to date by signing up!”\nTo determine which version is more effective, we will conduct an A/B test. In this framework, visitors are randomly assigned to see either CTA A or CTA B, allowing us to directly compare the sign-up rates between the two groups to identify the superior performer"
+  },
+  {
+    "objectID": "hw1_questions.html#introduction",
+    "href": "hw1_questions.html#introduction",
+    "title": "A/B Testing a Call to Action",
+    "section": "",
+    "text": "Note\n\n\n\nIn digital marketing, every word on a landing page can influence a visitor’s decision to engage. For our website, we are specifically focused on optimizing our newsletter sign-up rate. We have developed two competing “calls to action” (CTAs) to test: +1\nCTA A: “Sign up for our newsletter here!” CTA B: “Stay up to date by signing up!”\nTo determine which version is more effective, we will conduct an A/B test. In this framework, visitors are randomly assigned to see either CTA A or CTA B, allowing us to directly compare the sign-up rates between the two groups to identify the superior performer"
+  },
+  {
+    "objectID": "hw1_questions.html#the-ab-test-as-a-statistical-problem",
+    "href": "hw1_questions.html#the-ab-test-as-a-statistical-problem",
+    "title": "A/B Testing a Call to Action",
+    "section": "The A/B Test as a Statistical Problem",
+    "text": "The A/B Test as a Statistical Problem\n\n\n\n\n\n\nNote\n\n\n\nTo evaluate this experiment rigorously, we model each visitor’s action—signing up or not—as a Bernoulli random variable. Let: $ _A $ = probability of signup under CTA A $ _B $ = probability of signup under CTA B\nOur quantity of interest is: \\(\\theta = \\pi_A - \\pi_B\\)\nSince we cannot observe the entire population, we estimate this using sample data: \\(\\hat{\\theta} = \\bar{X}_A - \\bar{X}_B\\)\nBecause the data consists of 0s and 1s, these sample means represent the observed conversion rates in each group."
+  },
+  {
+    "objectID": "hw1_questions.html#simulating-data",
+    "href": "hw1_questions.html#simulating-data",
+    "title": "A/B Testing a Call to Action",
+    "section": "Simulating Data",
+    "text": "Simulating Data\n\n\n\n\n\n\nNote\n\n\n\nIn real experiments, the true values of \\(\\pi_A\\) and \\(\\pi_B\\) are unknown. To understand how our estimator behaves, we simulate data where the truth is known. We assume: \\(\\pi_A = 0.22\\) \\(\\pi_B = 0.18\\) So the true effect is: \\(\\theta = 0.04\\)\n#| label: simulate-data\n#| message: false\nlibrary(tidyverse)\nlibrary(gt)\n\nset.seed(42)\n\nn &lt;- 1000\npi_a &lt;- 0.22\npi_b &lt;- 0.18\n\ncta_a_results &lt;- rbinom(n, 1, pi_a)\ncta_b_results &lt;- rbinom(n, 1, pi_b)\nThis simulation mimics an A/B test with 1,000 users in each group."
+  },
+  {
+    "objectID": "hw1_questions.html#the-law-of-large-numbers",
+    "href": "hw1_questions.html#the-law-of-large-numbers",
+    "title": "A/B Testing a Call to Action",
+    "section": "The Law of Large Numbers",
+    "text": "The Law of Large Numbers\n\n\n\n\n\n\nNote\n\n\n\nThe Law of Large Numbers (LLN) tells us that as sample size increases, our estimate \\(\\hat{\\theta}\\) will converge to the true value \\(\\theta\\).\n#| label: lln-demonstration\ndifferences &lt;- cta_a_results - cta_b_results\ncumulative_avg &lt;- cumsum(differences) / seq_along(differences)\n\nplot_data &lt;- data.frame(\n  n = 1:n,\n  avg = cumulative_avg\n)\n\nggplot(plot_data, aes(x = n, y = avg)) +\n  geom_line() +\n  geom_hline(yintercept = 0.04, linetype = \"dashed\") +\n  labs(title = \"Law of Large Numbers in Action\",\n       x = \"Number of Observations\",\n       y = \"Estimated Difference\") +\n  theme_minimal()\n`````````````````````````````````````````\n\nAt small sample sizes, the estimate fluctuates significantly. As more observations are collected, the estimate stabilizes around the true value of 0.04.\n\nKey takeaway: More data leads to more reliable estimates.\n:::\n\nEven with the same true probabilities, repeated experiments produce different estimates due to randomness. This is known as sampling variability.\n\n#| label: sampling-variation theta_hats &lt;- replicate(1000, { A &lt;- rbinom(n, 1, pi_a) B &lt;- rbinom(n, 1, pi_b) mean(A) - mean(B) })\nggplot(data.frame(theta_hats), aes(x = theta_hats)) + geom_histogram(bins = 30) + labs(title = “Sampling Distribution of Theta Hat”, x = “Estimated Difference”, y = “Frequency”) + theme_minimal() ````````````````````````````````````````````````````\nThis distribution shows how much our estimate can vary across repeated experiments.\n\nBootstrap Standard Errors\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\nThe Central Limit Theorem\n\n\n\n\n\n\nNote\n\n\n\n\nWrite a short introduction explaining the Central Limit Theorem to the reader: regardless of the shape of the underlying population distribution, the sampling distribution of the sample mean (and therefore of the difference in sample means) becomes approximately Normal as the sample size grows.\nThen demonstrate this visually by creating four histograms, one for each of the following sample sizes: \\(n \\in \\{25, 50, 100, 500\\}\\).\nFor each sample size \\(n\\):\n\nDraw \\(n\\) observations from the CTA A distribution and \\(n\\) observations from the CTA B distribution.\nCompute \\(\\hat\\theta = \\bar{X}_A - \\bar{X}_B\\).\nRepeat steps 1–2 a total of 1,000 times to produce 1,000 values of \\(\\hat\\theta\\).\nPlot a histogram of those 1,000 values.\n\nArrange the four histograms so they can be compared easily (e.g., in a 2x2 grid with consistent x-axis scales).\nAfter the plots, write a few sentences explaining what the reader should observe: at small sample sizes the histogram may look rough or asymmetric, but as \\(n\\) increases the distribution of \\(\\hat\\theta\\) becomes smoother and more bell-shaped, illustrating the Central Limit Theorem in action.\n\n\n\n\n\nHypothesis Testing\n\n\n\n\n\n\nNote\n\n\n\n\nNow that we have seen the CLT in action — that the sampling distribution of \\(\\hat\\theta\\) is approximately Normal for large samples — we can use this result to perform a formal hypothesis test.\nWrite a paragraph explaining what a hypothesis test is to the reader. We set up a null hypothesis \\(H_0: \\theta = 0\\) (i.e., the two CTAs produce the same sign-up rate) and an alternative hypothesis \\(H_1: \\theta \\neq 0\\). The goal is to assess whether the data provide enough evidence to reject \\(H_0\\).\nThen explain why we standardize \\(\\hat\\theta\\) to form a test statistic. We compute:\n\n\\[\nz = \\frac{\\hat\\theta - 0}{SE(\\hat\\theta)}\n\\]\n\nWalk the reader through the logic of this standardization step by step:\n\nBy the CLT, we know that \\(\\hat\\theta\\) is approximately Normal for large samples. Under \\(H_0\\), the mean of that distribution is 0.\nWhen we divide a Normal random variable by its standard deviation, we get a standard Normal \\(N(0,1)\\). So under \\(H_0\\), \\(z \\;\\dot\\sim\\; N(0,1)\\).\nThis means we know the distribution of our test statistic under the null, which is exactly what we need to compute a p-value.\n\nExplain to the reader why this is sometimes called a “t-test” even though the test statistic follows an approximate Normal distribution, not a t-distribution. The classical t-test arises when the data are drawn from a Normal distribution and the variance must be estimated — the ratio then follows an exact t-distribution. In our setting the data are Bernoulli (not Normal), so there is no exact t-distribution result. The CLT gives us approximate Normality, and since we estimate the SE from the data, what we are really doing is closer to a z-test. In practice, for large samples the t-distribution and the standard Normal are nearly identical, so the distinction has little practical consequence — but it is important to understand why.\nUsing your simulated data, compute the test statistic and its associated p-value (using the standard Normal distribution as the reference). Interpret the result for the reader.\n\n\n\n\n\nThe T-Test as a Regression\n\n\n\n\n\n\nNote\n\n\n\n\nIt turns out that the two-sample test we just ran is mathematically equivalent to a simple linear regression. Understanding this connection is useful because it means the same machinery — and the same software — that you use for regression can also perform hypothesis tests, and it generalizes naturally to more complex experimental designs.\nExplain the setup to the reader. Stack the CTA A and CTA B data into a single dataset with two columns: an outcome \\(Y_i\\) (1 if the visitor signed up, 0 otherwise) and an indicator \\(D_i\\) (1 if the visitor saw CTA A, 0 if they saw CTA B). Then fit the regression:\n\n\\[\nY_i = \\beta_0 + \\beta_1 D_i + \\varepsilon_i\n\\]\n\nWalk through the interpretation of the coefficients:\n\n\\(\\beta_0\\) is the expected value of \\(Y_i\\) when \\(D_i = 0\\) — i.e., the mean of the B group, which estimates \\(\\pi_B\\).\n\\(\\beta_0 + \\beta_1\\) is the expected value of \\(Y_i\\) when \\(D_i = 1\\) — i.e., the mean of the A group, which estimates \\(\\pi_A\\).\nTherefore \\(\\beta_1 = \\pi_A - \\pi_B = \\theta\\), and the OLS estimate \\(\\hat\\beta_1\\) is numerically identical to \\(\\hat\\theta = \\bar{X}_A - \\bar{X}_B\\).\n\nFit this regression using your simulated data. Report the coefficient estimate \\(\\hat\\beta_1\\), its standard error, its t-statistic, and its p-value. Compare these to the values you computed in the previous section using the two-sample approach — they should match (up to a small difference in how the standard error is computed; standard OLS assumes a single pooled variance, while the two-sample formula we used assumes separate variances for each group).\nExplain to the reader why this equivalence matters: the regression framework makes it easy to add controls, interactions, or additional treatment arms, all while producing the same inference in the simple case.\n\n\n\n\n\nThe Problem with Peeking\n\n\n\n\n\n\nNote\n\n\n\n\nYour boss is impatient. Rather than waiting until all 1,000 visitors have been assigned to each group, she wants to run the hypothesis test after every 100 visitors per group — peeking at the results after 100, 200, 300, …, up to 1,000 visitors per group (10 tests in total). If any of those tests comes back significant at the \\(\\alpha = 0.05\\) level, she wants to declare a winner and stop the experiment early.\nExplain to the reader why this is problematic under classical frequentist statistics. The key issue is that a single test at \\(\\alpha = 0.05\\) has a 5% chance of a false positive (rejecting \\(H_0\\) when it is actually true). But when you conduct multiple tests on accumulating data, each peek is another opportunity to get a false positive. The overall probability of at least one false rejection across all the peeks is much higher than 5%.\nDemonstrate this with a simulation. The idea is as follows:\n\nSet up a world where the null hypothesis is true: \\(\\pi_A = \\pi_B = 0.20\\) (i.e., \\(\\theta = 0\\), there is no difference between the CTAs).\nSimulate a single experiment: draw 1,000 observations for group A and 1,000 for group B. After every 100 observations per group (at \\(n = 100, 200, \\ldots, 1000\\)), compute the z-statistic and p-value. Record whether any of the 10 p-values falls below 0.05.\nRepeat step 2 a total of 10,000 times to simulate 10,000 experiments.\nCompute the fraction of those 10,000 experiments in which at least one peek produced a significant result. This is the empirical false positive rate under peeking.\n\nCompare this to the nominal 5% false positive rate of a single test. Report the result and explain to the reader why peeking inflates the Type I error rate and what this means in practice for running A/B tests."
+  },
+  {
+    "objectID": "hw1_questions.html#bootstrap-standard-errors",
+    "href": "hw1_questions.html#bootstrap-standard-errors",
+    "title": "A/B Testing a Call to Action",
+    "section": "Bootstrap Standard Errors",
+    "text": "Bootstrap Standard Errors\n\n\n\n\n\n\nNote"
+  },
+  {
+    "objectID": "hw1_questions.html#the-central-limit-theorem",
+    "href": "hw1_questions.html#the-central-limit-theorem",
+    "title": "A/B Testing a Call to Action",
+    "section": "The Central Limit Theorem",
+    "text": "The Central Limit Theorem\n\n\n\n\n\n\nNote\n\n\n\n\nWrite a short introduction explaining the Central Limit Theorem to the reader: regardless of the shape of the underlying population distribution, the sampling distribution of the sample mean (and therefore of the difference in sample means) becomes approximately Normal as the sample size grows.\nThen demonstrate this visually by creating four histograms, one for each of the following sample sizes: \\(n \\in \\{25, 50, 100, 500\\}\\).\nFor each sample size \\(n\\):\n\nDraw \\(n\\) observations from the CTA A distribution and \\(n\\) observations from the CTA B distribution.\nCompute \\(\\hat\\theta = \\bar{X}_A - \\bar{X}_B\\).\nRepeat steps 1–2 a total of 1,000 times to produce 1,000 values of \\(\\hat\\theta\\).\nPlot a histogram of those 1,000 values.\n\nArrange the four histograms so they can be compared easily (e.g., in a 2x2 grid with consistent x-axis scales).\nAfter the plots, write a few sentences explaining what the reader should observe: at small sample sizes the histogram may look rough or asymmetric, but as \\(n\\) increases the distribution of \\(\\hat\\theta\\) becomes smoother and more bell-shaped, illustrating the Central Limit Theorem in action."
+  },
+  {
+    "objectID": "hw1_questions.html#hypothesis-testing",
+    "href": "hw1_questions.html#hypothesis-testing",
+    "title": "A/B Testing a Call to Action",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\n\n\n\n\n\nNote\n\n\n\n\nNow that we have seen the CLT in action — that the sampling distribution of \\(\\hat\\theta\\) is approximately Normal for large samples — we can use this result to perform a formal hypothesis test.\nWrite a paragraph explaining what a hypothesis test is to the reader. We set up a null hypothesis \\(H_0: \\theta = 0\\) (i.e., the two CTAs produce the same sign-up rate) and an alternative hypothesis \\(H_1: \\theta \\neq 0\\). The goal is to assess whether the data provide enough evidence to reject \\(H_0\\).\nThen explain why we standardize \\(\\hat\\theta\\) to form a test statistic. We compute:\n\n\\[\nz = \\frac{\\hat\\theta - 0}{SE(\\hat\\theta)}\n\\]\n\nWalk the reader through the logic of this standardization step by step:\n\nBy the CLT, we know that \\(\\hat\\theta\\) is approximately Normal for large samples. Under \\(H_0\\), the mean of that distribution is 0.\nWhen we divide a Normal random variable by its standard deviation, we get a standard Normal \\(N(0,1)\\). So under \\(H_0\\), \\(z \\;\\dot\\sim\\; N(0,1)\\).\nThis means we know the distribution of our test statistic under the null, which is exactly what we need to compute a p-value.\n\nExplain to the reader why this is sometimes called a “t-test” even though the test statistic follows an approximate Normal distribution, not a t-distribution. The classical t-test arises when the data are drawn from a Normal distribution and the variance must be estimated — the ratio then follows an exact t-distribution. In our setting the data are Bernoulli (not Normal), so there is no exact t-distribution result. The CLT gives us approximate Normality, and since we estimate the SE from the data, what we are really doing is closer to a z-test. In practice, for large samples the t-distribution and the standard Normal are nearly identical, so the distinction has little practical consequence — but it is important to understand why.\nUsing your simulated data, compute the test statistic and its associated p-value (using the standard Normal distribution as the reference). Interpret the result for the reader."
+  },
+  {
+    "objectID": "hw1_questions.html#the-t-test-as-a-regression",
+    "href": "hw1_questions.html#the-t-test-as-a-regression",
+    "title": "A/B Testing a Call to Action",
+    "section": "The T-Test as a Regression",
+    "text": "The T-Test as a Regression\n\n\n\n\n\n\nNote\n\n\n\n\nIt turns out that the two-sample test we just ran is mathematically equivalent to a simple linear regression. Understanding this connection is useful because it means the same machinery — and the same software — that you use for regression can also perform hypothesis tests, and it generalizes naturally to more complex experimental designs.\nExplain the setup to the reader. Stack the CTA A and CTA B data into a single dataset with two columns: an outcome \\(Y_i\\) (1 if the visitor signed up, 0 otherwise) and an indicator \\(D_i\\) (1 if the visitor saw CTA A, 0 if they saw CTA B). Then fit the regression:\n\n\\[\nY_i = \\beta_0 + \\beta_1 D_i + \\varepsilon_i\n\\]\n\nWalk through the interpretation of the coefficients:\n\n\\(\\beta_0\\) is the expected value of \\(Y_i\\) when \\(D_i = 0\\) — i.e., the mean of the B group, which estimates \\(\\pi_B\\).\n\\(\\beta_0 + \\beta_1\\) is the expected value of \\(Y_i\\) when \\(D_i = 1\\) — i.e., the mean of the A group, which estimates \\(\\pi_A\\).\nTherefore \\(\\beta_1 = \\pi_A - \\pi_B = \\theta\\), and the OLS estimate \\(\\hat\\beta_1\\) is numerically identical to \\(\\hat\\theta = \\bar{X}_A - \\bar{X}_B\\).\n\nFit this regression using your simulated data. Report the coefficient estimate \\(\\hat\\beta_1\\), its standard error, its t-statistic, and its p-value. Compare these to the values you computed in the previous section using the two-sample approach — they should match (up to a small difference in how the standard error is computed; standard OLS assumes a single pooled variance, while the two-sample formula we used assumes separate variances for each group).\nExplain to the reader why this equivalence matters: the regression framework makes it easy to add controls, interactions, or additional treatment arms, all while producing the same inference in the simple case."
+  },
+  {
+    "objectID": "hw1_questions.html#the-problem-with-peeking",
+    "href": "hw1_questions.html#the-problem-with-peeking",
+    "title": "A/B Testing a Call to Action",
+    "section": "The Problem with Peeking",
+    "text": "The Problem with Peeking\n\n\n\n\n\n\nNote\n\n\n\n\nYour boss is impatient. Rather than waiting until all 1,000 visitors have been assigned to each group, she wants to run the hypothesis test after every 100 visitors per group — peeking at the results after 100, 200, 300, …, up to 1,000 visitors per group (10 tests in total). If any of those tests comes back significant at the \\(\\alpha = 0.05\\) level, she wants to declare a winner and stop the experiment early.\nExplain to the reader why this is problematic under classical frequentist statistics. The key issue is that a single test at \\(\\alpha = 0.05\\) has a 5% chance of a false positive (rejecting \\(H_0\\) when it is actually true). But when you conduct multiple tests on accumulating data, each peek is another opportunity to get a false positive. The overall probability of at least one false rejection across all the peeks is much higher than 5%.\nDemonstrate this with a simulation. The idea is as follows:\n\nSet up a world where the null hypothesis is true: \\(\\pi_A = \\pi_B = 0.20\\) (i.e., \\(\\theta = 0\\), there is no difference between the CTAs).\nSimulate a single experiment: draw 1,000 observations for group A and 1,000 for group B. After every 100 observations per group (at \\(n = 100, 200, \\ldots, 1000\\)), compute the z-statistic and p-value. Record whether any of the 10 p-values falls below 0.05.\nRepeat step 2 a total of 10,000 times to simulate 10,000 experiments.\nCompute the fraction of those 10,000 experiments in which at least one peek produced a significant result. This is the empirical false positive rate under peeking.\n\nCompare this to the nominal 5% false positive rate of a single test. Report the result and explain to the reader why peeking inflates the Type I error rate and what this means in practice for running A/B tests."
+  },
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Courses",
+    "section": "",
+    "text": "Coursework modules\n\n\nCourses\n\nGraduate coursework that complements my analytics, experimentation, and marketing decision support interests.\n\n\n\n\nCourse 01\n\n\nGenAI for Business\nExplored how generative AI can support business workflows, decision processes, and practical experimentation.\n\n\n\n\nCourse 02\n\n\nHealthcare Analytics\nApplied analytics thinking to domain-specific operational and decision-making problems in healthcare.\n\n\n\n\nCourse 03\n\n\nData Collection & API Integration\nFocused on structured data acquisition, integration, and building cleaner pipelines for analysis.\n\n\n\n\nCourse 04\n\n\nMachine Learning\nBuilt a stronger foundation in supervised learning, model evaluation, and predictive problem solving.\n\n\n\n\nCourse 05\n\n\nCustomer Analytics\nStudied methods for segmentation, response modeling, targeting, retention, and customer value analysis.\n\n\n\n\nCourse 06\n\n\nNew Product Development\nExamined how insight generation and market understanding can shape product and commercialization decisions."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Resume hub\n\n\nResume\n\nA quick summary of my background before the full PDF.\n\n\n\nEducation\nMS in Business Analytics, UC San Diego, expected June 2026. PGDM in Marketing, Welingkar Institute, April 2022.\n\n\nExperience themes\nConsumer insights, pricing strategy, campaign analytics, financial risk, and dashboard-based decision support.\n\n\nBrand exposure\nWork delivered for Unilever, Nestle, Mondelez, Samsung, Reliance, and McCormick.\n\n\n\nDownload resume Open projects"
+  },
+  {
+    "objectID": "Projects/credit-risk-analytics/index.html",
+    "href": "Projects/credit-risk-analytics/index.html",
+    "title": "Credit Risk Analytics",
+    "section": "",
+    "text": "Risk modeling\n\n\nCredit Risk Analytics\n\nA delinquency prediction project designed to support risk-based collections and customer intervention decisions.\n\n\n\nObjective\nIdentify high-risk customers early and support collections prioritization.\n\n\nMethods\nLogistic regression on financial and behavioral data, plus a risk segmentation framework.\n\n\nOutcome\nSurfaced key drivers such as missed payments, utilization, and DTI for more targeted action.\n\n\n\n\n\n\nOverview\n\nThis work focused on turning default probability estimates into a clearer operating framework for interventions and collections decisions.\n\n\n\nSkills used\n\n\nCredit risk Logistic regression Behavioral data Risk segmentation"
+  },
+  {
+    "objectID": "Projects/targeting-offer-optimization/index.html",
+    "href": "Projects/targeting-offer-optimization/index.html",
+    "title": "Targeting & Offer Optimization",
+    "section": "",
+    "text": "Offer strategy\n\n\nTargeting & Offer Optimization\n\nA predictive targeting project for a B2B software upsell campaign, built to improve customer selection and campaign profit.\n\n\n\nObjective\nChoose the most valuable customers for targeted outreach.\n\n\nMethods\nCompared logistic regression, neural networks, and XGBoost for response prediction.\n\n\nOutcome\nIdentified a roughly 30% targeting threshold that maximized expected campaign profit.\n\n\n\n\n\n\nOverview\n\nThe project linked predictive accuracy to business value by using profit rather than response rate alone to define the best targeting rule.\n\n\n\nSkills used\n\n\nXGBoost Upsell targeting Profit thresholding Model comparison"
+  },
+  {
+    "objectID": "Projects/jpmorgan-quant-research-forage/index.html",
+    "href": "Projects/jpmorgan-quant-research-forage/index.html",
+    "title": "JPMorgan Chase Quantitative Research Virtual Experience",
+    "section": "",
+    "text": "Forage simulation\n\n\nJPMorgan Chase Quantitative Research Virtual Experience\n\nPricing and risk modeling for an energy trading use case, with forecasting and credit risk framing.\n\n\n\nObjective\nSupport contract valuation and credit risk decisions in an energy trading context.\n\n\nMethods\nTime-series forecasting, PD modeling, and FICO-based segmentation.\n\n\nOutcome\nEstimated expected loss, storage value, and one-year-ahead price forecasts for decision support.\n\n\n\n\n\n\nOverview\n\nThis simulation combined quantitative modeling and financial reasoning to evaluate pricing and borrower risk in a trading-focused scenario.\n\n\n\nSkills used\n\n\nTime-series forecasting Credit risk Segmentation Expected loss"
+  },
+  {
+    "objectID": "Projects/etl-data-pipeline-reporting-automation/index.html",
+    "href": "Projects/etl-data-pipeline-reporting-automation/index.html",
+    "title": "ETL Data Pipeline & Reporting Automation",
+    "section": "",
+    "text": "Data operations\n\n\nETL Data Pipeline & Reporting Automation\n\nA Python-SQL ETL workflow in Snowflake built to standardize multi-source retail and weather data for scalable analysis.\n\n\n\nObjective\nReduce manual effort and improve reporting consistency across combined datasets.\n\n\nMethods\nPython-SQL ETL design, multi-source standardization, and ZIP-level weather mapping.\n\n\nOutcome\nCreated a cleaner pipeline for identifying temperature-driven demand patterns affecting supplier sales.\n\n\n\n\n\n\nOverview\n\nThe project connected engineering discipline with business analytics by making integrated data easier to reuse, analyze, and report.\n\n\n\nSkills used\n\n\nPython SQL Snowflake Reporting automation"
+  },
+  {
+    "objectID": "Projects/churn-prediction-retention/index.html",
+    "href": "Projects/churn-prediction-retention/index.html",
+    "title": "Churn Prediction & Retention",
+    "section": "",
+    "text": "Retention analytics\n\n\nChurn Prediction & Retention\n\nA telecom churn project built to identify at-risk customers and support more profitable retention decisions.\n\n\n\nObjective\nEnable proactive retention strategies for a telecom carrier.\n\n\nMethods\nLogistic and neural models, threshold-based targeting, and CLV assessment.\n\n\nOutcome\nAchieved AUC 0.72, captured 68% of at-risk customers, and aligned retention with breakeven logic.\n\n\n\n\n\n\nOverview\n\nThe project combined predictive modeling with business constraints so retention outreach could be more targeted and economically grounded.\n\n\n\nSkills used\n\n\nChurn modeling Logistic regression Neural networks CLV"
+  },
+  {
+    "objectID": "Projects/ea-product-management-simulation/index.html",
+    "href": "Projects/ea-product-management-simulation/index.html",
+    "title": "Electronic Arts Product Management Job Simulation",
+    "section": "",
+    "text": "Forage simulation\n\n\nElectronic Arts Product Management Job Simulation\n\nA product-focused exercise centered on game performance review and player segmentation.\n\n\n\nObjective\nUnderstand player segments and performance signals that could inform product decisions.\n\n\nMethods\nPerformance review, segmentation thinking, and product recommendation framing.\n\n\nOutcome\nStructured a clearer view of how player behavior can guide prioritization and product direction.\n\n\n\n\n\n\nOverview\n\nThis project translates analytics into product management language by connecting user segments, performance patterns, and decision priorities.\n\n\n\nSkills used\n\n\nSegmentation Product analytics Performance review Recommendation design"
+  },
+  {
+    "objectID": "Projects/contextual-tv-ad-measurement/index.html",
+    "href": "Projects/contextual-tv-ad-measurement/index.html",
+    "title": "Quantifying Impact of Contextual TV Advertising",
+    "section": "",
+    "text": "Ad measurement study\n\n\nQuantifying Impact of Contextual TV Advertising\n\nAn AI-driven ad effectiveness study built for an audience measurement platform using household-level data.\n\n\n\nObjective\nMeasure contextual ad lift and connect it to business-facing attention and visibility KPIs.\n\n\nMethods\nHousehold-level analysis, segment-level driver modeling, and ad effectiveness framework design.\n\n\nOutput\nTableau dashboards that made performance easier to monitor and optimize.\n\n\n\n\n\n\nOverview\n\nThis project focused on quantifying the impact of contextual TV advertising and identifying the drivers behind lift across audience segments.\n\n\n\nSkills used\n\n\nAd effectiveness Audience measurement Tableau KPI tracking"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Hi, I am Prabhlin Kaur\n\nI work across business analytics, consumer insights, marketing analytics, and predictive modeling. I build decision support that turns analysis into clear, actionable business recommendations.\n\n\n        \n\n\n\n\n\nSnapshot\n\n\n\n\n11\n\n\nProjects\n\n\nAnalytics, optimization, experimentation, and risk work\n\n\n\n\n6\n\n\nCourses\n\n\nGraduate coursework spanning ML, APIs, and customer analytics\n\n\n\n\n4\n\n\nCertifications\n\n\nSQL, Python, GenAI, and quant research\n\n\n\n\n20+\n\n\nClient Projects\n\n\nCross-functional delivery for global brands"
+  },
+  {
+    "objectID": "certifications.html",
+    "href": "certifications.html",
+    "title": "Certifications",
+    "section": "",
+    "text": "Credentials\n\n\nCertifications\n\nProfessional credentials that reinforce my SQL, Python, quantitative research, and GenAI analytics toolkit.\n\n\n\n\nDataCamp\n\n\nProfessional Certificate - SQL\nFocused on query writing, analysis workflows, and practical SQL problem solving.\n\n\n\n\nDataCamp\n\n\nProfessional Certificate - Python\nStrengthened applied Python skills for analysis, data handling, and modeling workflows.\n\n\n\n\nForage\n\n\nJPMorgan Chase & Co. Quantitative Research Virtual Experience\nHands-on work in pricing, forecasting, and credit risk framing for finance-oriented decisions.\n\n\n\n\nForage\n\n\nTata GenAI Powered Data Analytics Virtual Experience\nExperience centered on GenAI-enabled analytics thinking and business-facing data work."
+  },
+  {
     "objectID": "Hw2_submission.html",
     "href": "Hw2_submission.html",
     "title": "Does Raising Minimum Wage Kill Jobs?",
     "section": "",
     "text": "A simple natural experiment from New Jersey challenges a classic economic assumption.\n\n\nAt first glance, the story seems obvious: if labor becomes more expensive, firms should hire fewer workers.\nCard and Krueger's famous 1994 study shows why the real world can be more surprising than the textbook.\nIn fast-food restaurants across New Jersey and eastern Pennsylvania, the data pointed in the opposite direction.\n\n\n\nWhy This Question Matters\nMinimum wage debates often begin with a clean prediction and end with a messy reality. The standard competitive model suggests that a higher wage floor should reduce employment. That prediction is intuitive, and for years it shaped how economists and policymakers talked about the issue.\nThis is where things get interesting. When New Jersey raised its minimum wage from $4.25 to $5.05 in April 1992, neighboring eastern Pennsylvania did not. That policy difference created a natural experiment: two nearby labor markets, one policy change, and a simple way to compare what happened next.\nThe key question is whether employment in New Jersey fell relative to Pennsylvania after the increase. If it did, the standard story looks stronger. If it did not, then the theory is at least incomplete in this setting.\n\n\nHow We Measure the Impact\nDifference-in-Differences, or DID, asks a simple question: how much did the treatment group change relative to the control group?\nHere:\n\nNew Jersey is the treatment group.\nPennsylvania is the control group.\n“Before” is the pre-policy survey.\n“After” is the post-policy survey.\n\nThe formula is:\n[ = (NJ_{after} - NJ_{before}) - (PA_{after} - PA_{before}) ]\nTo isolate the true effect, the comparison has to net out broad changes that would have affected both states anyway. That is exactly what DID does. It asks not just whether employment changed, but whether it changed more in New Jersey than in Pennsylvania.\nThe published materials available for this assignment support a clean replication of the paper’s reported Table 3 employment means, which are enough to reproduce the main DID result directly.\n\n\nWhat the Data Shows\nSurprisingly, the pattern does not look like a classic job-loss story. New Jersey employment edges up from 20.44 to 21.03 full-time-equivalent workers per store, while Pennsylvania falls from 23.33 to 21.17.\nThat means:\n\nNew Jersey changes by +0.59\nPennsylvania changes by -2.16\nThe DID estimate is 2.75\n\nThe same value appears in the simple 2x2 regression:\n[ = _0 + _1 + _2 + _3 () + u ]\n\n\n\n\n\n\n\n\n\ncoefficient\n\n\n\n\nIntercept\n23.33\n\n\ntreatment\n-2.89\n\n\npost\n-2.16\n\n\ntreatment_post\n2.75\n\n\n\n\n\n\n\nThe interaction term is 2.75, exactly matching the DID calculation.\n\n\n\n\n\n\nNote\n\n\n\nThis result challenges the standard economic prediction that a higher minimum wage must reduce employment.\n\n\n\n\nSeeing the Pattern\nBefore looking at the estimate itself, it helps to see the two state trends side by side. The first chart shows average employment before and after the policy in New Jersey and Pennsylvania.\n\n\n\n\n\n\n\n\n\n\nPennsylvania trends downward, but New Jersey does not follow the same path after the wage increase.\n\nThe second chart makes the comparison even sharper by focusing only on the change. This is where the DID logic becomes visual.\n\n\n\n\n\n\n\n\n\n\nOne state moves down, the other slightly up. The distance between those bars is the core result.\n\nThis is where things get especially interesting. The treatment state does not merely avoid a collapse. Relative to the control state, it looks stronger after the policy change.\n\n\nA Closer Look Inside New Jersey\nCard and Krueger also compare restaurants inside New Jersey based on how exposed they were to the new wage floor. Stores that had been paying the lowest wages should have been the most vulnerable if the standard prediction were fully correct.\nInstead, those stores show positive employment growth.\n\n\n\n\n\n\n\n\n\n\nThe lowest-wage New Jersey stores were the most exposed to the policy, yet they do not show the pattern of sharp job cuts that the simplest model would predict.\n\n\n\nWhy This Design Is Persuasive\nThe value of DID is that it compares changes, not just raw levels.\nNew Jersey and Pennsylvania do not need to start at the same level. What matters is whether Pennsylvania offers a believable benchmark for what New Jersey would have looked like without the policy change.\nThat logic works here because:\n\nthe states are geographically close\nthe restaurants are in the same industry\nthe data compare the same before-and-after window\nthe control group helps absorb broader economic changes\n\nNo observational design is perfect. But this one is powerful because it does not rely on New Jersey in isolation. It uses a nearby control group to separate the policy change from the wider economic environment.\n\n\nWhat This Means\nAt first glance, a higher minimum wage seems like it should obviously reduce employment. This case study shows why empirical work matters so much in economics.\nThe headline estimate is 2.75, and the broader conclusion is hard to miss: employment in New Jersey did not fall relative to Pennsylvania after the minimum wage increase. If anything, the relative pattern goes the other way.\nThat does not mean every minimum wage increase will always have this effect. It does mean the simplest version of the textbook prediction is not enough to explain what happened here.\n\n\nReplication Check\n\n“Note: This comparison table is included for grading reference and will be removed after grading.”\n\nThe main result matches the paper very closely. Where tiny differences appear, they come from row choice in Table 3, balanced-sample restrictions, temporary closures, employment definitions, and ordinary rounding.\n\n\n\n\n\n\n\n\n\nMetric\nPaper\nMy Result\nDifference\nInterpretation\n\n\n\n\n0\nPA before\n23.33\n23.33\n0.00\nExact match to Table 3.\n\n\n1\nNJ before\n20.44\n20.44\n0.00\nExact match to Table 3.\n\n\n2\nPA after\n21.17\n21.17\n0.00\nExact match to Table 3.\n\n\n3\nNJ after\n21.03\n21.03\n0.00\nExact match to Table 3.\n\n\n4\nChange PA\n-2.28\n-2.16\n+0.12\nThe paper's -2.28 value comes from the balance...\n\n\n5\nChange NJ\n0.59\n0.59\n-0.00\nExact match to the all-available row.\n\n\n6\nDID\n2.76\n2.75\n-0.01\nThe paper's core estimate is 2.75, often round...\n\n\n7\nRegression interaction\n2.75\n2.75\n-0.00\nMatches the DID exactly in the 2x2 setup."
-  },
-  {
-    "objectID": "Hw2_submission.html#replication-check",
-    "href": "Hw2_submission.html#replication-check",
-    "title": "Does Raising Minimum Wage Kill Jobs?",
-    "section": "Replication Check",
-    "text": "Replication Check\n\n\"Note: This comparison table is included for grading reference and will be removed after grading.\"\n\n\n\n\n\n\n\n\n\n\nMetric\nPaper\nMy replication\nNotes\n\n\n\n\n0\nPA before\n23.33\n23.33\nExact match to Table 3, row 1 (all available o...\n\n\n1\nNJ before\n20.44\n20.44\nExact match to Table 3, row 1.\n\n\n2\nPA after\n21.17\n21.17\nExact match to Table 3, row 2.\n\n\n3\nNJ after\n21.03\n21.03\nExact match to Table 3, row 2.\n\n\n4\nChange PA\n-2.28 in the balanced sample row; -2.16 from r...\n-2.16 from rows 1 and 2\nThe common grading shortcut mixes level rows w...\n\n\n5\nChange NJ\n0.59 in the all-available row; 0.47 in the bal...\n0.59\nMy main DID uses the same four level cells sho...\n\n\n6\nDID\n2.75 in Table 3; often rounded to about 2.76\n2.75\nExact match to the four-cell DID. Any 2.76 val...\n\n\n7\nRegression interaction\nShould equal the DID in the 2x2 setup\n2.75\nMatches the DID exactly, as expected.\n\n\n\n\n\n\n\nMost of the replication matches the paper exactly because the numbers come directly from Table 3.\nThe only subtle part is that people often mix values from different rows of Table 3:\n\nThe before and after levels usually come from the “all available observations” rows.\nThe PA change of -2.28 comes from the balanced sample row.\nThe NJ change of +0.59 comes from the all available row.\n\nThat combination is close enough for a quick class summary, but it is not one perfectly consistent four-cell calculation. If I compute the DID directly from the four level cells, I get:\n\nNew Jersey change: 0.59\nPennsylvania change: -2.16\nDID: 2.75\n\nIf I instead use the balanced-sample row, the paper reports:\n\nNew Jersey change: 0.47\nPennsylvania change: -2.28\nDID: 2.75\n\nSo the headline result is stable. The small differences come from:\n\nsample restrictions\nmissing observations across waves\nhow temporarily closed stores are handled\nthe exact employment definition used in a given row\nordinary rounding"
-  },
-  {
-    "objectID": "Hw2_submission.html#featured-post",
-    "href": "Hw2_submission.html#featured-post",
-    "title": "Articles",
-    "section": "Featured Post",
-    "text": "Featured Post\n\nA/B Testing a Call to Action\nAn applied walkthrough of A/B testing for CTA design, covering simulation, the Law of Large Numbers, bootstrap and analytical standard errors, hypothesis testing, regression equivalence, and why peeking can inflate false positives.\n\n\nDoes Raising Minimum Wage Kill Jobs?\nA replication-style blog post on Card and Krueger (1994), showing the core Difference-in-Differences result, checking the published employment values against the paper, and explaining where tiny mismatches come from."
   }
 ]

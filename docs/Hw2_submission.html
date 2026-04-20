@@ -123,13 +123,31 @@ p, li {
   font-size: 1.03rem;
   line-height: 1.9;
 }
-h1, h2 {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+main.content > section > h1,
+main.content > section > h2,
+main.content h3 {
   letter-spacing: -0.02em;
 }
-h2 {
-  font-size: 1.7rem;
+main.content > section > h1 {
+  font-size: clamp(1.55rem, 2vw, 1.85rem);
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 2.35rem;
+  margin-bottom: 0.75rem;
+}
+main.content > section > h2 {
+  font-size: clamp(1.3rem, 1.65vw, 1.5rem);
+  line-height: 1.28;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.65rem;
+}
+main.content h3 {
+  font-size: 1.1rem;
+  line-height: 1.35;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .callout {
   margin: 2rem 0;
@@ -313,7 +331,7 @@ In fast-food restaurants across New Jersey and eastern Pennsylvania, the data po
 </ul>
 <p>The same value appears in the simple 2x2 regression:</p>
 <p>[ = _0 + _1 + _2 + _3 () + u ]</p>
-<div id="f3a022ca" class="cell" data-execution_count="2">
+<div id="b2e3ccb0" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 
@@ -366,7 +384,7 @@ Note
 <section id="seeing-the-pattern" class="level1">
 <h1>Seeing the Pattern</h1>
 <p>Before looking at the estimate itself, it helps to see the two state trends side by side. The first chart shows average employment before and after the policy in New Jersey and Pennsylvania.</p>
-<div id="0c03bf1d" class="cell" data-execution_count="3">
+<div id="47b58447" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -379,7 +397,7 @@ Note
 Pennsylvania trends downward, but New Jersey does not follow the same path after the wage increase.
 </div>
 <p>The second chart makes the comparison even sharper by focusing only on the change. This is where the DID logic becomes visual.</p>
-<div id="166963d4" class="cell" data-execution_count="4">
+<div id="e6b96319" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -396,8 +414,9 @@ One state moves down, the other slightly up. The distance between those bars is 
 <section id="a-closer-look-inside-new-jersey" class="level1">
 <h1>A Closer Look Inside New Jersey</h1>
 <p>Card and Krueger also compare restaurants inside New Jersey based on how exposed they were to the new wage floor. Stores that had been paying the lowest wages should have been the most vulnerable if the standard prediction were fully correct.</p>
+<p>To go a step further, it helps to look within New Jersey itself rather than stopping with the cross-state comparison alone. Comparing stores by their initial wage levels gives a more detailed picture of whether the policy effect was concentrated among the businesses most directly affected by the new minimum wage.</p>
 <p>Instead, those stores show positive employment growth.</p>
-<div id="a8748a84" class="cell" data-execution_count="5">
+<div id="5de33f60" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -435,7 +454,7 @@ The lowest-wage New Jersey stores were the most exposed to the policy, yet they 
 <strong>“Note: This comparison table is included for grading reference and will be removed after grading.”</strong>
 </p>
 <p>The main result matches the paper very closely. Where tiny differences appear, they come from row choice in Table 3, balanced-sample restrictions, temporary closures, employment definitions, and ordinary rounding.</p>
-<div id="03fd7d83" class="cell" data-execution_count="6">
+<div id="502cf8ed" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display" data-execution_count="6">
 <div>
 

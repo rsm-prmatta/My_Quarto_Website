@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ac077c1e730dfeb5e42400639d17284e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-75b540f7d1f70a658ec6fb8eb9062a8e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-585db39d0cce6fb32e493c9ce39470c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,15 +73,22 @@ ul.task-list li input[type="checkbox"] {
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 <style>
+*, *::before, *::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
 main.content, .quarto-title-block {
   max-width: 760px;
   margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 #title-block-header {
   display: block !important;
   max-width: 860px;
   margin: 0 auto 2rem auto;
   padding-top: 0.5rem;
+  padding: 0 1.5rem;
 }
 .quarto-title-block .title {
   font-size: clamp(2.1rem, 4vw, 2.8rem);
@@ -106,6 +113,8 @@ main.content, .quarto-title-block {
   margin: 1.5rem 0 3rem 0;
   padding-bottom: 2rem;
   border-bottom: 1px solid #e8e2da;
+  overflow: hidden;
+  max-width: 100%;
 }
 .hero-subtitle {
   font-size: 1.2rem;
@@ -117,7 +126,11 @@ main.content, .quarto-title-block {
   font-size: 1.08rem;
   line-height: 1.9;
   color: #2f2723;
-  max-width: 680px;
+  max-width: 100%;
+  font-family: inherit;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
 }
 p, li {
   font-size: 1.03rem;
@@ -176,6 +189,10 @@ table.dataframe td {
   vertical-align: top;
   padding: 0.8rem 0.6rem;
   border-bottom: 1px solid #eee7df;
+}
+img, figure, .cell-output {
+  max-width: 100%;
+  height: auto;
 }
 </style>
 
@@ -294,20 +311,23 @@ table.dataframe td {
 A simple natural experiment from New Jersey challenges a classic economic assumption.
 </div>
 <div class="hero-intro">
-<pre><code>At first glance, the story seems obvious: if labor becomes more expensive, firms should hire fewer workers.
-Card and Krueger's famous 1994 study shows why the real world can be more surprising than the textbook.
-In fast-food restaurants across New Jersey and eastern Pennsylvania, the data pointed in the opposite direction.</code></pre>
+<p>
+At first glance, the story seems obvious: if labor becomes more expensive, firms should hire fewer workers.
+</p>
+<p>
+Card and Krueger’s landmark 1994 study shows why real-world outcomes often defy textbook predictions. In fast-food restaurants across New Jersey and eastern Pennsylvania, the data pointed in the opposite direction.
+</p>
 </div>
 </div>
 <section id="why-this-question-matters" class="level1">
 <h1>Why This Question Matters</h1>
-<p>Minimum wage debates often begin with a clean prediction and end with a messy reality. The standard competitive model suggests that a higher wage floor should reduce employment. That prediction is intuitive, and for years it shaped how economists and policymakers talked about the issue.</p>
-<p>This is where things get interesting. When New Jersey raised its minimum wage from $4.25 to $5.05 in April 1992, neighboring eastern Pennsylvania did not. That policy difference created a natural experiment: two nearby labor markets, one policy change, and a simple way to compare what happened next.</p>
+<p>Minimum wage debates typically begin with a clean theoretical prediction and end with a messier empirical reality. The standard competitive model holds that a higher wage floor raises the cost of labor, prompting firms to hire fewer workers. This intuition is straightforward, and for decades it shaped how economists and policymakers approached the issue.</p>
+<p>Card and Krueger’s study challenges this consensus in a compelling way. When New Jersey raised its minimum wage from $4.25 to $5.05 in April 1992, neighboring eastern Pennsylvania did not follow suit. This policy divergence created a natural experiment: two geographically adjacent labor markets, one policy change, and a straightforward way to observe what happened next.</p>
 <p>The key question is whether employment in New Jersey fell relative to Pennsylvania after the increase. If it did, the standard story looks stronger. If it did not, then the theory is at least incomplete in this setting.</p>
 </section>
 <section id="how-we-measure-the-impact" class="level1">
 <h1>How We Measure the Impact</h1>
-<p>Difference-in-Differences, or DID, asks a simple question: how much did the treatment group change relative to the control group?</p>
+<p>The Difference-in-Differences (DID) estimator asks a deceptively simple question: how much did the treatment group change relative to the control group? By comparing changes rather than levels, this method controls for any pre-existing differences between states.</p>
 <p>Here:</p>
 <ul>
 <li>New Jersey is the treatment group.</li>
@@ -317,22 +337,22 @@ In fast-food restaurants across New Jersey and eastern Pennsylvania, the data po
 </ul>
 <p>The formula is:</p>
 <p>[ = (NJ_{after} - NJ_{before}) - (PA_{after} - PA_{before}) ]</p>
-<p>To isolate the true effect, the comparison has to net out broad changes that would have affected both states anyway. That is exactly what DID does. It asks not just whether employment changed, but whether it changed <strong>more in New Jersey than in Pennsylvania</strong>.</p>
+<p>To isolate the policy’s effect, the comparison must strip out any broad economic trends that would have affected both states regardless of the wage change. DID accomplishes this by using Pennsylvania as a benchmark for what New Jersey’s trajectory would have looked like absent the policy. It asks not just whether employment changed, but whether it changed <strong>more in New Jersey than in Pennsylvania</strong>.</p>
 <p>The published materials available for this assignment support a clean replication of the paper’s reported Table 3 employment means, which are enough to reproduce the main DID result directly.</p>
 </section>
 <section id="what-the-data-shows" class="level1">
 <h1>What the Data Shows</h1>
-<p>Surprisingly, the pattern does not look like a classic job-loss story. New Jersey employment edges up from <strong>20.44</strong> to <strong>21.03</strong> full-time-equivalent workers per store, while Pennsylvania falls from <strong>23.33</strong> to <strong>21.17</strong>.</p>
+<p>Contrary to the standard prediction, the data do not tell a job-loss story. New Jersey employment edges up from <strong>20.44</strong> to <strong>21.03</strong> full-time-equivalent workers per store, while Pennsylvania falls from <strong>23.33</strong> to <strong>21.17</strong>.</p>
 <p>That means:</p>
 <ul>
 <li>New Jersey changes by <strong>+0.59</strong></li>
 <li>Pennsylvania changes by <strong>-2.16</strong></li>
 <li>The DID estimate is <strong>2.75</strong></li>
 </ul>
-<p>The same value appears in the simple 2x2 regression:</p>
+<p>This result is confirmed by a simple 2×2 regression, which makes the DID logic explicit in equation form:</p>
 <p>[ = _0 + _1 + _2 + _3 () + u ]</p>
-<div id="b2e3ccb0" class="cell" data-execution_count="2">
-<div class="cell-output cell-output-display" data-execution_count="2">
+<div id="1285b011" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="158">
 <div>
 
 
@@ -384,7 +404,7 @@ Note
 <section id="seeing-the-pattern" class="level1">
 <h1>Seeing the Pattern</h1>
 <p>Before looking at the estimate itself, it helps to see the two state trends side by side. The first chart shows average employment before and after the policy in New Jersey and Pennsylvania.</p>
-<div id="47b58447" class="cell" data-execution_count="3">
+<div id="49d0fc84" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -397,7 +417,7 @@ Note
 Pennsylvania trends downward, but New Jersey does not follow the same path after the wage increase.
 </div>
 <p>The second chart makes the comparison even sharper by focusing only on the change. This is where the DID logic becomes visual.</p>
-<div id="e6b96319" class="cell" data-execution_count="4">
+<div id="10f07d99" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -413,10 +433,9 @@ One state moves down, the other slightly up. The distance between those bars is 
 </section>
 <section id="a-closer-look-inside-new-jersey" class="level1">
 <h1>A Closer Look Inside New Jersey</h1>
-<p>Card and Krueger also compare restaurants inside New Jersey based on how exposed they were to the new wage floor. Stores that had been paying the lowest wages should have been the most vulnerable if the standard prediction were fully correct.</p>
-<p>To go a step further, it helps to look within New Jersey itself rather than stopping with the cross-state comparison alone. Comparing stores by their initial wage levels gives a more detailed picture of whether the policy effect was concentrated among the businesses most directly affected by the new minimum wage.</p>
+<p>Card and Krueger go further by examining variation within New Jersey. By grouping restaurants according to their pre-policy wage levels, they can test whether the policy hit hardest where it should have: stores already paying the lowest wages. These establishments faced the largest mandated increase and, under the standard model, should have cut jobs most aggressively.</p>
 <p>Instead, those stores show positive employment growth.</p>
-<div id="5de33f60" class="cell" data-execution_count="5">
+<div id="d4907765" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -431,8 +450,8 @@ The lowest-wage New Jersey stores were the most exposed to the policy, yet they 
 </section>
 <section id="why-this-design-is-persuasive" class="level1">
 <h1>Why This Design Is Persuasive</h1>
-<p>The value of DID is that it compares <strong>changes</strong>, not just raw levels.</p>
-<p>New Jersey and Pennsylvania do not need to start at the same level. What matters is whether Pennsylvania offers a believable benchmark for what New Jersey would have looked like without the policy change.</p>
+<p>The strength of the DID design is that it compares changes over time, not just raw snapshots, so the two states do not need to start from identical baselines.</p>
+<p>What matters is whether Pennsylvania offers a believable benchmark for what New Jersey would have looked like without the policy change.</p>
 <p>That logic works here because:</p>
 <ul>
 <li>the states are geographically close</li>
@@ -440,13 +459,13 @@ The lowest-wage New Jersey stores were the most exposed to the policy, yet they 
 <li>the data compare the same before-and-after window</li>
 <li>the control group helps absorb broader economic changes</li>
 </ul>
-<p>No observational design is perfect. But this one is powerful because it does not rely on New Jersey in isolation. It uses a nearby control group to separate the policy change from the wider economic environment.</p>
+<p>No observational design is perfect, and critics have raised questions about whether Pennsylvania truly serves as a valid counterfactual. But the design is credible precisely because it does not rely on New Jersey’s trend in isolation — it uses a geographically close, industry-matched control group to absorb economy-wide shocks.</p>
 </section>
 <section id="what-this-means" class="level1">
 <h1>What This Means</h1>
-<p>At first glance, a higher minimum wage seems like it should obviously reduce employment. This case study shows why empirical work matters so much in economics.</p>
+<p>This case study illustrates a broader lesson: theoretical predictions, however intuitive, must be tested against data. The competitive model’s forecast was clear, but the evidence pointed in a different direction.</p>
 <p>The headline estimate is <strong>2.75</strong>, and the broader conclusion is hard to miss: employment in New Jersey did not fall relative to Pennsylvania after the minimum wage increase. If anything, the relative pattern goes the other way.</p>
-<p>That does not mean every minimum wage increase will always have this effect. It does mean the simplest version of the textbook prediction is not enough to explain what happened here.</p>
+<p>This finding does not imply that minimum wage increases are always employment-neutral or positive. Context matters — labor market structure, the size of the wage increase, and local economic conditions all play a role. What this study does establish is that the simplest textbook model is insufficient to explain what happened in New Jersey in 1992, and that the empirical question deserves more nuance than the theory alone provides.</p>
 </section>
 <section id="replication-check" class="level1">
 <h1>Replication Check</h1>
@@ -454,8 +473,8 @@ The lowest-wage New Jersey stores were the most exposed to the policy, yet they 
 <strong>“Note: This comparison table is included for grading reference and will be removed after grading.”</strong>
 </p>
 <p>The main result matches the paper very closely. Where tiny differences appear, they come from row choice in Table 3, balanced-sample restrictions, temporary closures, employment definitions, and ordinary rounding.</p>
-<div id="502cf8ed" class="cell" data-execution_count="6">
-<div class="cell-output cell-output-display" data-execution_count="6">
+<div id="62d36f31" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display" data-execution_count="162">
 <div>
 
 

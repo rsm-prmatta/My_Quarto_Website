@@ -59,10 +59,10 @@ A replication-style economics article on Card and Krueger (1994), showing the co
 Analytics
 :::
 
-### [Poisson Regression and Maximum Likelihood Estimation](hw3_questions.qmd)
+### [Poisson Regression and Maximum Likelihood Estimation](article-3.qmd)
 
 A Blueprinty case study using count data, manual likelihood optimization, Poisson regression, and counterfactual prediction to estimate the adjusted association between software adoption and patent awards.
 
-[Open article →](hw3_questions.qmd){.btn-link}
+[Open article →](article-3.qmd){.btn-link}
 :::
 :::

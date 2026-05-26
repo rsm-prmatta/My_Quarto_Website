@@ -1,0 +1,1102 @@
+---
+title: "MaxDiff Analysis of MSBA Class Preferences"
+subtitle: "Counts, MLE, and Bayesian estimation of the MNL model"
+author: "Prabhlin Kaur Matta"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    page-layout: full
+    code-fold: true
+    code-summary: "Show R code"
+    include-in-header:
+      text: |
+        <style>
+        #title-block-header {
+          display: block !important;
+          max-width: 900px;
+          margin: 0 auto 2.2rem auto;
+          padding-top: 0.75rem;
+        }
+        #title-block-header .title {
+          font-size: clamp(2.2rem, 4.4vw, 3rem);
+          line-height: 1.08;
+          letter-spacing: -0.03em;
+          margin-bottom: 0.55rem;
+        }
+        #title-block-header .subtitle {
+          color: #735a55;
+          font-size: 1.08rem;
+          max-width: 760px;
+        }
+        #title-block-header .quarto-title-meta {
+          margin-top: 0.55rem;
+        }
+        #title-block-header .quarto-title-meta-heading {
+          font-size: 0.78rem;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #7a6660;
+        }
+        #title-block-header .quarto-title-meta-contents {
+          color: #4b3a36;
+          font-size: 0.96rem;
+        }
+        </style>
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(knitr)
+library(scales)
+
+knitr::opts_chunk$set(
+  fig.width = 9,
+  fig.height = 6,
+  out.width = "100%"
+)
+
+options(dplyr.summarise.inform = FALSE)
+
+plot_theme <- theme_minimal(base_family = "sans") +
+  theme(
+    plot.background = element_rect(fill = "#FFF8F4", color = NA),
+    panel.background = element_rect(fill = "#FFFDFB", color = NA),
+    strip.background = element_rect(fill = "#FFECE2", color = NA),
+    panel.grid.major = element_line(color = "#EFDCD2", linewidth = 0.35),
+    panel.grid.minor = element_blank(),
+    plot.title = element_text(face = "bold", size = 17, color = "#342523"),
+    plot.subtitle = element_text(size = 11, color = "#735a55", margin = margin(b = 10)),
+    axis.title = element_text(face = "bold", color = "#4b3a36"),
+    axis.text = element_text(color = "#4b3a36"),
+    strip.text = element_text(face = "bold", color = "#342523"),
+    legend.position = "none",
+    plot.margin = margin(14, 18, 12, 18)
+  )
+
+class_palette <- c(
+  "#2F6F9F", "#D86F5B", "#5B8C5A", "#B8523D", "#7A5AA6",
+  "#D79A30", "#3F7C85", "#A84E72", "#607D3B", "#6E6259"
+)
+```
+
+```{=html}
+<style>
+.maxdiff-hero {
+  max-width: 980px;
+  margin: 0 auto 2.25rem auto;
+  padding: 1.6rem;
+  border: 1px solid #eadfd8;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #fff8f4 0%, #ffffff 58%, #edf6f8 100%);
+  box-shadow: 0 18px 45px rgba(52, 37, 35, 0.08);
+}
+
+.maxdiff-hero-header {
+  text-align: center;
+  margin-bottom: 1.35rem;
+}
+
+.maxdiff-hero-title {
+  margin: 0 0 0.35rem 0;
+  color: #342523;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.maxdiff-hero-subtitle {
+  max-width: 640px;
+  margin: 0 auto;
+  color: #735a55;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.maxdiff-task-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.15rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.maxdiff-card {
+  min-width: 0;
+  height: 136px;
+  padding: 1rem;
+  border: 1px solid #e7ddd7;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 24px rgba(52, 37, 35, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.maxdiff-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(52, 37, 35, 0.11);
+}
+
+.maxdiff-card.is-best {
+  border-color: rgba(82, 138, 92, 0.46);
+  background: linear-gradient(180deg, rgba(237, 248, 239, 0.98), rgba(255, 255, 255, 0.96));
+}
+
+.maxdiff-card.is-worst {
+  border-color: rgba(216, 111, 91, 0.48);
+  background: linear-gradient(180deg, rgba(255, 240, 238, 0.98), rgba(255, 255, 255, 0.96));
+}
+
+.maxdiff-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.maxdiff-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0.28rem 0.62rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.maxdiff-badge.is-best {
+  color: #2f6f43;
+  background: rgba(82, 138, 92, 0.16);
+}
+
+.maxdiff-badge.is-worst {
+  color: #b8523d;
+  background: rgba(216, 111, 91, 0.16);
+}
+
+.maxdiff-badge.is-shown {
+  color: #476575;
+  background: rgba(75, 111, 130, 0.13);
+}
+
+.maxdiff-card-number {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border-radius: 10px;
+  background: #f4eee9;
+  color: #735a55;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.maxdiff-card.is-best .maxdiff-card-number {
+  background: rgba(82, 138, 92, 0.16);
+  color: #2f6f43;
+}
+
+.maxdiff-card.is-worst .maxdiff-card-number {
+  background: rgba(216, 111, 91, 0.16);
+  color: #b8523d;
+}
+
+.maxdiff-course {
+  min-width: 0;
+}
+
+.maxdiff-course-code {
+  margin-bottom: 0.2rem;
+  color: #342523;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.maxdiff-course-title {
+  color: #5f4b46;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.25;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.maxdiff-hero-note {
+  max-width: 760px;
+  margin: 1.3rem auto 0 auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(232, 221, 215, 0.9);
+  color: #735a55;
+  text-align: center;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 760px) {
+  .maxdiff-hero {
+    padding: 1.15rem;
+    border-radius: 20px;
+  }
+
+  .maxdiff-task-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+  }
+
+  .maxdiff-card {
+    height: 126px;
+    padding: 0.9rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .maxdiff-task-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .maxdiff-card {
+    height: 112px;
+  }
+}
+</style>
+
+<div class="maxdiff-hero">
+  <div class="maxdiff-hero-header">
+    <h2 class="maxdiff-hero-title">How MaxDiff Tasks Work</h2>
+    <p class="maxdiff-hero-subtitle">Respondents select the most and least preferred option from a small choice set.</p>
+  </div>
+
+  <div class="maxdiff-task-grid">
+    <div class="maxdiff-card is-best">
+      <div class="maxdiff-card-top">
+        <span class="maxdiff-badge is-best">Best</span>
+        <span class="maxdiff-card-number">01</span>
+      </div>
+      <div class="maxdiff-course">
+        <div class="maxdiff-course-code">MGTA 495</div>
+        <div class="maxdiff-course-title">Marketing Analytics</div>
+      </div>
+    </div>
+
+    <div class="maxdiff-card">
+      <div class="maxdiff-card-top">
+        <span class="maxdiff-badge is-shown">Shown</span>
+        <span class="maxdiff-card-number">02</span>
+      </div>
+      <div class="maxdiff-course">
+        <div class="maxdiff-course-code">MGTA 453</div>
+        <div class="maxdiff-course-title">Business Analytics</div>
+      </div>
+    </div>
+
+    <div class="maxdiff-card">
+      <div class="maxdiff-card-top">
+        <span class="maxdiff-badge is-shown">Shown</span>
+        <span class="maxdiff-card-number">03</span>
+      </div>
+      <div class="maxdiff-course">
+        <div class="maxdiff-course-code">MGTA 464</div>
+        <div class="maxdiff-course-title">SQL</div>
+      </div>
+    </div>
+
+    <div class="maxdiff-card">
+      <div class="maxdiff-card-top">
+        <span class="maxdiff-badge is-shown">Shown</span>
+        <span class="maxdiff-card-number">04</span>
+      </div>
+      <div class="maxdiff-course">
+        <div class="maxdiff-course-code">MGTA 410</div>
+        <div class="maxdiff-course-title">Digital Marketing</div>
+      </div>
+    </div>
+
+    <div class="maxdiff-card is-worst">
+      <div class="maxdiff-card-top">
+        <span class="maxdiff-badge is-worst">Worst</span>
+        <span class="maxdiff-card-number">05</span>
+      </div>
+      <div class="maxdiff-course">
+        <div class="maxdiff-course-code">MGTA 444</div>
+        <div class="maxdiff-course-title">Analytics Consulting</div>
+      </div>
+    </div>
+
+    <div class="maxdiff-card">
+      <div class="maxdiff-card-top">
+        <span class="maxdiff-badge is-shown">Shown</span>
+        <span class="maxdiff-card-number">06</span>
+      </div>
+      <div class="maxdiff-course">
+        <div class="maxdiff-course-code">MGTA 457</div>
+        <div class="maxdiff-course-title">Consumer Insights</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="maxdiff-hero-note">MaxDiff (Best-Worst Scaling) forces tradeoffs, producing more reliable preference measurement than traditional ratings.</p>
+</div>
+```
+
+::: {.callout-important}
+**Key insight:** The top and bottom class preferences are very stable across counts, MLE, and Bayesian MNL. The interesting movement is in the middle, where classes are closer together and model uncertainty matters more.
+:::
+
+## Introduction
+
+MaxDiff, or Best-Worst Scaling, measures preference through tradeoffs. Each respondent sees four MSBA classes and picks the one they like most and least. This is cleaner than ratings because people use rating scales differently, but a best-worst choice forces real separation.
+
+I estimate preferences three ways:
+
+1. A counts analysis based on percent picked best minus percent picked worst.
+2. A multinomial logit model estimated by maximum likelihood.
+3. The same MNL model estimated with a Bayesian random-walk Metropolis-Hastings sampler.
+
+The goal is simple: see which classes clearly rise to the top, which fall to the bottom, and where the ranking is uncertain.
+
+## The Data
+
+The data are one row per class shown in a task. I also read a small labels file to map item numbers to class names.
+
+```{r}
+#| label: read-data
+data_dir <- "."
+if (!file.exists(file.path(data_dir, "maxdiff_design_and_choices.csv"))) {
+  data_dir <- "/Users/prabhlinkaurmatta/Downloads"
+}
+
+labels_raw <- read_csv(
+  file.path(data_dir, "maxdiff_item_labels.csv"),
+  show_col_types = FALSE
+)
+
+labels <- labels_raw %>%
+  transmute(
+    item = as.integer(`Item #`),
+    item_label = str_squish(Item),
+    label_short = str_wrap(str_squish(Item), width = 35)
+  ) %>%
+  filter(!is.na(item), !is.na(item_label))
+
+design_raw <- read_csv(
+  file.path(data_dir, "maxdiff_design_and_choices.csv"),
+  show_col_types = FALSE
+)
+
+design <- design_raw %>%
+  rename(record_id = `Record ID`) %>%
+  mutate(
+    Task = as.integer(Task),
+    Position = as.integer(Position),
+    Item = as.integer(Item),
+    Response = as.integer(Response)
+  )
+```
+
+The raw file includes extra screens with unlabeled item `11`, so I keep only valid four-item MaxDiff tasks for the 10 labeled classes.
+
+```{r}
+#| label: clean-data
+labeled_design <- design %>%
+  semi_join(labels, by = c("Item" = "item"))
+
+valid_task_ids <- labeled_design %>%
+  group_by(record_id, Task) %>%
+  summarise(
+    rows = n(),
+    best_count = sum(Response == 1),
+    worst_count = sum(Response == -1),
+    zero_count = sum(Response == 0),
+    .groups = "drop"
+  ) %>%
+  filter(
+    rows == 4,
+    best_count == 1,
+    worst_count == 1,
+    zero_count == 2
+  ) %>%
+  select(record_id, Task)
+
+md_data <- labeled_design %>%
+  semi_join(valid_task_ids, by = c("record_id", "Task")) %>%
+  left_join(labels, by = c("Item" = "item"))
+
+task_check <- md_data %>%
+  group_by(record_id, Task) %>%
+  summarise(
+    rows = n(),
+    best_count = sum(Response == 1),
+    worst_count = sum(Response == -1),
+    zero_count = sum(Response == 0),
+    .groups = "drop"
+  ) %>%
+  mutate(valid = rows == 4 & best_count == 1 & worst_count == 1 & zero_count == 2)
+
+tasks_per_respondent <- md_data %>%
+  distinct(record_id, Task) %>%
+  count(record_id, name = "tasks")
+
+n_respondents <- n_distinct(md_data$record_id)
+n_total_tasks <- nrow(task_check)
+n_unique_items <- n_distinct(md_data$Item)
+items_per_task <- unique(task_check$rows)
+tasks_per_respondent_label <- if_else(
+  min(tasks_per_respondent$tasks) == max(tasks_per_respondent$tasks),
+  as.character(min(tasks_per_respondent$tasks)),
+  str_c(min(tasks_per_respondent$tasks), " to ", max(tasks_per_respondent$tasks))
+)
+
+data_summary <- tibble(
+  metric = c(
+    "Respondents",
+    "MaxDiff tasks per respondent",
+    "Total MaxDiff respondent-tasks",
+    "Items per task",
+    "Unique labeled class items"
+  ),
+  value = c(
+    n_respondents,
+    tasks_per_respondent_label,
+    n_total_tasks,
+    str_c(sort(items_per_task), collapse = ", "),
+    n_unique_items
+  )
+)
+
+kable(data_summary)
+```
+
+After cleaning: `r n_respondents` respondents, `r tasks_per_respondent_label` tasks each, `r str_c(sort(items_per_task), collapse = ", ")` items per task, and `r n_unique_items` class items. The sanity check below confirms one best, one worst, and two zeros per task.
+
+```{r}
+#| label: sanity-check
+task_check %>%
+  count(rows, best_count, worst_count, zero_count, valid, name = "respondent_tasks") %>%
+  kable()
+```
+
+Exposure is roughly balanced across classes.
+
+```{r}
+#| label: exposure-counts
+exposure_tbl <- md_data %>%
+  count(Item, item_label, name = "times_shown") %>%
+  arrange(Item)
+
+kable(exposure_tbl)
+```
+
+## Counts Analysis
+
+The counts score is the quickest read on preference:
+
+$$
+\text{score}_j = \%\text{best}_j - \%\text{worst}_j
+$$
+
+A higher score means a class wins more often than it loses when shown.
+
+```{r}
+#| label: counts-table
+counts_tbl <- md_data %>%
+  group_by(Item, item_label, label_short) %>%
+  summarise(
+    times_shown = n(),
+    times_best = sum(Response == 1),
+    times_worst = sum(Response == -1),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    pct_best = times_best / times_shown,
+    pct_worst = times_worst / times_shown,
+    score = pct_best - pct_worst
+  ) %>%
+  arrange(desc(score)) %>%
+  mutate(counts_rank = row_number())
+
+counts_tbl %>%
+  transmute(
+    rank = counts_rank,
+    item = Item,
+    class = item_label,
+    times_shown,
+    times_best,
+    times_worst,
+    `% best` = percent(pct_best, accuracy = 0.1),
+    `% worst` = percent(pct_worst, accuracy = 0.1),
+    score = percent(score, accuracy = 0.1)
+  ) %>%
+  kable()
+```
+
+I bootstrap respondents, not rows, because each student answers multiple tasks.
+
+```{r}
+#| label: bootstrap-counts
+set.seed(2026)
+B <- 1000
+respondent_ids <- unique(md_data$record_id)
+
+respondent_item_counts <- md_data %>%
+  group_by(record_id, Item, item_label, label_short) %>%
+  summarise(
+    times_shown = n(),
+    times_best = sum(Response == 1),
+    times_worst = sum(Response == -1),
+    .groups = "drop"
+  )
+
+boot_scores <- map_dfr(seq_len(B), function(b) {
+  sampled_ids <- tibble(
+    record_id = sample(respondent_ids, length(respondent_ids), replace = TRUE),
+    boot_person = seq_along(respondent_ids)
+  )
+
+  respondent_item_counts %>%
+    inner_join(sampled_ids, by = "record_id", relationship = "many-to-many") %>%
+    group_by(Item) %>%
+    summarise(
+      times_shown = sum(times_shown),
+      times_best = sum(times_best),
+      times_worst = sum(times_worst),
+      .groups = "drop"
+    ) %>%
+    mutate(
+      boot = b,
+      score = times_best / times_shown - times_worst / times_shown
+    )
+})
+
+boot_ci <- boot_scores %>%
+  group_by(Item) %>%
+  summarise(
+    score_low = quantile(score, 0.025),
+    score_high = quantile(score, 0.975),
+    .groups = "drop"
+  )
+
+counts_tbl <- counts_tbl %>%
+  left_join(boot_ci, by = "Item")
+```
+
+```{r}
+#| label: counts-plot
+ggplot(counts_tbl, aes(x = score, y = fct_reorder(label_short, score))) +
+  geom_vline(xintercept = 0, color = "#BBA9A0") +
+  geom_col(fill = "#2F6F9F", width = 0.75) +
+  geom_errorbarh(aes(xmin = score_low, xmax = score_high), height = 0.2, color = "#342523") +
+  scale_x_continuous(labels = percent_format(accuracy = 1)) +
+  labs(
+    x = "% best - % worst",
+    y = NULL,
+    title = "Counts Score by Class",
+    subtitle = "Error bars are 95% bootstrap confidence intervals"
+  ) +
+  plot_theme
+```
+
+```{r}
+#| label: counts-interpretation-objects
+top_counts <- counts_tbl %>% slice_head(n = 3)
+bottom_counts <- counts_tbl %>% slice_tail(n = 3)
+top_count <- counts_tbl %>% slice_head(n = 1)
+bottom_count <- counts_tbl %>% slice_tail(n = 1)
+```
+
+Counts put `r top_count$item_label` first, with a score of `r percent(top_count$score, accuracy = 0.1)`. The bottom class is `r bottom_count$item_label` at `r percent(bottom_count$score, accuracy = 0.1)`.
+
+## From MaxDiff Data to MNL Choices
+
+Each MaxDiff task becomes two choices: first the best class from all four shown classes, then the worst class from the remaining three. For the best choice:
+
+$$
+P(\text{best}=b) =
+\frac{\exp(\beta_b)}
+{\exp(\beta_a) + \exp(\beta_b) + \exp(\beta_c) + \exp(\beta_d)}
+$$
+
+For the worst choice, I remove the best item and flip utility:
+
+$$
+P(\text{worst}=c \mid \text{best}=b) =
+\frac{\exp(-\beta_c)}
+{\sum_{j \in \text{shown} \setminus b} \exp(-\beta_j)}
+$$
+
+Because MNL utilities are relative, I set $\beta_1 = 0$ and estimate $\beta_2$ through $\beta_{10}$.
+
+```{r}
+#| label: choice-data
+choice_tasks <- md_data %>%
+  arrange(record_id, Task, Position) %>%
+  group_by(record_id, Task) %>%
+  summarise(
+    shown = list(Item),
+    best_item = Item[Response == 1][1],
+    worst_item = Item[Response == -1][1],
+    .groups = "drop"
+  )
+
+choice_tasks_display <- choice_tasks %>%
+  mutate(
+    shown_items = map_chr(shown, ~ str_c(.x, collapse = ", ")),
+    best_class = labels$item_label[match(best_item, labels$item)],
+    worst_class = labels$item_label[match(worst_item, labels$item)]
+  ) %>%
+  select(record_id, Task, shown_items, best_item, best_class, worst_item, worst_class) %>%
+  slice_head(n = 8)
+
+kable(choice_tasks_display)
+```
+
+## MNL via Maximum Likelihood
+
+The MLE model maximizes this best-plus-worst log-likelihood:
+
+$$
+\ell(\boldsymbol{\beta}) =
+\sum_{\text{tasks}}
+\left[
+\beta_{j_b^*}
+- \log \sum_{j \in \text{shown}} \exp(\beta_j)
+- \beta_{j_w^*}
+- \log \sum_{j \in \text{shown} \setminus \{j_b^*\}} \exp(-\beta_j)
+\right]
+$$
+
+The code uses log-sum-exp so the likelihood stays numerically stable.
+
+```{r}
+#| label: mle-likelihood
+shown_mat <- do.call(rbind, choice_tasks$shown)
+best_vec <- choice_tasks$best_item
+worst_vec <- choice_tasks$worst_item
+best_pos <- cbind(
+  seq_len(nrow(shown_mat)),
+  max.col(shown_mat == best_vec, ties.method = "first")
+)
+
+log_sum_exp_rows <- function(x) {
+  row_max <- apply(x, 1, max)
+  row_max + log(rowSums(exp(x - row_max)))
+}
+
+ll <- function(beta_free) {
+  beta <- c(0, beta_free)
+
+  best_utility <- matrix(beta[shown_mat], nrow = nrow(shown_mat))
+  worst_utility <- matrix(-beta[shown_mat], nrow = nrow(shown_mat))
+  worst_utility[best_pos] <- -Inf
+
+  best_ll <- beta[best_vec] - log_sum_exp_rows(best_utility)
+  worst_ll <- -beta[worst_vec] - log_sum_exp_rows(worst_utility)
+
+  sum(best_ll + worst_ll)
+}
+```
+
+```{r}
+#| label: mle-estimation
+mle_out <- optim(
+  par = rep(0, n_unique_items - 1),
+  fn = ll,
+  method = "BFGS",
+  hessian = TRUE,
+  control = list(fnscale = -1, maxit = 1000)
+)
+
+mle_se <- sqrt(diag(solve(-mle_out$hessian)))
+mle_beta <- c(0, mle_out$par)
+mle_share <- exp(mle_beta) / sum(exp(mle_beta))
+
+mle_results <- tibble(
+  item = labels$item,
+  beta_hat = mle_beta,
+  se = c(NA_real_, mle_se),
+  share = mle_share
+) %>%
+  left_join(labels, by = "item") %>%
+  arrange(desc(share)) %>%
+  mutate(mle_rank = row_number())
+
+mle_results %>%
+  transmute(
+    rank = mle_rank,
+    item,
+    class = item_label,
+    beta_hat = number(beta_hat, accuracy = 0.001),
+    se = if_else(is.na(se), "reference", number(se, accuracy = 0.001)),
+    preference_share = percent(share, accuracy = 0.1)
+  ) %>%
+  kable()
+```
+
+Optimizer convergence code: `r mle_out$convergence` (0 means success).
+
+```{r}
+#| label: mle-share-plot
+ggplot(mle_results, aes(x = share, y = fct_reorder(label_short, share))) +
+  geom_col(fill = "#5B8C5A", width = 0.75) +
+  scale_x_continuous(labels = percent_format(accuracy = 1)) +
+  labs(
+    x = "Share of preference",
+    y = NULL,
+    title = "MNL Preference Shares from Maximum Likelihood"
+  ) +
+  plot_theme
+```
+
+```{r}
+#| label: mle-compare-objects
+count_mle_compare <- counts_tbl %>%
+  select(item = Item, item_label, counts_rank, counts_score = score) %>%
+  left_join(
+    mle_results %>% select(item, mle_rank, mle_share = share),
+    by = "item"
+  ) %>%
+  mutate(rank_gap = abs(counts_rank - mle_rank))
+
+largest_count_mle_gap <- count_mle_compare %>%
+  slice_max(rank_gap, n = 1, with_ties = FALSE)
+```
+
+MLE keeps `r mle_results$item_label[1]` at the top. The biggest counts-to-MLE rank change is `r largest_count_mle_gap$item_label`, moving `r largest_count_mle_gap$rank_gap` positions. That is the value of MNL: it uses the full choice set, not just the final best-minus-worst counts.
+
+## Bayesian MNL
+
+The Bayesian model uses the same likelihood plus a weak normal prior:
+
+$$
+\boldsymbol{\beta} \sim N(\boldsymbol{0}, 10I)
+$$
+
+The prior is applied to the nine free coefficients, and I sample from the posterior with a random-walk Metropolis-Hastings algorithm.
+
+```{r}
+#| label: bayes-functions
+log_post <- function(beta_free) {
+  ll(beta_free) + sum(dnorm(beta_free, mean = 0, sd = sqrt(10), log = TRUE))
+}
+
+mh <- function(beta0, n_iter, step, keep_draws = TRUE) {
+  K <- length(beta0)
+  draws <- if (keep_draws) matrix(NA_real_, nrow = n_iter, ncol = K) else NULL
+
+  beta <- beta0
+  lp <- log_post(beta)
+  accept <- 0
+
+  for (t in seq_len(n_iter)) {
+    beta_star <- beta + rnorm(K, mean = 0, sd = step)
+    lp_star <- log_post(beta_star)
+
+    if (log(runif(1)) < lp_star - lp) {
+      beta <- beta_star
+      lp <- lp_star
+      accept <- accept + 1
+    }
+
+    if (keep_draws) {
+      draws[t, ] <- beta
+    }
+  }
+
+  list(draws = draws, accept_rate = accept / n_iter)
+}
+```
+
+I tune the proposal step size to target a 25% to 40% acceptance rate.
+
+```{r}
+#| label: bayes-tuning
+set.seed(444)
+tuning_steps <- c(0.04, 0.05, 0.06, 0.07, 0.08)
+
+tuning_results <- tibble(step = tuning_steps) %>%
+  mutate(
+    accept_rate = map_dbl(
+      step,
+      ~ mh(mle_out$par, n_iter = 2000, step = .x, keep_draws = FALSE)$accept_rate
+    )
+  )
+
+step_size <- tuning_results %>%
+  filter(accept_rate >= 0.25, accept_rate <= 0.40) %>%
+  arrange(desc(step)) %>%
+  slice_head(n = 1) %>%
+  pull(step)
+
+if (length(step_size) == 0) {
+  step_size <- tuning_results %>%
+    mutate(distance = abs(accept_rate - 0.32)) %>%
+    slice_min(distance, n = 1) %>%
+    pull(step)
+}
+
+tuning_results %>%
+  mutate(accept_rate = percent(accept_rate, accuracy = 0.1)) %>%
+  kable()
+```
+
+Final step size: `r step_size`.
+
+```{r}
+#| label: bayes-run
+set.seed(445)
+n_iter <- 20000
+mcmc <- mh(mle_out$par, n_iter = n_iter, step = step_size)
+colnames(mcmc$draws) <- str_c("beta_", 2:n_unique_items)
+
+burn_in <- floor(0.25 * n_iter)
+post_draws <- mcmc$draws[(burn_in + 1):n_iter, , drop = FALSE]
+
+bayes_acceptance <- mcmc$accept_rate
+```
+
+Final acceptance rate: `r percent(bayes_acceptance, accuracy = 0.1)`. Burn-in dropped: `r burn_in` draws.
+
+```{r}
+#| label: trace-plots
+trace_tbl <- as_tibble(mcmc$draws) %>%
+  mutate(iteration = row_number()) %>%
+  select(iteration, beta_2, beta_5, beta_9) %>%
+  pivot_longer(-iteration, names_to = "parameter", values_to = "value")
+
+ggplot(trace_tbl, aes(x = iteration, y = value)) +
+  geom_line(linewidth = 0.25, alpha = 0.7, color = "#2F6F9F") +
+  geom_vline(xintercept = burn_in, linetype = "dashed", color = "#6E6259") +
+  facet_wrap(~ parameter, scales = "free_y", ncol = 1) +
+  labs(
+    x = "Iteration",
+    y = "Beta value",
+    title = "Trace Plots for Three MNL Coefficients",
+    subtitle = "Dashed line marks the burn-in cutoff"
+  ) +
+  plot_theme
+```
+
+The traces settle into a stable range after burn-in, which is what I want for this sampler.
+
+```{r}
+#| label: bayes-results
+post_beta_draws <- cbind(beta_1 = 0, post_draws)
+colnames(post_beta_draws) <- str_c("beta_", 1:n_unique_items)
+
+share_draws <- t(apply(post_beta_draws, 1, function(x) {
+  exp_x <- exp(x - max(x))
+  exp_x / sum(exp_x)
+}))
+colnames(share_draws) <- str_c("share_", 1:n_unique_items)
+
+bayes_results <- tibble(
+  item = labels$item,
+  beta_mean = colMeans(post_beta_draws),
+  beta_low = apply(post_beta_draws, 2, quantile, 0.025),
+  beta_high = apply(post_beta_draws, 2, quantile, 0.975),
+  beta_sd = apply(post_beta_draws, 2, sd),
+  share_mean = colMeans(share_draws),
+  share_low = apply(share_draws, 2, quantile, 0.025),
+  share_high = apply(share_draws, 2, quantile, 0.975)
+) %>%
+  left_join(labels, by = "item") %>%
+  arrange(desc(share_mean)) %>%
+  mutate(bayes_rank = row_number())
+
+bayes_results %>%
+  transmute(
+    rank = bayes_rank,
+    item,
+    class = item_label,
+    beta_mean = number(beta_mean, accuracy = 0.001),
+    beta_95_ci = str_c(
+      "[",
+      number(beta_low, accuracy = 0.001),
+      ", ",
+      number(beta_high, accuracy = 0.001),
+      "]"
+    ),
+    posterior_share = percent(share_mean, accuracy = 0.1),
+    share_95_ci = str_c(
+      "[",
+      percent(share_low, accuracy = 0.1),
+      ", ",
+      percent(share_high, accuracy = 0.1),
+      "]"
+    )
+  ) %>%
+  kable()
+```
+
+```{r}
+#| label: bayes-share-plot
+ggplot(bayes_results, aes(x = share_mean, y = fct_reorder(label_short, share_mean))) +
+  geom_col(fill = "#D86F5B", width = 0.75) +
+  geom_errorbarh(aes(xmin = share_low, xmax = share_high), height = 0.2, color = "#342523") +
+  scale_x_continuous(labels = percent_format(accuracy = 1)) +
+  labs(
+    x = "Posterior mean share of preference",
+    y = NULL,
+    title = "Bayesian MNL Preference Shares",
+    subtitle = "Error bars are 95% posterior credible intervals"
+  ) +
+  plot_theme
+```
+
+```{r}
+#| label: bayes-mle-compare-objects
+mle_bayes_compare <- mle_results %>%
+  select(item, item_label, mle_beta = beta_hat, mle_se = se, mle_share = share) %>%
+  left_join(
+    bayes_results %>%
+      select(item, bayes_beta = beta_mean, bayes_sd = beta_sd, bayes_share = share_mean),
+    by = "item"
+  ) %>%
+  mutate(
+    beta_gap = abs(mle_beta - bayes_beta),
+    share_gap = abs(mle_share - bayes_share)
+  )
+
+largest_mle_bayes_share_gap <- mle_bayes_compare %>%
+  slice_max(share_gap, n = 1, with_ties = FALSE)
+```
+
+Bayes and MLE are very close. The largest share gap is only `r percent(largest_mle_bayes_share_gap$share_gap, accuracy = 0.1)` for `r largest_mle_bayes_share_gap$item_label`. The benefit is the credible interval, not a dramatically different ranking.
+
+## Comparing the Three Methods
+
+The final table puts the methods side by side, sorted by MLE rank.
+
+```{r}
+#| label: final-comparison
+final_compare <- counts_tbl %>%
+  select(
+    item = Item,
+    item_label,
+    counts_score = score,
+    counts_rank
+  ) %>%
+  left_join(
+    mle_results %>% select(item, mle_share = share, mle_rank),
+    by = "item"
+  ) %>%
+  left_join(
+    bayes_results %>% select(item, bayes_share = share_mean, bayes_rank),
+    by = "item"
+  ) %>%
+  arrange(mle_rank)
+
+final_compare %>%
+  transmute(
+    class = item_label,
+    counts_score = percent(counts_score, accuracy = 0.1),
+    counts_rank,
+    mle_share = percent(mle_share, accuracy = 0.1),
+    mle_rank,
+    bayes_posterior_share = percent(bayes_share, accuracy = 0.1),
+    bayes_rank
+  ) %>%
+  kable()
+```
+
+```{r}
+#| label: final-comparison-plot
+compare_plot_data <- bind_rows(
+  counts_tbl %>%
+    transmute(
+      item = Item,
+      label_short,
+      method = "Counts score",
+      value = score
+    ),
+  mle_results %>%
+    transmute(
+      item,
+      label_short,
+      method = "MLE share",
+      value = share
+    ),
+  bayes_results %>%
+    transmute(
+      item,
+      label_short,
+      method = "Bayesian share",
+      value = share_mean
+    )
+) %>%
+  mutate(method = factor(method, levels = c("Counts score", "MLE share", "Bayesian share"))) %>%
+  arrange(method, value) %>%
+  mutate(label_method = factor(
+    str_c(label_short, "___", method),
+    levels = unique(str_c(label_short, "___", method))
+  ))
+
+ggplot(compare_plot_data, aes(x = value, y = label_method, fill = factor(item))) +
+  geom_vline(
+    data = tibble(method = factor("Counts score", levels = levels(compare_plot_data$method))),
+    aes(xintercept = 0),
+    inherit.aes = FALSE,
+    color = "gray70"
+  ) +
+  geom_col(width = 0.75, show.legend = FALSE) +
+  facet_wrap(~ method, scales = "free") +
+  scale_y_discrete(labels = function(x) str_remove(x, "___.*$")) +
+  scale_x_continuous(labels = percent_format(accuracy = 1)) +
+  scale_fill_manual(values = class_palette) +
+  labs(
+    x = NULL,
+    y = NULL,
+    title = "Comparison Across Counts, MLE, and Bayesian MNL"
+  ) +
+  plot_theme
+```
+
+```{r}
+#| label: final-interpretation-objects
+top_all <- final_compare %>%
+  filter(counts_rank <= 3, mle_rank <= 3, bayes_rank <= 3) %>%
+  pull(item_label)
+
+bottom_all <- final_compare %>%
+  filter(counts_rank >= 8, mle_rank >= 8, bayes_rank >= 8) %>%
+  pull(item_label)
+
+largest_rank_range <- final_compare %>%
+  mutate(
+    rank_range = pmax(counts_rank, mle_rank, bayes_rank) -
+      pmin(counts_rank, mle_rank, bayes_rank)
+  ) %>%
+  slice_max(rank_range, n = 1, with_ties = FALSE)
+```
+
+The methods agree most at the extremes. Top-three across all methods: `r str_c(top_all, collapse = ", ")`. Bottom-three across all methods: `r str_c(bottom_all, collapse = ", ")`. The biggest movement is `r largest_rank_range$item_label`, with a `r largest_rank_range$rank_range`-rank spread.
+
+Counts are fast and transparent. MNL is more rigorous because it models each choice set directly. Bayes adds uncertainty intervals, which are especially useful when middle-ranked classes are close.
+
+## Discussion
+
+The clearest takeaway is that `r top_count$item_label` is the strongest class in this survey. `r bottom_count$item_label` is the weakest by the simple counts score and stays near the bottom in the model-based results.
+
+For a quick read, I would use counts. For a cleaner ranking, I would use MLE MNL. For uncertainty and future simulations, I would use Bayesian MNL.
+
+The caveat is that this is still a survey of MSBA students, not a universal ranking of classes. If I extended this, I would segment preferences by student background or career interest.

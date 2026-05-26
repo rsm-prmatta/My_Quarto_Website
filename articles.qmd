@@ -36,6 +36,22 @@ A polished walkthrough of A/B testing for CTA design, covering simulation, the L
 ::: {.article-card-grid}
 ::: {.article-card}
 ::: {.card-icon}
+<i class="bi bi-ui-checks-grid"></i>
+:::
+
+::: {.card-meta}
+Conjoint / MaxDiff
+:::
+
+### [MaxDiff Analysis of MSBA Class Preferences](hw4_questions.qmd)
+
+A visual Best-Worst Scaling analysis of MSBA course preferences, using counts, MLE MNL, and Bayesian MNL to show winners, losers, and uncertainty.
+
+[Open article →](hw4_questions.qmd){.btn-link}
+:::
+
+::: {.article-card}
+::: {.card-icon}
 <i class="bi bi-graph-up-arrow"></i>
 :::
 
